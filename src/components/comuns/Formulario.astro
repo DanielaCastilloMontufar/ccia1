@@ -1,0 +1,113 @@
+---
+interface Props {
+  email:string;
+
+}
+
+const {email} = Astro.props;
+---
+
+
+<div class="pt-[70px] w-2/3 pb-20">
+    <h1 class="">Ingresa tus datos</h1>
+    <p>Para concretar la solicitud necesitamos tus datos.</p>
+
+    <form action={`${email}`} method="POST">
+        <div class="form-group mt-20">
+            <input
+                type="text"
+                class="form-control input-control"
+                name="Empresa del contacto"
+                id=""
+                placeholder="Nombre de la empresa"
+                required=""
+            />
+        </div>
+        <div class="form-group mt-10">
+            <input
+                type="text"
+                class="form-control input-control"
+                name="Nombre del contacto"
+                id=""
+                placeholder="Nombre de la persona de contacto"
+                required=""
+            />
+        </div>
+    
+        <div class="form-group flex items-center mt-10">
+            <button type="button" class="btn btn-outline-black flex mb-1"
+                ><a class="mt-[12px] mr-10">RUC</a><i
+                    ><svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 20 20"
+                        fill="currentColor"
+                        class="w-6 h-6 flex mt-0"
+                    >
+                        <path
+                            fill-rule="evenodd"
+                            d="M5 10a.75.75 0 01.75-.75h6.638L10.23 7.29a.75.75 0 111.04-1.08l3.5 3.25a.75.75 0 010 1.08l-3.5 3.25a.75.75 0 11-1.04-1.08l2.158-1.96H5.75A.75.75 0 015 10z"
+                        ></path>
+                    </svg>
+                </i></button
+            >
+            <input
+                type="text"
+                class="form-control input-control input-number ml-4"
+                name="RUC"
+                id=""
+                placeholder="Colocar aquí el número de RUC"
+                maxlength="20"
+                required=""
+            />
+        </div>
+    
+        <div class="form-group flex items-center mt-10 ml-4">
+            <input
+                type="email"
+                class="form-control input-control input-number mr-4 mb-4"
+                name="Correo electrónico"
+                id=""
+                placeholder="Correo electrónico"
+                maxlength="100"
+                required=""
+            />
+            <input
+                type="text"
+                class="form-control input-control input-number pl-4"
+                name="Teléfono/Celular"
+                id=""
+                placeholder="Teléfono o celular"
+                maxlength="11"
+                required=""
+            />
+        </div>
+    
+    <div class="input-group mt-10">
+        <div class="input-group-prepend">
+            <div class="input-group-text">
+                <input type="checkbox" aria-label="Checkbox for following text input" id="okterm">
+            </div>
+        </div>
+        <label for="okterm">Acepto la <a href="" class="btn-secundario">Política de Protección de Datos Personales</a></label>
+    </div>
+    
+    <button type="submit" class="mt-10 btn btn-primario flex">
+        <i>
+            <svg 
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 20 20"
+            fill="currentColor"
+            class="w-6 h-6 flex mt-0">
+            <path
+                fill-rule="evenodd"
+                d="M5 10a.75.75 0 01.75-.75h6.638L10.23 7.29a.75.75 0 111.04-1.08l3.5 3.25a.75.75 0 010 1.08l-3.5 3.25a.75.75 0 11-1.04-1.08l2.158-1.96H5.75A.75.75 0 015 10z"
+            ></path>
+        </svg>
+        </i>
+        Enviar
+        solicitud</button>
+    </form>
+</div>
+
+   <img src="./images/Alejandra2.webp" class="card-img-top"
+alt="..."/> 

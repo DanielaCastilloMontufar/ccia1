@@ -1,0 +1,47 @@
+{
+    "empresas":[
+        {
+            "name": "30.25 ARQUITECTOS S.A.C.",
+            "image": "ARQUITECTOS.webp",
+            "link": "#"
+
+        },   
+
+        {
+            "name": "AGROFACTORY DEL PERU E.I.R.L.",
+            "image": "agroFactory.webp",
+            "link": "#"
+
+        },
+        {
+            "name": "ALIMENTOS PROCESADOS S.A.",
+            "image": "alimentosProcesados.webp",
+            "link": "#"
+
+        },   
+
+        {
+            "name": "DROGUERIA ANGYMARC / BOTICAS PIERINELLA + VIDA",
+            "image": "pierinella.webp",
+            "link": "#"
+
+        },
+        {
+            "name": "ARLA CONSULTORES",
+            "image": "arla.webp",
+            "link": "#"
+
+        },   
+
+        {
+            "name": "ASCENSORES & SERVICIOS PERU SAC",
+            "image": "ascensores.webp",
+            "link": "#"
+
+        }
+
+
+
+        
+    ]
+}

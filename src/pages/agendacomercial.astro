@@ -1,0 +1,60 @@
+---
+import Arrow1 from "../components/comuns/Arrow1.astro";
+import NavbarAgenda from "../components/comuns/NavbarAgenda.astro"
+import ComoProcedemos from "../components/comuns/ComoProcedemos.astro";
+import Tarifas from "../components/comuns/Tarifas.astro"
+import Layout from "../layouts/Layout.astro";
+import LandingHeader from "../components/LandingHeader.astro";
+import FooterSection from "../components/FooterSection.astro";
+---
+
+<Layout title="Agenda Comercial">
+    <LandingHeader/>
+    <section class="agendaC">
+        <div class="dtl grid grid-cols-2 gap-2">
+            <div class="pt-20 pl-10">
+                <h2>Agenda <span><br />comercial</span></h2>
+                <p>
+                    Ayudamos a nuestros asociados a reunirse con potenciales
+                    clientes. <br /><br />
+                    Preparamos un directorio de empresas basándonos en el conocimiento
+                    sectorial que tenemos de nuestros afiliados.<br /><br />
+                    Presentamos a nuestros asociados a través de la Cámara evitando el
+                    contacto de "puerta fría".
+                </p>
+    
+                <a href="#section-next"><button type="submit" class="btn btn-secundario flex mt-10"
+                    ><i> <Arrow1 /></i> Ver más</button></a>
+            </div>
+    
+            <div>
+                <div class="imagen1 pt-20">
+                    <img
+                        class="app-img1"
+                        src="./images/agenda.webp"
+                        alt=""
+                    />
+                </div>
+                <div class="flex">
+                    <div class="w-1/2"><a href="/agendacomercial/"><img
+                    class=" pt-20 w-200"
+                    src="./images/videos.webp"
+                    alt=""
+                /></a></div>
+                <div class="pt-20 w-1/2">
+                    <p class="uppercase">Novedades</p>
+                    <p class="">¿Qué es el libro de reclamaciones?</p>
+                </div></div>
+            </div>
+        </div>
+    </section>
+        <NavbarAgenda 
+        name="Lissete Valdivia Alemán"
+        number="380505 Anexo 121"
+        hotmail="lvaldivia@cciarequipa.org"
+        link="https://api.whatsapp.com/send?phone=%2B51968084830&amp;data=ARDU4mFAII7PJiQX0Pezq2kW4Z2ffzO2-yTDzPPQkfnwgvCya1ZOgVndhXjzvCoHaAq7B352aodU1z77qHUbGx9woOud8Abrvlrt6K8qlVTnjiBLg7easjsDdFV8FJCpjKkylHtN8NYCzOwPuNgg46U&amp;source=FB_Page&amp;app=facebook&amp;entry_point=page_cta&amp;fbclid=IwAR1G3CnbxJrcBx5cKckm_KAIKMfHrsX8jWAZEJF7IY_l8VknmtN3n8qIdcs"/>
+    
+    <ComoProcedemos/>
+<Tarifas/>
+    <FooterSection/>
+</Layout>

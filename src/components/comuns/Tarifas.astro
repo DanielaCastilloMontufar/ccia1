@@ -1,0 +1,13 @@
+---
+import Formulario from "./Formulario.astro";
+import AgendaC from "../AgendaC"
+---
+
+<section class="tarifario">
+    <div class="container">
+        <h1 class="">Tarifas</h1>
+        <AgendaC client:only/>
+        <Formulario email="https://formsubmit.co/your@email.com"/>
+    </div>
+    
+</section>

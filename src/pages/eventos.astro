@@ -1,0 +1,46 @@
+---
+import FooterSection from "../components/FooterSection.astro";
+import LandingHeader from "../components/LandingHeader.astro";
+import Arrow1 from "../components/comuns/Arrow1.astro";
+import Layout from "../layouts/Layout.astro";
+import EventosActividades from "../components/EventosActividades"
+
+---
+
+<Layout title="Eventos">
+    <LandingHeader/>
+    <section class="eventos pt-40">
+        <div class="dtl grid grid-cols-2 gap-2">
+            <div class="pt-20 pl-10">
+                <h2>Eventos <span><br />CCIA</span></h2>
+                <p>
+                    Presenciales y virtuales <br /><br />
+                    ¿No eres socio de la Cámara de Comercio?<br />
+                    ¡También puedes participar!
+                </p>
+            </div>
+    
+            <div>
+                <div class="imagen1">
+                    <img
+                        class="app-img1"
+                        src="./images/eventos.webp"
+                        alt=""
+                    />
+                </div>
+            </div>
+        </div>
+        <button type="submit" class="btn btn-secundario flex"><a href="#pills-eventos" class="flex"> 
+            <i> <Arrow1 /></i> Quiero recibir información de sus eventos</a></button
+        >
+    </section>
+    
+    <section id="eventos-realizados" class="pb-6">
+        <div class="container">
+            <div class="row">
+                <EventosActividades client:only/>
+            </div>
+        </div>
+    </section>
+    <FooterSection/>
+</Layout>

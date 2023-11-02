@@ -1,0 +1,280 @@
+---
+import FooterSection from "../components/FooterSection.astro";
+import LandingHeader from "../components/LandingHeader.astro";
+import Arrow from "../components/comuns/Arrow.astro";
+import Arrow1 from "../components/comuns/Arrow1.astro";
+import NavbarAgenda from "../components/comuns/NavbarAgenda.astro";
+import Layout from "../layouts/Layout.astro";
+
+---
+
+<Layout title="Estudios Económicos">
+    <LandingHeader/>
+    <section class="estudiosE">
+        <div class="dtl grid grid-cols-2 gap-2">
+            <div class="pt-20 pl-10">
+                <h2 class="leading-[55px]">
+                    Estudios <span><br />económicos</span>
+                </h2>
+                <p>
+                    Herramienta para la toma de decisiones en base a indicadores
+                    económicos. <br /><br />
+                    Consultas en información económica a nivel local y regional relevante
+                    para el sector empresarial.<br /><br />
+    
+                    <a href="#reservar-asesoria"><button type="submit" class="btn btn-secundario flex mt-10"
+                        ><i> <Arrow1 /></i>Solicita una asesoría</button
+                    ></a>
+                </p>
+            </div>
+    
+            <div>
+                <div class="imagen1">
+                    <img
+                        class="app-img1"
+                        src="./images/estudios.webp"
+                        alt=""
+                    />
+                </div>
+                <div class="flex">
+                    <div class="w-1/2">
+                        <a href="/estudioseconomicos/"
+                            ><img
+                                class="pt-20 w-200"
+                                src="./images/videos.webp"
+                                alt=""
+                            /></a
+                        >
+                    </div>
+                    <div class="pt-20 w-1/2">
+                        <p class="uppercase">Novedades</p>
+                        <p class="">¿Qué es el libro de reclamaciones?</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- -->
+        
+    </section>
+    <NavbarAgenda name="Ing." number="380505 Anexo 333" hotmail=" " link="https://wa.link/3zcfnl" />
+    
+    <section class="cifras py-6 mt-5 pt-20 pb-20">
+        <div class="pt-20 justify-center w-100% items-center">
+            <h2 class="leading-[55px]">Arequipa <span>en cifras</span></h2>
+    
+            <div class="year-filter mx-auto flex justify-center">
+                <div class="year-filter-nav">
+                    <div class="year-filter-button year-filter-down pt-2">
+                        <i
+                            ><svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 20 20"
+                                fill="#3CBF71"
+                                class="w-5 h-5"
+                            >
+                                <path
+                                    fill-rule="evenodd"
+                                    d="M12.79 5.23a.75.75 0 01-.02 1.06L8.832 10l3.938 3.71a.75.75 0 11-1.04 1.08l-4.5-4.25a.75.75 0 010-1.08l4.5-4.25a.75.75 0 011.06.02z"
+                                    clip-rule="evenodd"></path>
+                            </svg></i
+                        >
+                    </div>
+                </div><input
+                    type="number"
+                    min="1900"
+                    max="2099"
+                    step="1"
+                    id="anio-economico"
+                    value="2023"
+                /><div class="year-filter-nav">
+                    <div class="year-filter-button year-filter-up pt-2">
+                        <i>
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 20 20"
+                                fill="#3CBF71"
+                                class="w-5 h-5"
+                            >
+                                <path
+                                    fill-rule="evenodd"
+                                    d="M7.21 14.77a.75.75 0 01.02-1.06L11.168 10 7.23 6.29a.75.75 0 111.04-1.08l4.5 4.25a.75.75 0 010 1.08l-4.5 4.25a.75.75 0 01-1.06-.02z"
+                                    clip-rule="evenodd"></path></svg
+                            >
+                        </i>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="row mt-4 flex">
+                <div class="col-md-1">
+                    <button type="button" data-mes="1" class="btn-mes-filter"
+                        >Ene</button
+                    >
+                </div>
+                <div class="col-md-1">
+                    <button type="button" data-mes="2" class="btn-mes-filter"
+                        >Feb</button
+                    >
+                </div>
+                <div class="col-md-1">
+                    <button type="button" data-mes="3" class="btn-mes-filter"
+                        >Mar</button
+                    >
+                </div>
+                <div class="col-md-1">
+                    <button type="button" data-mes="4" class="btn-mes-filter"
+                        >Abr</button
+                    >
+                </div>
+                <div class="col-md-1">
+                    <button type="button" data-mes="5" class="btn-mes-filter active"
+                        >May</button
+                    >
+                </div>
+                <div class="col-md-1">
+                    <button type="button" data-mes="6" class="btn-mes-filter"
+                        >Jun</button
+                    >
+                </div>
+                <div class="col-md-1">
+                    <button type="button" data-mes="7" class="btn-mes-filter"
+                        >Jul</button
+                    >
+                </div>
+                <div class="col-md-1">
+                    <button type="button" data-mes="8" class="btn-mes-filter"
+                        >Ago</button
+                    >
+                </div>
+                <div class="col-md-1">
+                    <button type="button" data-mes="9" class="btn-mes-filter"
+                        >Set</button
+                    >
+                </div>
+                <div class="col-md-1">
+                    <button type="button" data-mes="10" class="btn-mes-filter"
+                        >Oct</button
+                    >
+                </div>
+                <div class="col-md-1">
+                    <button type="button" data-mes="11" class="btn-mes-filter"
+                        >Nov</button
+                    >
+                </div>
+                <div class="col-md-1">
+                    <button type="button" data-mes="12" class="btn-mes-filter"
+                        >Dic</button
+                    >
+                </div>
+            </div>
+        </div>
+        <div class="row flex flex-1 items-center justify-center pdf">
+            <div class="col-md-5 text-center">
+                <img
+                    src="./images/estudiosEcon.webp"
+                    class="card-img-top"
+                    alt="..."
+                />
+            </div>
+    
+            <div class="col-md-5">
+                <p id="mes-economico" class="mb-0"></p>
+    
+                <h5 id="title-economico">No encontramos archivos</h5>
+    
+                <a class="btn-secundario btn-login cursor-pointer flex"
+                    ><i><Arrow /></i> Descarga (exclusivo para asociados)</a
+                >
+            </div>
+        </div>
+    </section>
+    
+    <section class="testimoniales py-6 pt-16 pb-16 items">
+        <div class="container text-white">
+            <div class="row">
+                <h1 class="">¿Cómo va el panorama?</h1>
+    
+                <img
+                    class="mx-auto mt-5"
+                    src="./images/comillas.webp"
+                    width="150"
+                    alt=""
+                />
+    
+                <p class="info text-center">
+                    La economía peruana ha sido impulsada por los elevados precios
+                    de los metales, pero también por el control de los contagios por
+                    covid-19 gracias a la vacunación, lo que ha permitido aumentar
+                    la movilidad y demanda de las personas. Así mismo, el ritmo de
+                    crecimiento del sector construcción, enfatizando en la mayor
+                    demanda de cemento para autoconstrucción, también ha contribuido
+                    a resultados positivos. Entre enero y setiembre, se reporta un
+                    crecimiento económico de 17.49%, lo que evidencia la
+                    reactivación económica del Perú.
+                </p>
+            </div>
+            <div class="mt-4 flex text-center justify-content-center align-items-center">
+                <img
+                    class="mr-2 rounded-circle"
+                    src="https://www.camara-arequipa.org.pe/public/images/personas/estudios_economicoss.jpg"
+                    width="70"
+                    height="70"
+                    alt=""
+                />
+    
+                <div class="text-center">
+                    <p class="mb-0">Grace Villanueva</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="py-6 recomendacion">
+    
+        <div class="container">
+    
+            <h1 class="pt-20">¿Qué te recomendamos?</h1>
+    
+            <p class="mt-4">Estas son algunas de las recomendaciones que te brindamos por parte de la<br>Cámara de Comercio
+                e Industria de Arequipa.</p>
+    
+                <div class="grid grid-cols-2 gap-10">
+                    <div class="image-recomendacion">
+                        <img
+                    class="mx-auto mt-5"
+                    src="./images/anunciate1.webp"
+                    alt=""
+                />
+                    </div>
+    
+                    <div class="pt-20">
+                        <span>Recomendación</span>
+                        <p class="mt-4">Se ha demostrado que la inversión es el motor de la economía de un país. En el
+                            caso de la Inversión Privada, ésta representa el 80% de la inversión total del Perú, y
+                            es aproximadamente el 18% del PBI. Es por ello la importancia de atraer inversión ya que
+                            ésta es generadora de puestos de trabajo y afecta el desempeño económico.</p>
+                    </div>
+                    
+                </div>
+    
+        </div>
+    
+    </section>
+    
+    <section class="reservar relative flex items-center" id="reservar-asesoria">
+        <div class="container">
+            <img
+                    class="mx-auto mt-5"
+                    src="./images/Fabiana.webp"
+                    alt=""
+                />
+            <h2>Solicitar asesoría económica</h2>
+            <div class="w-100 pt-4 inline-flex">
+                <button class="inline btn btn-primario btn-login">Soy socio</button>
+                <a href="https://www.camara-arequipa.org.pe/alquileres/afiliaciones" class="ml-8 mt-2 flex btn-secundario"><i><Arrow/></i> Aún no soy socio</a>
+            </div>
+        </div>
+    </section>
+    
+    <FooterSection/>
+</Layout>

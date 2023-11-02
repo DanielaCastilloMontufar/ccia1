@@ -1,0 +1,153 @@
+---
+import FooterSection from "../components/FooterSection.astro";
+import LandingHeader from "../components/LandingHeader.astro";
+import Layout from "../layouts/Layout.astro";
+import Arrow1 from "../components/comuns/Arrow1.astro";
+import NavbarAgenda from "../components/comuns/NavbarAgenda.astro";
+---
+
+<script>
+    import { tns } from "tiny-slider";
+  
+    var slider = tns({
+      container: ".my-slider1",
+      items: 2,
+      slideBy: "page",
+      autoplay: true,
+      controls: true,
+      nav: false,
+      autoplayButtonOutput: false,
+      arrowKeys: true,
+      autoplayHoverPause: true,
+      speed: 300,
+      mode: "gallery",
+      responsive: {
+        300: {
+          items: 1,
+        },
+      },
+    });
+  
+    const prev = document.querySelector(
+      ".tns-controls button[data-controls='prev']"
+    );
+    prev.innerHTML =
+      '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="white" class="w-14 h-14"><path fill-rule="evenodd" d="M12.79 5.23a.75.75 0 01-.02 1.06L8.832 10l3.938 3.71a.75.75 0 11-1.04 1.08l-4.5-4.25a.75.75 0 010-1.08l4.5-4.25a.75.75 0 011.06.02z" clip-rule="evenodd" /></svg>';
+    const next = document.querySelector(
+      ".tns-controls button[data-controls='next']"
+    );
+    next.innerHTML =
+      '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="white" class="w-14 h-14">  <path fill-rule="evenodd" d="M7.21 14.77a.75.75 0 01.02-1.06L11.168 10 7.23 6.29a.75.75 0 111.04-1.08l4.5 4.25a.75.75 0 010 1.08l-4.5 4.25a.75.75 0 01-1.06-.02z" clip-rule="evenodd" /></svg>';
+  </script> 
+
+<Layout title="Alquiler de Ambientes">
+    <LandingHeader/>
+    
+    <section class="alquilerA">
+        <div class="dtl grid grid-cols-2 gap-4">
+            <div class="pt-20">
+                <p class="opacity-80">Nuestros espacios</p>
+                <h2>Alquiler de<span><br />ambientes</span></h2>
+                <p>
+                    Físicos y virtuales <br /><br />
+                    Contamos con los ambientes más modernos de la ciudad, provistos de
+                    equipos tecnológicos, audiovisuales, mobiliarios y servicio técnico
+                    completo durante el desarrollo de tus eventos.<br /><br />
+                    ¿No eres socio de la CCIA?<br />
+                    ¡También puedes disfrutar de nuestros ambientes!
+                </p>
+    
+                <a href="#slide2"><button type="submit" class="btn btn-secundario flex mt-10"
+                  ><i> <Arrow1 /></i> Ver más</button></a>
+            </div>
+    
+            <div>
+                <section id="slide3">
+                    <div class="slideshow1">
+                      <ul class="my-slider1">
+                        <li style="content1">
+                          <img src="./images/alquiler1.webp" alt="" />
+                        </li>
+                        <li style="">
+                          <img src="./images/alquiler2.webp" alt="" />
+                        </li>
+                        <li style="">
+                          <img src="./images/alquiler3.webp" alt="" />
+                        </li>
+                      </ul>
+                    </div>
+                  </section>
+            </div>
+        </div>
+    </section>
+    <NavbarAgenda
+            name="Mónica Torres"
+            number="380505 Anexo 115"
+            hotmail="mtorres@cciarequipa.org"
+            link=""
+        />
+    <script>
+        import { tns } from "tiny-slider";
+      
+        var slider = tns({
+          container: ".my-slider",
+          items: 2,
+          slideBy: "page",
+          autoplay: true,
+          controls: true,
+          nav: false,
+          autoplayButtonOutput: false,
+          arrowKeys: true,
+          autoplayHoverPause: true,
+          speed: 300,
+          mode: "gallery",
+          responsive: {
+            300: {
+              items: 1,
+            },
+          },
+        });
+      
+        const prev = document.querySelector(
+          ".tns-controls button[data-controls='prev']"
+        );
+        prev.innerHTML =
+          '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="white" class="w-14 h-14"><path fill-rule="evenodd" d="M12.79 5.23a.75.75 0 01-.02 1.06L8.832 10l3.938 3.71a.75.75 0 11-1.04 1.08l-4.5-4.25a.75.75 0 010-1.08l4.5-4.25a.75.75 0 011.06.02z" clip-rule="evenodd" /></svg>';
+        const next = document.querySelector(
+          ".tns-controls button[data-controls='next']"
+        );
+        next.innerHTML =
+          '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="white" class="w-14 h-14">  <path fill-rule="evenodd" d="M7.21 14.77a.75.75 0 01.02-1.06L11.168 10 7.23 6.29a.75.75 0 111.04-1.08l4.5 4.25a.75.75 0 010 1.08l-4.5 4.25a.75.75 0 01-1.06-.02z" clip-rule="evenodd" /></svg>';
+      </script>
+    <section id="slide2">
+        <div class="slideshow">
+          <ul class="my-slider">
+            <li style="content">
+              <img src="./images/alquiler4.webp" alt="" />
+              <section class="caption">
+                <h1>Auditorium</h1>
+                <p class="pt-6 pb-6">Ideal para conferencias, seminarios, foros, presentaciones,<br>lanzamiento de productos y eventos masivos.</p>
+                <a href="/detallesAuditorio/" class="button-slide">Ver Más</a>
+              </section>
+            </li>
+            <li style="">
+              <img src="./images/alquiler5.webp" alt="" />
+              <section class="caption">
+                <h1>Salón Cervesur</h1>
+                <p class="pt-6 pb-6">Ambientes privados para sesiones de directorio, consejo, reuniones<br>de trabajo, coworking.</p>
+                <a href="/detallesSalon/" class="button-slide">Ver Más</a>
+              </section>
+            </li>
+            <li style="">
+              <img src="./images/alquiler6.webp" alt="" />
+              <section class="caption">
+                <h1>Directorio</h1>
+                <p class="pt-6 pb-6">Ambientes privados para sesiones de directorio, consejo, reuniones<br>de trabajo, coworking.</p>
+                <a href="/detallesDirectorio/" class="button-slide">Ver Más</a>
+              </section>
+            </li>
+          </ul>
+        </div>
+      </section>
+    <FooterSection/>
+</Layout>

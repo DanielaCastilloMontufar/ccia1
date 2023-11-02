@@ -1,0 +1,1347 @@
+---
+interface Props {
+    empresas: Array<string>;
+  }
+  
+  const {empresas} = Astro.props;
+
+  
+import ChangePageNumbers from "./ChangePageNumbers.astro"
+---
+
+<section class="empresas py-6">
+    <div class="row">
+        <div class="container flex">
+            <div class="grid grid-cols-3 gap-4">
+                {empresas.map(("Empresas.json"))}
+
+
+                    <!-- <div class="card border rounded-lg">
+                        <div
+                            class="card-header flex items-center justify-center pt-[44px] pb-[80px]"
+                        >
+                            <img
+                                src="../../../public/images/ARQUITECTOS.webp"
+                                class="card-img-top"
+                                alt="..."
+                            />
+                        </div>
+                        <div class="card-body ml-2">
+                            <h5 class="card-title">30.25 ARQUITECTOS S.A.C.</h5>
+                            <div class="stars mb-4 flex">
+                                <i><Stars /></i>
+                                <i><Stars /></i>
+                                <i><Stars /></i>
+                                <i><Stars /></i>
+                                <i><Stars /></i>
+                            </div>
+                            <a
+                                href="###########"
+                                class="btn-secundario flex"
+                                ><Arrow/><i class=""> Ver más</i></a
+                            >
+                        </div>
+                    </div>
+                
+
+                <div class="card border rounded-lg">
+                    <div
+                        class="card-header flex items-center justify-center pt-[30px] pb-[80px]"
+                    >
+                        <img
+                            src="../../../public/images/agroFactory.webp"
+                            class="card-img-top"
+                            alt="..."
+                        />
+                    </div>
+                    <div class="card-body ml-2">
+                        <h5 class="card-title">AGROFACTORY DEL PERU E.I.R.L.</h5>
+                        <div class="stars mb-4 flex">
+                            <i><Stars /></i>
+                            <i><Stars /></i>
+                            <i><Stars /></i>
+                            <i><Stars /></i>
+                            <i><Stars /></i>
+                        </div>
+                        <a
+                            href="###########"
+                            class="btn-secundario flex"
+                                ><Arrow/><i class=""> Ver más</i></a
+                        >
+                    </div>
+                </div>
+
+                <div class="card border rounded-lg">
+                    <div
+                        class="card-header flex items-center justify-center pt-20 pb-[80px]"
+                    >
+                        <img
+                            src="../../../public/images/alimentosProcesados.webp"
+                            class="card-img-top"
+                            alt="..."
+                        />
+                    </div>
+                    <div class="card-body ml-2">
+                        <h5 class="card-title">ALIMENTOS PROCESADOS S.A.</h5>
+                        <div class="stars mb-4 flex">
+                            <i><Stars /></i>
+                            <i><Stars /></i>
+                            <i><Stars /></i>
+                            <i><Stars /></i>
+                            <i><Stars /></i>
+                        </div>
+                        <a
+                            href="###########"
+                            class="btn-secundario flex"
+                                ><Arrow/><i class=""> Ver más</i></a
+                        >
+                    </div>
+                </div>
+
+                <div class="card border rounded-lg">
+                    <div
+                        class="card-header flex items-center justify-center pt-[30px] pb-[50px]"
+                    >
+                        <img
+                            src="../../../public/images/pierinella.webp"
+                            class="card-img-top"
+                            alt="..."
+                        />
+                    </div>
+                    <div class="card-body ml-2">
+                        <h5 class="card-title">DROGUERIA ANGYMARC / BOTICAS PIERINELLA + VIDA</h5>
+                        <div class="stars mb-4 flex">
+                            <i><Stars /></i>
+                            <i><Stars /></i>
+                            <i><Stars /></i>
+                            <i><Stars /></i>
+                            <i><Stars /></i>
+                        </div>
+                        <a
+                            href="###########"
+                            class="btn-secundario flex"
+                                ><Arrow/><i class=""> Ver más</i></a
+                        >
+                    </div>
+                </div>
+
+                <div class="card border rounded-lg">
+                    <div
+                        class="card-header flex items-center justify-center pt-[70px] pb-[80px]"
+                    >
+                        <img
+                            src="../../../public/images/arla.webp"
+                            class="card-img-top"
+                            alt="..."
+                        />
+                    </div>
+                    <div class="card-body ml-2">
+                        <h5 class="card-title">ARLA CONSULTORES</h5>
+                        <div class="stars mb-4 flex">
+                            <i><Stars /></i>
+                            <i><Stars /></i>
+                            <i><Stars /></i>
+                            <i><Stars /></i>
+                            <i><Stars /></i>
+                        </div>
+                        <a
+                            href="###########"
+                            class="btn-secundario flex"
+                                ><Arrow/><i class=""> Ver más</i></a
+                        >
+                    </div>
+                </div>
+
+                <div class="card border rounded-lg">
+                    <div
+                        class="card-header flex items-center justify-center pt-[0px] pb-[0px]"
+                    >
+                        <img
+                            src="../../../public/images/ascensores.webp"
+                            class="card-img-top"
+                            alt="..."
+                        />
+                    </div>
+                    <div class="card-body ml-2">
+                        <h5 class="card-title">ASCENSORES & SERVICIOS PERU SAC</h5>
+                        <div class="stars mb-4 flex">
+                            <i><Stars /></i>
+                            <i><Stars /></i>
+                            <i><Stars /></i>
+                            <i><Stars /></i>
+                            <i><Stars /></i>
+                        </div>
+                        <a
+                            href="###########"
+                            class="btn-secundario flex"
+                                ><Arrow/><i class=""> Ver más</i></a
+                        >
+                    </div>
+                </div>
+
+                <div class="card border rounded-lg">
+                    <div
+                        class="card-header flex items-center justify-center pt-[30px] pb-[40px]"
+                    >
+                        <img
+                            src="../../../public/images/AGESA.webp"
+                            class="card-img-top"
+                            alt="..."
+                        />
+                    </div>
+                    <div class="card-body ml-2">
+                        <h5 class="card-title">AGESA</h5>
+                        <div class="stars mb-4 flex">
+                            <i><Stars /></i>
+                            <i><Stars /></i>
+                            <i><Stars /></i>
+                            <i><Stars /></i>
+                            <i><Stars /></i>
+                        </div>
+                        <a
+                            href="###########"
+                            class="btn-secundario flex"
+                                ><Arrow/><i class=""> Ver más</i></a
+                        >
+                    </div>
+                </div>
+
+                <div class="card border rounded-lg">
+                    <div
+                        class="card-header flex items-center justify-center pt-[80px] pb-[65px]"
+                    >
+                        <img
+                            src="../../../public/images/TECSUP.webp"
+                            class="card-img-top"
+                            alt="..."
+                        />
+                    </div>
+                    <div class="card-body ml-2">
+                        <h5 class="card-title">TECSUP Nro2</h5>
+                        <div class="stars mb-4 flex">
+                            <i><Stars /></i>
+                            <i><Stars /></i>
+                            <i><Stars /></i>
+                            <i><Stars /></i>
+                            <i><Stars /></i>
+                        </div>
+                        <a
+                            href="###########"
+                            class="btn-secundario flex"
+                                ><Arrow/><i class=""> Ver más</i></a
+                        >
+                    </div>
+                </div>
+
+                <div class="card border rounded-lg">
+                    <div
+                        class="card-header flex items-center justify-center pt-[0px] pb-[0px]"
+                    >
+                        <img
+                            src="../../../public/images/incaMotors.webp"
+                            class="card-img-top"
+                            alt="..."
+                        />
+                    </div>
+                    <div class="card-body ml-2">
+                        <h5 class="card-title">AUTOMOTRIZ INCAMOTORS S.A.C.</h5>
+                        <div class="stars mb-4 flex">
+                            <i><Stars /></i>
+                            <i><Stars /></i>
+                            <i><Stars /></i>
+                            <i><Stars /></i>
+                            <i><Stars /></i>
+                        </div>
+                        <a
+                            href="###########"
+                            class="btn-secundario flex"
+                                ><Arrow/><i class=""> Ver más</i></a
+                        >
+                    </div>
+                </div>
+
+                <div class="card border rounded-lg">
+                    <div
+                        class="card-header flex items-center justify-center pt-[30px] pb-[35px]"
+                    >
+                        <img
+                            src="../../../public/images/bcp.webp"
+                            class="card-img-top"
+                            alt="..."
+                        />
+                    </div>
+                    <div class="card-body ml-2">
+                        <h5 class="card-title">BANCO DE CREDITO DEL PERU</h5>
+                        <div class="stars mb-4 flex">
+                            <i><Stars /></i>
+                            <i><Stars /></i>
+                            <i><Stars /></i>
+                            <i><Stars /></i>
+                            <i><Stars /></i>
+                        </div>
+                        <a
+                            href="###########"
+                            class="btn-secundario flex"
+                                ><Arrow/><i class=""> Ver más</i></a
+                        >
+                    </div>
+                </div>
+
+                <div class="card border rounded-lg">
+                    <div
+                        class="card-header flex items-center justify-center pt-[0px] pb-[0px]"
+                    >
+                        <img
+                            src="../../../public/images/crismar.webp"
+                            class="card-img-top"
+                            alt="..."
+                        />
+                    </div>
+                    <div class="card-body ml-2">
+                        <h5 class="card-title">XIMA CRISMAR E.I.R.L.</h5>
+                        <div class="stars mb-4 flex">
+                            <i><Stars /></i>
+                            <i><Stars /></i>
+                            <i><Stars /></i>
+                            <i><Stars /></i>
+                            <i><Stars /></i>
+                        </div>
+                        <a
+                            href="###########"
+                            class="btn-secundario flex"
+                                ><Arrow/><i class=""> Ver más</i></a
+                        >
+                    </div>
+                </div>
+
+                <div class="card border rounded-lg">
+                    <div
+                        class="card-header flex items-center justify-center pt-[50px] pb-[50px]"
+                    >
+                        <img
+                            src="../../../public/images/braillard.webp"
+                            class="card-img-top"
+                            alt="..."
+                        />
+                    </div>
+                    <div class="card-body ml-2">
+                        <h5 class="card-title">BRAILLARD S.A.</h5>
+                        <div class="stars mb-4 flex">
+                            <i><Stars /></i>
+                            <i><Stars /></i>
+                            <i><Stars /></i>
+                            <i><Stars /></i>
+                            <i><Stars /></i>
+                        </div>
+                        <a
+                            href="###########"
+                            class="btn-secundario flex"
+                                ><Arrow/><i class=""> Ver más</i></a
+                        >
+                    </div>
+                </div>
+
+                <div class="card border rounded-lg">
+                    <div
+                        class="card-header flex items-center justify-center pt-[60px] pb-[70px]"
+                    >
+                        <img
+                            src="../../../public/images/agroInca.webp"
+                            class="card-img-top"
+                            alt="..."
+                        />
+                    </div>
+                    <div class="card-body ml-2">
+                        <h5 class="card-title">AGROINCA PRODUCTOS PERUANOS DE EXPORTACION S.A.</h5>
+                        <div class="stars mb-4 flex">
+                            <i><Stars /></i>
+                            <i><Stars /></i>
+                            <i><Stars /></i>
+                            <i><Stars /></i>
+                            <i><Stars /></i>
+                        </div>
+                        <a
+                            href="###########"
+                            class="btn-secundario flex"
+                                ><Arrow/><i class=""> Ver más</i></a
+                        >
+                    </div>
+                </div>
+
+                <div class="card border rounded-lg">
+                    <div
+                        class="card-header flex items-center justify-center pt-[60px] pb-[65px]"
+                    >
+                        <img
+                            src="../../../public/images/cultural.webp"
+                            class="card-img-top"
+                            alt="..."
+                        />
+                    </div>
+                    <div class="card-body ml-2">
+                        <h5 class="card-title">CENTRO CULTURAL PERUANO NORTEAMERICANO</h5>
+                        <div class="stars mb-4 flex">
+                            <i><Stars /></i>
+                            <i><Stars /></i>
+                            <i><Stars /></i>
+                            <i><Stars /></i>
+                            <i><Stars /></i>
+                        </div>
+                        <a
+                            href="###########"
+                            class="btn-secundario flex"
+                                ><Arrow/><i class=""> Ver más</i></a
+                        >
+                    </div>
+                </div>
+
+                <div class="card border rounded-lg">
+                    <div
+                        class="card-header flex items-center justify-center pt-[80px] pb-[70px]"
+                    >
+                        <img
+                            src="../../../public/images/certus.webp"
+                            class="card-img-top"
+                            alt="..."
+                        />
+                    </div>
+                    <div class="card-body ml-2">
+                        <h5 class="card-title">CERV REALIDAD VIRTUAL</h5>
+                        <div class="stars mb-4 flex">
+                            <i><Stars /></i>
+                            <i><Stars /></i>
+                            <i><Stars /></i>
+                            <i><Stars /></i>
+                            <i><Stars /></i>
+                        </div>
+                        <a
+                            href="###########"
+                            class="btn-secundario flex"
+                                ><Arrow/><i class=""> Ver más</i></a
+                        >
+                    </div>
+                </div>
+
+                <div class="card border rounded-lg">
+                    <div
+                        class="card-header flex items-center justify-center pt-[20px] pb-[20px]"
+                    >
+                        <img
+                            src="../../../public/images/prosegur.webp"
+                            class="card-img-top"
+                            alt="..."
+                        />
+                    </div>
+                    <div class="card-body ml-2">
+                        <h5 class="card-title">PROSEGUR</h5>
+                        <div class="stars mb-4 flex">
+                            <i><Stars /></i>
+                            <i><Stars /></i>
+                            <i><Stars /></i>
+                            <i><Stars /></i>
+                            <i><Stars /></i>
+                        </div>
+                        <a
+                            href="###########"
+                            class="btn-secundario flex"
+                                ><Arrow/><i class=""> Ver más</i></a
+                        >
+                    </div>
+                </div>
+
+                </div>
+
+                <div class="column2">
+
+                    <div class="card border rounded-lg">
+                        <div
+                            class="card-header flex items-center justify-center pt-20 pb-[110px]"
+                        >
+                            <img
+                                src="../../../public/images/adecco.webp"
+                                class="card-img-top"
+                                alt="..."
+                            />
+                        </div>
+                        <div class="card-body pl-2">
+                            <h5 class="card-title">ADECCO</h5>
+                            <div class="stars mb-4 flex">
+                                <i><Stars /></i>
+                                <i><Stars /></i>
+                                <i><Stars /></i>
+                                <i><Stars /></i>
+                                <i><Stars /></i>
+                            </div>
+                            <a
+                                href="https://www.camara-arequipa.org.pe/directorio/detalle/1/adecco"
+                                class="btn-secundario flex"
+                                    ><Arrow/><i class=""> Ver más</i></a
+                            >
+                        </div>
+                    </div>
+
+                    <div class="card border rounded-lg">
+                        <div
+                            class="card-header flex items-center justify-center pt-[60px] pb-[60px]"
+                        >
+                            <img
+                                src="../../../public/images/agropel.webp"
+                                class="card-img-top"
+                                alt="..."
+                            />
+                        </div>
+                        <div class="card-body pl-2">
+                            <h5 class="card-title">AGROPECUARIA DON LUCHO SAC</h5>
+                            <div class="stars mb-4 flex">
+                                <i><Stars /></i>
+                                <i><Stars /></i>
+                                <i><Stars /></i>
+                                <i><Stars /></i>
+                                <i><Stars /></i>
+                            </div>
+                            <a
+                                href="https://www.camara-arequipa.org.pe/directorio/detalle/1/adecco"
+                                class="btn-secundario flex"
+                                    ><Arrow/><i class=""> Ver más</i></a
+                            >
+                        </div>
+                    </div>
+
+                    <div class="card border rounded-lg">
+                        <div
+                            class="card-header flex items-center justify-center pt-[60px] pb-[60px]"
+                        >
+                            <img
+                                src=" no found"
+                                class="card-img-top"
+                                alt="..."
+                            />
+                        </div>
+                        <div class="card-body pl-2">
+                            <h5 class="card-title">ALIMENTOS Y SERVICIOS AGROPECUARIOS S.R.L</h5>
+                            <div class="stars mb-4 flex">
+                                <i><Stars /></i>
+                                <i><Stars /></i>
+                                <i><Stars /></i>
+                                <i><Stars /></i>
+                                <i><Stars /></i>
+                            </div>
+                            <a
+                                href="https://www.camara-arequipa.org.pe/directorio/detalle/1/adecco"
+                                class="btn-secundario flex"
+                                    ><Arrow/><i class=""> Ver más</i></a
+                            >
+                        </div>
+                    </div>
+
+                    <div class="card border rounded-lg">
+                        <div
+                            class="card-header flex items-center justify-center pt-[30px] pb-[25px]"
+                        >
+                            <img
+                                src="../../../public/images/aqpIndustrial.webp"
+                                class="card-img-top"
+                                alt="..."
+                            />
+                        </div>
+                        <div class="card-body pl-2">
+                            <h5 class="card-title">AQP INDUSTRIAL SERVICE S.A.C.</h5>
+                            <div class="stars mb-4 flex">
+                                <i><Stars /></i>
+                                <i><Stars /></i>
+                                <i><Stars /></i>
+                                <i><Stars /></i>
+                                <i><Stars /></i>
+                            </div>
+                            <a
+                                href="https://www.camara-arequipa.org.pe/directorio/detalle/1/adecco"
+                                class="btn-secundario flex"
+                                    ><Arrow/><i class=""> Ver más</i></a
+                            >
+                        </div>
+                    </div>
+
+
+                    <div class="card border rounded-lg">
+                        <div
+                            class="card-header flex items-center justify-center pt-[90px] pb-[85px]"
+                        >
+                            <img
+                                src="../../../public/images/artAtlas.webp"
+                                class="card-img-top"
+                                alt="..."
+                            />
+                        </div>
+                        <div class="card-body pl-2">
+                            <h5 class="card-title">ART ATLAS S.R.L.</h5>
+                            <div class="stars mb-4 flex">
+                                <i><Stars /></i>
+                                <i><Stars /></i>
+                                <i><Stars /></i>
+                                <i><Stars /></i>
+                                <i><Stars /></i>
+                            </div>
+                            <a
+                                href="https://www.camara-arequipa.org.pe/directorio/detalle/1/adecco"
+                                class="btn-secundario flex"
+                                    ><Arrow/><i class=""> Ver más</i></a
+                            >
+                        </div>
+                    </div>
+
+
+                    <div class="card border rounded-lg">
+                        <div
+                            class="card-header flex items-center justify-center pt-[90px] pb-[85px]"
+                        >
+                            <img
+                                src="../../../public/images/asesoresAQP.webp"
+                                class="card-img-top"
+                                alt="..."
+                            />
+                        </div>
+                        <div class="card-body pl-2">
+                            <h5 class="card-title">ASESORES AQP E.I.R.L.</h5>
+                            <div class="stars mb-4 flex">
+                                <i><Stars /></i>
+                                <i><Stars /></i>
+                                <i><Stars /></i>
+                                <i><Stars /></i>
+                                <i><Stars /></i>
+                            </div>
+                            <a
+                                href="https://www.camara-arequipa.org.pe/directorio/detalle/1/adecco"
+                                class="btn-secundario flex"
+                                    ><Arrow/><i class=""> Ver más</i></a
+                            >
+                        </div>
+                    </div>
+
+
+                    <div class="card border rounded-lg">
+                        <div
+                            class="card-header flex items-center justify-center pt-[60px] pb-[70px]"
+                        >
+                            <img
+                                src="../../../public/images/asocCerroJuli.webp"
+                                class="card-img-top"
+                                alt="..."
+                            />
+                        </div>
+                        <div class="card-body pl-2">
+                            <h5 class="card-title">ASOCIACION EMPRESARIAL CERRO JULI</h5>
+                            <div class="stars mb-4 flex">
+                                <i><Stars /></i>
+                                <i><Stars /></i>
+                                <i><Stars /></i>
+                                <i><Stars /></i>
+                                <i><Stars /></i>
+                            </div>
+                            <a
+                                href="https://www.camara-arequipa.org.pe/directorio/detalle/1/adecco"
+                                class="btn-secundario flex"
+                                    ><Arrow/><i class=""> Ver más</i></a
+                            >
+                        </div>
+                    </div>
+
+
+                    <div class="card border rounded-lg">
+                        <div
+                            class="card-header flex items-center justify-center pt-[0px] pb-[0px]"
+                        >
+                            <img
+                                src="../../../public/images/aurum.webp"
+                                class="card-img-top"
+                                alt="..."
+                            />
+                        </div>
+                        <div class="card-body pl-2">
+                            <h5 class="card-title">AURUM S.A.C</h5>
+                            <div class="stars mb-4 flex">
+                                <i><Stars /></i>
+                                <i><Stars /></i>
+                                <i><Stars /></i>
+                                <i><Stars /></i>
+                                <i><Stars /></i>
+                            </div>
+                            <a
+                                href="https://www.camara-arequipa.org.pe/directorio/detalle/1/adecco"
+                                class="btn-secundario flex"
+                                    ><Arrow/><i class=""> Ver más</i></a
+                            >
+                        </div>
+                    </div>
+
+
+                    <div class="card border rounded-lg">
+                        <div
+                            class="card-header flex items-center justify-center pt-[0px] pb-[0px]"
+                        >
+                            <img
+                                src="../../../public/images/hunter.webp"
+                                class="card-img-top"
+                                alt="..."
+                            />
+                        </div>
+                        <div class="card-body pl-2">
+                            <h5 class="card-title">HUNTER</h5>
+                            <div class="stars mb-4 flex">
+                                <i><Stars /></i>
+                                <i><Stars /></i>
+                                <i><Stars /></i>
+                                <i><Stars /></i>
+                                <i><Stars /></i>
+                            </div>
+                            <a
+                                href="https://www.camara-arequipa.org.pe/directorio/detalle/1/adecco"
+                                class="btn-secundario flex"
+                                    ><Arrow/><i class=""> Ver más</i></a
+                            >
+                        </div>
+                    </div>
+
+
+                    <div class="card border rounded-lg">
+                        <div
+                            class="card-header flex items-center justify-center pt-[40px] pb-[50px]"
+                        >
+                            <img
+                                src="../../../public/images/bantotal.webp"
+                                class="card-img-top"
+                                alt="..."
+                            />
+                        </div>
+                        <div class="card-body pl-2">
+                            <h5 class="card-title">BANTOTAL CENTRO DE DESARROLLO SAC</h5>
+                            <div class="stars mb-4 flex">
+                                <i><Stars /></i>
+                                <i><Stars /></i>
+                                <i><Stars /></i>
+                                <i><Stars /></i>
+                                <i><Stars /></i>
+                            </div>
+                            <a
+                                href="https://www.camara-arequipa.org.pe/directorio/detalle/1/adecco"
+                                class="btn-secundario flex"
+                                    ><Arrow/><i class=""> Ver más</i></a
+                            >
+                        </div>
+                    </div>
+
+
+                    <div class="card border rounded-lg">
+                        <div
+                            class="card-header flex items-center justify-center pt-[80px] pb-[80px]"
+                        >
+                            <img
+                                src="../../../public/images/bha.webp"
+                                class="card-img-top"
+                                alt="..."
+                            />
+                        </div>
+                        <div class="card-body pl-2">
+                            <h5 class="card-title">BHA CARGO LOGISTIC PERU S.A.C.</h5>
+                            <div class="stars mb-4 flex">
+                                <i><Stars /></i>
+                                <i><Stars /></i>
+                                <i><Stars /></i>
+                                <i><Stars /></i>
+                                <i><Stars /></i>
+                            </div>
+                            <a
+                                href="https://www.camara-arequipa.org.pe/directorio/detalle/1/adecco"
+                                class="btn-secundario flex"
+                                    ><Arrow/><i class=""> Ver más</i></a
+                            >
+                        </div>
+                    </div>
+
+                    <div class="card border rounded-lg">
+                        <div
+                            class="card-header flex items-center justify-center pt-[60px] pb-[65px]"
+                        >
+                            <img
+                                src="../../../public/images/bsg.webp"
+                                class="card-img-top"
+                                alt="..."
+                            />
+                        </div>
+                        <div class="card-body pl-2">
+                            <h5 class="card-title">BSG INSTITUTE</h5>
+                            <div class="stars mb-4 flex">
+                                <i><Stars /></i>
+                                <i><Stars /></i>
+                                <i><Stars /></i>
+                                <i><Stars /></i>
+                                <i><Stars /></i>
+                            </div>
+                            <a
+                                href="https://www.camara-arequipa.org.pe/directorio/detalle/1/adecco"
+                                class="btn-secundario flex"
+                                    ><Arrow/><i class=""> Ver más</i></a
+                            >
+                        </div>
+                    </div>
+
+                    <div class="card border rounded-lg">
+                        <div
+                            class="card-header flex items-center justify-center pt-[0px] pb-[0px]"
+                        >
+                            <img
+                                src="../../../public/images/viveAhora.webp"
+                                class="card-img-top"
+                                alt="..."
+                            />
+                        </div>
+                        <div class="card-body pl-2">
+                            <h5 class="card-title">FRATELLI PERU S.A.C.</h5>
+                            <div class="stars mb-4 flex">
+                                <i><Stars /></i>
+                                <i><Stars /></i>
+                                <i><Stars /></i>
+                                <i><Stars /></i>
+                                <i><Stars /></i>
+                            </div>
+                            <a
+                                href="https://www.camara-arequipa.org.pe/directorio/detalle/1/adecco"
+                                class="btn-secundario flex"
+                                    ><Arrow/><i class=""> Ver más</i></a
+                            >
+                        </div>
+                    </div>
+
+
+                    <div class="card border rounded-lg">
+                        <div
+                            class="card-header flex items-center justify-center pt-[80px] pb-[70px]"
+                        >
+                            <img
+                                src="../../../public/images/cesem.webp"
+                                class="card-img-top"
+                                alt="..."
+                            />
+                        </div>
+                        <div class="card-body pl-2">
+                            <h5 class="card-title">CENTRO DE SERVICIOS EMPRESARIALES DE AREQUIPA</h5>
+                            <div class="stars mb-4 flex">
+                                <i><Stars /></i>
+                                <i><Stars /></i>
+                                <i><Stars /></i>
+                                <i><Stars /></i>
+                                <i><Stars /></i>
+                            </div>
+                            <a
+                                href="https://www.camara-arequipa.org.pe/directorio/detalle/1/adecco"
+                                class="btn-secundario flex"
+                                    ><Arrow/><i class=""> Ver más</i></a
+                            >
+                        </div>
+                    </div>
+
+
+
+                    <div class="card border rounded-lg">
+                        <div
+                            class="card-header flex items-center justify-center pt-[60px] pb-[50px]"
+                        >
+                            <img
+                                src="../../../public/images/backus.webp"
+                                class="card-img-top"
+                                alt="..."
+                            />
+                        </div>
+                        <div class="card-body pl-2">
+                            <h5 class="card-title">CERVECERIAS PERUANAS BACKUS S.A.A</h5>
+                            <div class="stars mb-4 flex">
+                                <i><Stars /></i>
+                                <i><Stars /></i>
+                                <i><Stars /></i>
+                                <i><Stars /></i>
+                                <i><Stars /></i>
+                            </div>
+                            <a
+                                href="https://www.camara-arequipa.org.pe/directorio/detalle/1/adecco"
+                                class="btn-secundario flex"
+                                    ><Arrow/><i class=""> Ver más</i></a
+                            >
+                        </div>
+                    </div>
+
+
+                    <div class="card border rounded-lg">
+                        <div
+                            class="card-header flex items-center justify-center pt-[90px] pb-[80px]"
+                        >
+                            <img
+                                src="../../../public/images/cifumiga.webp"
+                                class="card-img-top"
+                                alt="..."
+                            />
+                        </div>
+                        <div class="card-body pl-2">
+                            <h5 class="card-title">CIFUMIGA E.I.R.L.</h5>
+                            <div class="stars mb-4 flex">
+                                <i><Stars /></i>
+                                <i><Stars /></i>
+                                <i><Stars /></i>
+                                <i><Stars /></i>
+                                <i><Stars /></i>
+                            </div>
+                            <a
+                                href="https://www.camara-arequipa.org.pe/directorio/detalle/1/adecco"
+                                class="btn-secundario flex"
+                                    ><Arrow/><i class=""> Ver más</i></a
+                            >
+                        </div>
+                    </div>
+
+
+
+
+
+
+
+                    
+            </div>
+
+            <div class="column3">
+
+                <div class="card border rounded-lg">
+                    <div
+                        class="card-header flex items-center justify-center pt-20 pb-[100px]"
+                    >
+                        <img
+                            src="../../../public/images/agregaSAC.webp"
+                            class="card-img-top"
+                            alt="..."
+                        />
+                    </div>
+                    <div class="card-body pl-2">
+                        <h5 class="card-title">AGREGA S.A.C.</h5>
+                        <div class="stars mb-4 flex">
+                            <i><Stars /></i>
+                            <i><Stars /></i>
+                            <i><Stars /></i>
+                            <i><Stars /></i>
+                            <i><Stars /></i>
+                        </div>
+                        <a
+                            href="https://www.camara-arequipa.org.pe/directorio/detalle/1/adecco"
+                            class="btn-secundario flex"
+                                ><Arrow/><i class=""> Ver más</i></a
+                        >
+                    </div>
+                </div>
+
+
+                <div class="card border rounded-lg">
+                    <div
+                        class="card-header flex items-center justify-center pt-[90px] pb-[90px]"
+                    >
+                        <img
+                            src="../../../public/images/alicorp.webp"
+                            class="card-img-top"
+                            alt="..."
+                        />
+                    </div>
+                    <div class="card-body ml-2">
+                        <h5 class="card-title">ALICORP S.A.A.</h5>
+                        <div class="stars mb-4 flex">
+                            <i><Stars /></i>
+                            <i><Stars /></i>
+                            <i><Stars /></i>
+                            <i><Stars /></i>
+                            <i><Stars /></i>
+                        </div>
+                        <a
+                            href="###########"
+                            class="btn-secundario flex"
+                                ><Arrow/><i class=""> Ver más</i></a
+                        >
+                    </div>
+                </div>
+
+                <div class="card border rounded-lg">
+                    <div
+                        class="card-header flex items-center justify-center pt-[0px] pb-[0px]"
+                    >
+                        <img
+                            src="../../../public/images/alsur.webp"
+                            class="card-img-top"
+                            alt="..."
+                        />
+                    </div>
+                    <div class="card-body ml-2">
+                        <h5 class="card-title">ALSUR PERU S.A.C.</h5>
+                        <div class="stars mb-4 flex">
+                            <i><Stars /></i>
+                            <i><Stars /></i>
+                            <i><Stars /></i>
+                            <i><Stars /></i>
+                            <i><Stars /></i>
+                        </div>
+                        <a
+                            href="###########"
+                            class="btn-secundario flex"
+                                ><Arrow/><i class=""> Ver más</i></a
+                        >
+                    </div>
+                </div>
+
+                <div class="card border rounded-lg">
+                    <div
+                        class="card-header flex items-center justify-center pt-[90px] pb-[95px]"
+                    >
+                        <img
+                            src="../../../public/images/comite4.webp"
+                            class="card-img-top"
+                            alt="..."
+                        />
+                    </div>
+                    <div class="card-body ml-2">
+                        <h5 class="card-title">AREQUIPA EXPRESS COMITE 4 S.R.L.</h5>
+                        <div class="stars mb-4 flex">
+                            <i><Stars /></i>
+                            <i><Stars /></i>
+                            <i><Stars /></i>
+                            <i><Stars /></i>
+                            <i><Stars /></i>
+                        </div>
+                        <a
+                            href="###########"
+                            class="btn-secundario flex"
+                                ><Arrow/><i class=""> Ver más</i></a
+                        >
+                    </div>
+                </div>
+
+                <div class="card border rounded-lg">
+                    <div
+                        class="card-header flex items-center justify-center pt-[0px] pb-[0px]"
+                    >
+                        <img
+                            src="../../../public/images/artePeru.webp"
+                            class="card-img-top"
+                            alt="..."
+                        />
+                    </div>
+                    <div class="card-body ml-2">
+                        <h5 class="card-title">ARTE PERU S.A.C.</h5>
+                        <div class="stars mb-4 flex">
+                            <i><Stars /></i>
+                            <i><Stars /></i>
+                            <i><Stars /></i>
+                            <i><Stars /></i>
+                            <i><Stars /></i>
+                        </div>
+                        <a
+                            href="###########"
+                            class="btn-secundario flex"
+                                ><Arrow/><i class=""> Ver más</i></a
+                        >
+                    </div>
+                </div>
+
+                <div class="card border rounded-lg">
+                    <div
+                        class="card-header flex items-center justify-center pt-[80px] pb-[75px]"
+                    >
+                        <img
+                            src="../../../public/images/parqueEsperanza.webp"
+                            class="card-img-top"
+                            alt="..."
+                        />
+                    </div>
+                    <div class="card-body ml-2">
+                        <h5 class="card-title">ASOCIACION CIVIL SAN JUAN BAUTISTA</h5>
+                        <div class="stars mb-4 flex">
+                            <i><Stars /></i>
+                            <i><Stars /></i>
+                            <i><Stars /></i>
+                            <i><Stars /></i>
+                            <i><Stars /></i>
+                        </div>
+                        <a
+                            href="###########"
+                            class="btn-secundario flex"
+                                ><Arrow/><i class=""> Ver más</i></a
+                        >
+                    </div>
+                </div>
+
+                <div class="card border rounded-lg">
+                    <div
+                        class="card-header flex items-center justify-center pt-[20px] pb-[20px]"
+                    >
+                        <img
+                            src="../../../public/images/pazPeru.webp"
+                            class="card-img-top"
+                            alt="..."
+                        />
+                    </div>
+                    <div class="card-body ml-2">
+                        <h5 class="card-title">ASOCIACION PAZ PERU ORGANISMO NO GUBERNAMENTAL</h5>
+                        <div class="stars mb-4 flex">
+                            <i><Stars /></i>
+                            <i><Stars /></i>
+                            <i><Stars /></i>
+                            <i><Stars /></i>
+                            <i><Stars /></i>
+                        </div>
+                        <a
+                            href="###########"
+                            class="btn-secundario flex"
+                                ><Arrow/><i class=""> Ver más</i></a
+                        >
+                    </div>
+                </div>
+
+                <div class="card border rounded-lg">
+                    <div
+                        class="card-header flex items-center justify-center pt-[70px] pb-[75px]"
+                    >
+                        <img
+                            src="../../../public/images/automotrizCisne.webp"
+                            class="card-img-top"
+                            alt="..."
+                        />
+                    </div>
+                    <div class="card-body ml-2">
+                        <h5 class="card-title">AUTOMOTRIZ CISNE S.R.L.</h5>
+                        <div class="stars mb-4 flex">
+                            <i><Stars /></i>
+                            <i><Stars /></i>
+                            <i><Stars /></i>
+                            <i><Stars /></i>
+                            <i><Stars /></i>
+                        </div>
+                        <a
+                            href="###########"
+                            class="btn-secundario flex"
+                                ><Arrow/><i class=""> Ver más</i></a
+                        >
+                    </div>
+                </div>
+
+                <div class="card border rounded-lg">
+                    <div
+                        class="card-header flex items-center justify-center pt-[40px] pb-[40px]"
+                    >
+                        <img
+                            src="../../../public/images/bcrp.webp"
+                            class="card-img-top"
+                            alt="..."
+                        />
+                    </div>
+                    <div class="card-body ml-2">
+                        <h5 class="card-title">BANCO CENTRAL DE RESERVA DEL PERU</h5>
+                        <div class="stars mb-4 flex">
+                            <i><Stars /></i>
+                            <i><Stars /></i>
+                            <i><Stars /></i>
+                            <i><Stars /></i>
+                            <i><Stars /></i>
+                        </div>
+                        <a
+                            href="###########"
+                            class="btn-secundario flex"
+                                ><Arrow/><i class=""> Ver más</i></a
+                        >
+                    </div>
+                </div>
+
+                <div class="card border rounded-lg">
+                    <div
+                        class="card-header flex items-center justify-center pt-[80px] pb-[70px]"
+                    >
+                        <img
+                            src="../../../public/images/bbva.webp"
+                            class="card-img-top"
+                            alt="..."
+                        />
+                    </div>
+                    <div class="card-body ml-2">
+                        <h5 class="card-title">BBVA BANCO CONTINENTAL</h5>
+                        <div class="stars mb-4 flex">
+                            <i><Stars /></i>
+                            <i><Stars /></i>
+                            <i><Stars /></i>
+                            <i><Stars /></i>
+                            <i><Stars /></i>
+                        </div>
+                        <a
+                            href="###########"
+                            class="btn-secundario flex"
+                                ><Arrow/><i class=""> Ver más</i></a
+                        >
+                    </div>
+                </div>
+
+                <div class="card border rounded-lg">
+                    <div
+                        class="card-header flex items-center justify-center pt-[90px] pb-[90px]"
+                    >
+                        <img
+                            src="not found"
+                            class="card-img-top"
+                            alt="..."
+                        />
+                    </div>
+                    <div class="card-body ml-2">
+                        <h5 class="card-title">BOUTIQUE GABRIELA - GABRIELA LOZANO DE VELASCO</h5>
+                        <div class="stars mb-4 flex">
+                            <i><Stars /></i>
+                            <i><Stars /></i>
+                            <i><Stars /></i>
+                            <i><Stars /></i>
+                            <i><Stars /></i>
+                        </div>
+                        <a
+                            href="###########"
+                            class="btn-secundario flex"
+                                ><Arrow/><i class=""> Ver más</i></a
+                        >
+                    </div>
+                </div>
+
+                <div class="card border rounded-lg">
+                    <div
+                        class="card-header flex items-center justify-center pt-[40px] pb-[40px]"
+                    >
+                        <img
+                            src="../../../public/images/cajaArequipa.webp"
+                            class="card-img-top"
+                            alt="..."
+                        />
+                    </div>
+                    <div class="card-body ml-2">
+                        <h5 class="card-title">CAJA AREQUIPA</h5>
+                        <div class="stars mb-4 flex">
+                            <i><Stars /></i>
+                            <i><Stars /></i>
+                            <i><Stars /></i>
+                            <i><Stars /></i>
+                            <i><Stars /></i>
+                        </div>
+                        <a
+                            href="###########"
+                            class="btn-secundario flex"
+                                ><Arrow/><i class=""> Ver más</i></a
+                        >
+                    </div>
+                </div>
+
+                <div class="card border rounded-lg">
+                    <div
+                        class="card-header flex items-center justify-center pt-[60px] pb-[60px]"
+                    >
+                        <img
+                            src="../../../public/images/carp.webp"
+                            class="card-img-top"
+                            alt="..."
+                        />
+                    </div>
+                    <div class="card-body ml-2">
+                        <h5 class="card-title">CARP Y ASOCIADOS S.C.R.L.</h5>
+                        <div class="stars mb-4 flex">
+                            <i><Stars /></i>
+                            <i><Stars /></i>
+                            <i><Stars /></i>
+                            <i><Stars /></i>
+                            <i><Stars /></i>
+                        </div>
+                        <a
+                            href="###########"
+                            class="btn-secundario flex"
+                                ><Arrow/><i class=""> Ver más</i></a
+                        >
+                    </div>
+                </div>
+
+                <div class="card border rounded-lg">
+                    <div
+                        class="card-header flex items-center justify-center pt-[20px] pb-[20px]"
+                    >
+                        <img
+                            src="../../../public/images/cetemin.webp"
+                            class="card-img-top"
+                            alt="..."
+                        />
+                    </div>
+                    <div class="card-body ml-2">
+                        <h5 class="card-title">CENTRO TECNOLOGICO MINERO</h5>
+                        <div class="stars mb-4 flex">
+                            <i><Stars /></i>
+                            <i><Stars /></i>
+                            <i><Stars /></i>
+                            <i><Stars /></i>
+                            <i><Stars /></i>
+                        </div>
+                        <a
+                            href="###########"
+                            class="btn-secundario flex"
+                                ><Arrow/><i class=""> Ver más</i></a
+                        >
+                    </div>
+                </div>
+
+                <div class="card border rounded-lg">
+                    <div
+                        class="card-header flex items-center justify-center pt-[90px] pb-[90px]"
+                    >
+                        <img
+                            src="no found"
+                            class="card-img-top"
+                            alt="..."
+                        />
+                    </div>
+                    <div class="card-body ml-2">
+                        <h5 class="card-title">CHARLES JULIAN PRIME RODRIGUEZ</h5>
+                        <div class="stars mb-4 flex">
+                            <i><Stars /></i>
+                            <i><Stars /></i>
+                            <i><Stars /></i>
+                            <i><Stars /></i>
+                            <i><Stars /></i>
+                        </div>
+                        <a
+                            href="###########"
+                            class="btn-secundario flex"
+                                ><Arrow/><i class=""> Ver más</i></a
+                        >
+                    </div>
+                </div>
+
+                <div class="card border rounded-lg">
+                    <div
+                        class="card-header flex items-center justify-center pt-[0px] pb-[0px]"
+                    >
+                        <img
+                            src="../../../public/images/clamasac.webp"
+                            class="card-img-top"
+                            alt="..."
+                        />
+                    </div>
+                    <div class="card-body ml-2">
+                        <h5 class="card-title">CLAMASAC</h5>
+                        <div class="stars mb-4 flex">
+                            <i><Stars /></i>
+                            <i><Stars /></i>
+                            <i><Stars /></i>
+                            <i><Stars /></i>
+                            <i><Stars /></i>
+                        </div>
+                        <a
+                            href="###########"
+                            class="btn-secundario flex"
+                                ><Arrow/><i class=""> Ver más</i></a
+                        >
+                    </div>
+                </div>
+            </div> -->
+        </div>
+    </div>
+    </div>
+    <ChangePageNumbers/>
+</section>

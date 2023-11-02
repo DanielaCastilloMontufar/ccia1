@@ -1,0 +1,6218 @@
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+
+/*HEADER*/
+
+header {
+    height: 100px;
+    background: transparent;
+    display: flex;
+    align-items: center;
+    z-index: 50;
+    background-attachment: fixed;
+    width: 100%;
+    position: fixed;
+    padding-top: 0px;
+    place-content: center;
+    transition: 0.4s;
+}
+
+.backgorund-transparent{
+    background: transparent;
+}
+
+.backgorund-black{
+    background: black;
+}
+
+#logo-img{
+    height: 65px;
+}
+
+.button-logIn{
+    color: #d4d4d8;
+    opacity: 80%;
+    font-weight: 800;
+    font-family: 'InterM';
+    transition: 0.4s;
+    display: inline;
+    font-size: 14px;
+    justify-content: space-between;
+    background-color: rgba(60, 191, 113, 0.14);
+    border: 1px solid white;
+    padding: 10px 10px;
+
+}
+
+.menu {
+    padding-left: 100px;
+}
+
+ul li {
+    display: inline-block;
+    position: relative;
+    padding-bottom: 10px;
+}
+
+ul li a {
+    color: #d4d4d8;
+    opacity: 80%;
+    font-weight: 800;
+    font-family: 'InterM';
+    text-decoration: none;
+    padding: 0 5px;
+    transition: 0.4s;
+    display: inline;
+    font-size: 14px;
+    justify-content: space-between;
+}
+
+ul li ul.dropdown li {
+    display: block;
+    padding: 5px;
+}
+
+ul li ul.dropdown li a {
+    font-size: 14px;
+    font-weight: 100;
+    color: black;
+    font-family: 'InterM';
+}
+
+ul li ul.dropdown {
+    width: max-content;
+    border-radius: 5px;
+    padding: 20px;
+    background: white;
+    position: absolute;
+    z-index: 3;
+    display: none;
+    color: black;
+    margin-top: 10px;
+}
+
+ul li a:hover{
+    color: white;
+}
+
+ul li ul.dropdown li a:hover {
+    color: #3CBF71;
+    font-weight: 900;
+}
+
+ul li:hover ul.dropdown {
+    display: block;
+}
+
+.mostrar-menu,
+.esconder-menu {
+    font-size: 30px;
+    cursor: pointer;
+    display: none;
+    color: white;
+    transition: 0.4s;
+}
+
+.mostrar-menu {
+    order: 1;
+}
+
+.mostrar-menu,
+.logo {
+    justify-content: space-between;
+}
+
+
+.menu li a:hover,
+.mostrar-menu:hover,
+.esconder-menu:hover {
+    color: white;
+    border-radius: 0.5rem;
+    padding: 10px;
+}
+
+#check {
+    display: none;
+}
+
+#log-in{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: block;
+    background-color: white;
+    padding: 20px 50px;
+    border-radius: 50px;
+}
+
+.container-all{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background: rgba(0, 0, 0, 0.6);
+}
+
+
+/* --------------SLIDE1------------*/
+.slideshow {
+    width: 100%;
+    position: relative;
+    z-index: 0;
+}
+
+.my-slider li,
+.my-slider ul {
+    width: 100%;
+}
+
+.my-slider li {
+    overflow: hidden;
+}
+
+.my-slider li img {
+    width: 100%;
+}
+
+.my-slider .caption {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    padding: 15px 180px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    text-align: left;
+    color: #fff;
+    z-index: 10;
+}
+
+.my-slider .caption h1 {
+    font-family: 'AxiformaM';
+    width: 100%;
+    font-weight: 600;
+    font-size: 50px;
+    margin-bottom: 0.5rem;
+    line-height: 1.2;
+    z-index: 10;
+}
+
+.caption .button-slide {
+    border: #3CBF71 2px solid;
+    border-radius: 35px;
+    line-height: 0px;
+    cursor: pointer;
+    font-weight: 600;
+    color: #fff;
+    background-color: rgba(60, 191, 113, 0.14);
+    transition: 0.3s;
+    font-size: 17px;
+    padding: 25px 20px;
+    height: auto;
+    display: flex;
+    position: relative;
+    z-index: 90;
+}
+
+.slideshow .my-slider li .icons {
+    position: absolute;
+    z-index: 10;
+    padding-top: 190px;
+    padding-left: 1110px;
+}
+
+.tns-controls button{
+    position: absolute;
+    z-index: 1;
+    height: 50%;
+}
+
+.tns-controls button {
+    opacity: .3;
+    transition: all .5;
+}
+
+.tns-controls button:hover {
+    opacity: 1;
+}
+
+.tns-controls button[data-controls="prev"] {
+    top: 23%;
+    position: absolute;
+    left: 10px;
+    color: transparent;
+}
+
+.tns-controls button[data-controls="next"] {
+    top: 23%;
+    position: absolute;
+    right: 10px;
+    color: transparent;
+}
+
+.animacion {
+    animation: fadeIn 5s;
+    transition: all .5s;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+
+
+/* --------------NAVBAR------------*/
+
+#navbar{
+    position: relative;
+    margin-top: -50px;
+}
+
+.navbar-subnav {
+    width: 100%;
+    top: 85%;
+    z-index: 4;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    position: relative;
+    font-family: "AxiformaM";
+}
+
+.navbar-subnav {
+
+    position: absolute;
+
+    width: 100%;
+
+    top: 12.9%;
+
+    z-index: 4;
+
+    justify-content: center;
+
+}
+
+.navbar-subnav ul {
+
+    margin: auto;
+
+    width: 80%;
+
+    background-color: #fff;
+
+    padding: 20px 100px;
+
+    border-radius: 35px;
+
+    box-shadow: 0px 6px 7px 0px rgba(203, 210, 239, 0.7);
+
+}
+
+.navbar-subnav ul li.subnav-link {
+
+    text-align: center;
+    border-right: 1px solid #000;
+    padding-left: 28px;
+    padding-right: 28px;
+
+}
+
+.navbar-subnav ul li.subnav-link a {
+
+    font-size: 16px;
+
+    color: rgb(24, 24, 24);
+
+    transition: all 0.3s ease-in-out 0s;
+
+}
+
+.navbar-subnav ul li.subnav-link a:hover {
+
+
+    color: #3CBF71;
+
+}
+
+.navbar-subnav ul li.subnav-link a i {
+
+    font-size: 17px;
+
+    margin-right: 5px;
+
+}
+
+.navbar-subnav ul li.subnav-button {
+
+    text-align: center;
+    padding: 8px;
+    padding-left: 22px;
+
+}
+
+
+/* -------------Submenu de botones */
+
+.navbar-subnav-botons {
+
+    margin: auto;
+
+    max-width: 600px;
+
+    background-color: #fff;
+
+    padding: 20px 25px;
+
+    border-radius: 35px;
+
+    box-shadow: 0px 6px 7px 0px rgba(203, 210, 239, 0.7);
+}
+
+ul.navbar-subnav-botons li.subnav-link {
+
+    text-align: center;
+
+    border-right: 1px solid #000;
+
+    padding: 8px;
+
+}
+
+ul.navbar-subnav-botons li.subnav-link a:hover {
+
+    color: #3CBF71;
+
+}
+
+.nav-pills.navbar-subnav-botons .nav-link.active {
+
+    border-bottom: 0;
+
+}
+
+.home-nav button.btn-primario {
+    padding: 15px 25px;
+    font-size: 13px;
+}
+
+/*---------ACTIVITY SECTION------------*/
+
+#hero .container {
+    align-items: center !important;
+    width: 100%;
+    height: 100%;
+    line-height: 4.85rem;
+}
+
+.row1 h1 {
+    font-size: 39px;
+    color: black;
+    font-weight: 200;
+    font-family: 'AxiformaM';
+    line-height: 2.85rem;
+}
+
+.row1 .rowp {
+    font-size: 17px;
+    color: black;
+    font-weight: 100;
+    font-family: 'AxiformaL';
+    line-height: 1.55rem;
+}
+
+#hero .container .row {
+    display: flex;
+    align-content: center;
+    padding-bottom: 100px;
+}
+
+.container .row1 {
+    padding-left: 120px;
+    padding-top: 320px;
+}
+
+.container .row2 {
+    position: relative;
+    padding-top: 90px;
+    width: max-content;
+    height: max-content;
+    padding-left: 40px;
+
+}
+
+
+
+.years-home {
+    letter-spacing: -0.05em;
+}
+
+.year-num {
+    font-size: 105px;
+    color: #A3A3A3;
+    font-weight: 800;
+    letter-spacing: -2px;
+    font-family: 'AxiformaM';
+}
+
+.year-str {
+    font-size: 63px;
+    color: #3CBF71;
+    font-weight: 800;
+    margin-left: 2px;
+    font-family: 'AxiformaM';
+}
+
+
+
+/* --------------VIDEO SECTION------------*/
+#video {
+    align-items: center !important;
+    background-color: black;
+    width: 100%;
+    height: 100%;
+    padding: 80px 130px;
+    padding-bottom: 150px;
+}
+
+#video .row h2 {
+    font-size: 43px;
+    color: white;
+    font-family: 'AxiformaM';
+
+}
+
+#video .row p {
+    padding-top: 15px;
+    font-size: 17px;
+    color: white;
+    font-family: 'AxiformaL';
+}
+
+.dtl h2 span {
+    color: #3CBF71;
+}
+
+#btn-modal {
+    cursor: pointer;
+}
+
+.video-home-url {
+    width: 600px;
+    margin: auto;
+    border-radius: 50%;
+    border: 5px solid #009961;
+    overflow: hidden;
+}
+
+.text-center h3 {
+    padding-top: 15px;
+    font-size: 40px;
+    color: #fff;
+    font-family: 'AxiformaE';
+    line-height: 3.074rem;
+    padding-bottom: 20px;
+}
+
+.text-center .btn-outline {
+    border: #3CBF71 2px solid;
+    border-radius: 35px;
+    line-height: 0px;
+    cursor: pointer;
+    font-weight: 600;
+    color: #fff;
+    background-color: rgba(60, 191, 113, 0.14);
+    transition: 0.3s;
+    font-size: 17px;
+    height: auto;
+    z-index: 30;
+    padding: 20px 20px;
+}
+
+
+/* --------------DOWNLOAD SECTION------------*/
+#download {
+    align-items: center !important;
+    background-color: #F4F6F9;
+    width: 100%;
+    position: relative;
+    height: 100%;
+    padding-bottom: 290px;
+}
+
+#download .dtl div h2 {
+    font-size: 43px;
+    color: black;
+    font-family: 'AxiformaM';
+}
+
+#download .dtl div h2 span {
+    color: #3CBF71;
+}
+
+#download .dtl div p {
+    padding-top: 15px;
+    font-size: 17px;
+    color: black;
+    font-family: 'AxiformaL';
+}
+
+
+.img-fluid-a {
+    max-width: 600px;
+    height: 70px;
+}
+
+a .img-fluid-b {
+    max-width: 600px;
+    height: 70px;
+}
+
+.app-img {
+    position: absolute;
+    width: 650px;
+    top: -22.5%;
+    right: 0px;
+}
+
+/*---------PUBLICITY SECTION----------*/
+#publicity {
+    padding-bottom: 80px;
+    display: flex;
+}
+
+#publicity .slider h2 {
+    font-size: 43px;
+    color: black;
+    font-family: 'AxiformaM';
+    padding-top: 100px;
+    padding-left: 100px;
+}
+
+#publicity div h5{
+    padding-top: 250px;
+}
+
+div h5 {
+    font-size: 27px;
+    color: black;
+    font-weight: 900;
+    font-family: 'AxiformaM';
+}
+
+.slider {
+    position: relative;
+    width: 60%;
+    padding-left: 100px;
+    overflow: hidden;
+    align-self: start;
+    content: center;
+}
+
+.slider .slide {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    clip-path: circle(0% at 0 50%);
+}
+
+.slider .slide.active {
+    clip-path: circle(150% at 0 50%);
+    transition: 0.5s;
+}
+
+.slider .slide img {
+    position: absolute;
+    width: 90%;
+    height: 80%;
+
+}
+
+.navigation {
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    opacity: 0;
+    transition: opacity 100s ease;
+
+}
+
+.slider:hover .navigation {
+    opacity: 1;
+}
+
+.prevb,
+.nextb {
+    z-index: 999;
+    font-size: 2em;
+    padding: 4px;
+    cursor: pointer;
+    background: rgba(255, 255, 255, 0.8);
+}
+
+.prevb {
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+
+.nextb {
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+}
+
+.navigation-visibility {
+    z-index: 999;
+    display: flex;
+    justify-content: center;
+}
+
+.navigation-visibility .slide-icon {
+    z-index: 999;
+    background: rgba(255, 255, 255, 0.5);
+    width: 20px;
+    height: 10px;
+    transform: translateY(-50px);
+    margin: 0 6px;
+    border-radius: 2px;
+    box-shadow: 0 5px 25px rgb(1 1 1 / 20%);
+
+}
+
+.navigation-visibility .slide-icon.active {
+    background: gray;
+}
+
+
+
+/*---------OPTIONS SECTION----------*/
+#options {
+    align-items: center !important;
+    background-color: #F4F6F9;
+    width: 100%;
+    height: 100%;
+    padding: 180px 130px;
+    padding-bottom: 150px;
+}
+
+#options h2 {
+    font-family: "AxiformaM";
+    font-weight: 500;
+    font-size: 23px;
+}
+
+.inside-nav {
+    padding: 30px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.inside-nav h2 {
+    padding-left: 125px;
+    padding-right: 125px;
+}
+
+.inside-nav1 {
+    padding: 30px;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.inside-nav1 h2 {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.principal {
+
+    justify-content: space-between;
+    display: flex;
+    padding-top: 40px;
+    width: fit-content;
+}
+
+.nav1 {
+    width: 100%;
+}
+
+.nav2 {
+    width: 50%;
+    display: flex;
+}
+
+
+.box-items-service {
+    -webkit-box-shadow: 0px 0px 29px -6px rgba(79, 79, 79, .7);
+    -moz-box-shadow: 0px 0px 29px -6px rgba(79, 79, 79, .7);
+    box-shadow: 0px 0px 29px -6px rgba(79, 79, 79, .7);
+}
+
+.nav1:hover,
+.nav2:hover .box-items-service {
+    box-shadow: 0px 0px 29px -6px rgba(80, 80, 80, .9);
+}
+
+
+.popup:target{
+    visibility: visible;
+    opacity: 1;
+    transition: all .2s;
+}
+
+.popup{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    top: 20%;
+    padding-left: 5%;
+    padding-right: 5%;
+    left: 0%;
+    font-family: "AxiformaM";
+    visibility: hidden;
+    opacity: 0;
+    z-index: 99;
+    position: absolute;
+    width: 100%;
+}
+
+
+
+.camara-video{
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 1px 8px 1px rgba(0, 0, 0, 0.26);
+    border-radius: 2%;
+    padding: 3rem;
+    gap: 2rem;
+    width: 90%;
+    justify-content: center;
+    align-items: center;
+    background-color: #F5F6FA;
+    position: relative;
+}
+
+.video-close, .video-close:link, .video-close:visited{
+    font-size: 2.5rem;
+    color: #08b374;
+    position: absolute;
+    top: 0rem;
+    right: 1rem;
+    &:hover{
+        color: #247143;
+    }
+}
+
+.popup .camara-video .video-info{
+    text-align: center;
+}
+
+
+/*---------FOOTER SECTION----------*/
+
+
+#footer .row p {
+    padding-top: 15px;
+    font-size: 17px;
+    color: white;
+    font-family: 'AxiformaL';
+}
+
+.row h2 {
+    font-size: 25px;
+    font-weight: 900;
+    font-family: "AxiformaM";
+}
+
+#email-address {
+    background-color: white;
+    color: #000;
+    font-family: "AxiformaL";
+}
+
+.input-group {
+    background-color: white;
+    font-family: "AxiformaM";
+    font-size: 13px;
+}
+
+form .sub {
+    background-color: #3CBF71;
+}
+
+#footer .second div h2 {
+    color: #fff;
+    font-size: 22px;
+}
+
+#footer .second div p {
+    font-size: 15px;
+}
+
+form .sub:hover {
+    background-color: #247143;
+}
+
+div .icons {
+    z-index: 10;
+    padding: 0;
+    position: absolute;
+    color: white;
+    right: 120px;
+    top: 100px
+}
+
+.menu1 ul li a {
+    font-family: "AxiformaL";
+    font-size: 15px;
+    color: white;
+}
+
+.menu1 ul li a:hover {
+    color: #3CBF71;
+}
+
+#footer .second div div form input {
+    min-width: 480px;
+}
+
+.copy {
+    padding: 2em 0 1em 0;
+    margin-top: 2em;
+    border-top: 3px solid #3CBF71;
+}
+
+.copy p {
+    color: white;
+    font-family: "AxiformaL";
+    font-size: 13px;
+}
+
+.copy p:hover {
+    color: #3CBF71;
+}
+
+
+/*---------QUIENES SOMOS SECTION----------*/
+#quienes-somos {
+    background-color: white;
+    padding: 100px;
+    padding-top: 200px;
+}
+
+.row h2 {
+    font-size: 43px;
+    color: black;
+    font-family: 'AxiformaM';
+}
+
+.row h2 span {
+    color: #3CBF71;
+}
+
+.row p {
+    padding-top: 15px;
+    font-size: 17px;
+    color: black;
+    font-family: 'AxiformaL';
+    padding-bottom: 50px;
+}
+
+.row img-fluid {
+    float: right;
+    max-width: 100%;
+    height: auto;
+}
+
+#quienes-somos .row div{
+
+}
+
+#quienes-somos .row div h3{
+    background-color: #009961; 
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    padding-top: 50%;
+    text-align: center;
+    justify-content: center;
+    font-family: "AxiformaM";
+    font-weight: 900;
+    z-index: 10;
+    
+    color: #fff;
+    font-size: 20px;
+}   
+
+#quienes-somos .row div:hover h3{
+    opacity: 90%;
+    transition: 0.4s;
+}
+
+
+
+
+
+/*---------CONSEJO D SECTION----------*/
+#consejo {
+    background-color: white;
+    padding: 100px;
+    padding-top: 200px;
+}
+
+.scrollblock {
+    width: 100%;
+    margin: 2.5rem 0;
+}
+
+.person {
+    margin: 2.5rem 0;
+    width: 280px;
+    position: relative;
+}
+
+.person .img-fluid {
+    /* width: 95%;
+    height: 100%;
+    z-index: 0;
+    background-color: #F4F6F9;
+    position: absolute;
+    margin-left: -18px;
+    border-radius: 100%; */
+    filter: drop-shadow(0 25px 25px rgb(0 0 0 / 0.15));
+}
+
+.rounded-circle {
+    border-radius: 50% !important;
+}
+
+.person-name {
+    margin-top: -30px;
+    margin-left: -40px;
+    position: relative;
+    background-color: #3CBF71;
+    border-radius: 50rem !important;
+    height: 70px;
+}
+
+.person-name p {
+    font-weight: bold;
+    color: white;
+    font-size: 16px;
+    font-family: "AxiformaM";
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    padding-top: 7px;
+}
+
+.person-name p small {
+    color: white;
+    font-size: 13px;
+    text-transform: uppercase;
+    font-family: "AxiformaL";
+    position: relative;
+    justify-content: center;
+    align-items: center;
+}
+
+/*---------ORGANIZACION SECTION----------*/
+#organizacion {
+    background-color: white;
+    padding: 100px;
+    padding-top: 150px;
+}
+
+.scrollblock {
+    width: 100%;
+    margin: 2.5rem 0;
+}
+
+.person {
+    margin: 2.5rem 0;
+    width: 280px;
+    position: relative;
+}
+
+.person .img-fluid {
+    /* width: 95%;
+    height: 100%;
+    z-index: 0;
+    background-color: #F4F6F9;
+    position: absolute;
+    margin-left: -18px;
+    border-radius: 100%; */
+    filter: drop-shadow(0 25px 25px rgb(0 0 0 / 0.15));
+}
+
+.rounded-circle {
+    border-radius: 50% !important;
+}
+
+#organizacion .person-name {
+    margin-top: -30px;
+    margin-left: -40px;
+    position: relative;
+    background-color: #3CBF71;
+    border-radius: 50rem !important;
+    max-height: min-content;
+}
+
+.person-name p {
+    font-weight: bold;
+    color: white;
+    font-size: 16px;
+    font-family: "AxiformaM";
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    padding-top: 7px;
+}
+
+.person-name p small {
+    color: white;
+    font-size: 13px;
+    text-transform: uppercase;
+    font-family: "AxiformaL";
+    position: relative;
+    justify-content: center;
+    align-items: center;
+}
+
+/* --------------DIRECTORIO SECTION------------*/
+.directorio-menu{
+    padding-top: 150px;
+    justify-content: center;
+}
+
+.directorio-menu .navbar-directorio ul li a {
+    font-family: "AxiformaL";
+    font-size: 16px;
+    color: #000;
+    font-weight: 900px;
+}
+
+.directorio-menu .navbar-directorio {
+    width: 100%;
+}
+
+.directorio-menu .navbar-directorio ul {
+    margin: auto;
+    width: 80%;
+    background-color: #F5F6FA;
+    padding: 20px 25px;
+    border-radius: 35px;
+    box-shadow: 0px 6px 7px 0px rgba(203, 210, 239, 0.7);
+    -webkit-box-shadow: 0px 6px 7px 0px rgba(203, 210, 239, 0.7);
+    -moz-box-shadow: 0px 6px 7px 0px rgba(203, 210, 239, 0.7);
+    /* display: flex; */
+}
+
+.directorio-menu .navbar-directorio ul li.directorio-link {
+    text-align: center;
+    border-right: 1px solid #000;
+    padding: 8px;
+}
+
+.directorio-menu .container {
+    width: 100%;
+    padding-left: 100px;
+}
+
+.directorio-menu .container .row {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+}
+
+.form-control {
+    display: flex;
+    flex-grow: 1;
+    width: 290%;
+    position: relative;
+    height: calc(1.5em + 0.75rem + 2px);
+    padding: 32px 20px;
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 1.5;
+    font-family: "PoppinsM";
+    color: #000;
+    background-clip: padding-box;
+    border-radius: 5.25rem;
+    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+    background-color: #F4F6F9;
+}
+
+.directorio-menu label {
+    margin-bottom: 0;
+    line-height: 2.5;
+    position: relative;
+    padding: 5px;
+}
+
+.directorio-menu .container .row div div {
+    display: flex;
+    align-items: center;
+    padding-left: 500px;
+}
+
+.directorio-menu .container .row div div .search-cat {
+    justify-content: space-between;
+    display: flex;
+    flex-grow: 1;
+}
+
+.search-cat label {
+    font-family: "AxiformaL";
+    padding-top: 15px;
+    color: #000;
+    font-weight: 900;
+    padding-right: 10px;
+    flex-grow: 1;
+}
+
+option {
+    font-family: "AxiformaL";
+    color: #000;
+    font-weight: 900;
+}
+
+.form-control1 {
+    display: block;
+    height: calc(1.5em + 0.75rem + 2px);
+    padding: 10px 5px;
+    font-size: 1rem;
+    line-height: 1.5;
+    font-family: "AxiformaL";
+    text-align: start;
+    place-self: center;
+    padding-top: 12px;
+    color: #000;
+    font-weight: 900;
+    border-radius: 0.25rem;
+}
+
+.directorio-menu select {
+    width: 150px;
+    border: none;
+}
+
+.btn-secundario{
+    font-family: "AxiformaM";
+    color: #3CBF71;
+    font-size: 18px;
+    font-weight: bolder;
+}
+
+.btn-secundario:hover {
+    color: #1b6137;
+}
+
+.directorio-menu .navbar-directorio ul li a:hover {
+    color: #3CBF71;
+    font-weight: bolder;
+}
+
+/**EMPRESAS**/
+
+.empresas .container {
+    width: 100%;
+    justify-content: center;
+}
+
+.empresas .row {
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+.empresas .card {
+    margin: 2.5rem 0;
+    width: 380px;
+    height: 420px;
+    position: relative;
+    padding-bottom: 20px;
+}
+
+.empresas .card .card-body h5 {
+    font-family: "AxiformaM";
+    font-weight: 900;
+    font-size: 19px;
+}
+
+.empresas .card .card-body {
+    padding: 10px 10px 0 10px;
+}
+
+
+.card-body {
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    min-height: 1px;
+    padding: 1.25rem;
+}
+
+.empresas .stars {
+    color: #3CBF71;
+}
+
+.empresas .btn-secundario {
+    background-color: transparent;
+    font-weight: 600;
+    /* padding: 15px 25px; */
+    line-height: 0px;
+    font-weight: 600;
+    color: #3CBF71;
+    transition: all 0.3s ease-in-out 0s;
+    font-size: 17px;
+    cursor: pointer;
+}
+
+.empresas .card .card-header img {
+    width: 80%;
+}
+
+.empresas .card-img-top {
+    border-top-left-radius: calc(0.25rem - 1px);
+    border-top-right-radius: calc(0.25rem - 1px);
+}
+
+.empresas .card {
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid rgba(0, 0, 0, .125);
+    border-radius: 0.25rem;
+}
+
+.empresas .card .card-body i {
+    padding-top: 10px;
+    font-style: normal;
+}
+
+
+.empresas .row1 {
+    padding-top: 10px;
+    padding-left: 380px;
+}
+
+.empresas .row1 nav .pagination .page-item .page-link {
+    color: #000;
+    font-size: 1.2rem;
+    font-family: "Helvetica";
+    font-weight: 100;
+    padding: 0.5rem 0.95rem;
+    transition: ease .5s;
+    position: relative;
+    display: block;
+    margin-left: -1px;
+    line-height: 1.25;
+    background-color: #fff;
+    border: 1px solid #dee2e6;
+}
+
+.empresas .row1 nav .pagination .page-item .page-link:hover {
+    background-color: #3CBF71;
+}
+
+/*********************AGENDA COMERCIAL*********************/
+.agendaC {
+    align-items: center !important;
+    background-color: white;
+    width: 100%;
+    height: 100%;
+    padding: 80px 130px;
+}
+
+.agendaC .dtl div h2 {
+    font-size: 43px;
+    color: black;
+    font-family: 'AxiformaM';
+}
+
+.agendaC .dtl div h2 span {
+    color: #3CBF71;
+}
+
+.agendaC .dtl div p {
+    padding-top: 15px;
+    font-size: 17px;
+    color: black;
+    font-family: 'AxiformaL';
+}
+
+.agendaC .dtl div div div p {
+    padding-top: 40px;
+    padding-left: 10px;
+    padding-right: 0px;
+    font-size: 16px;
+    line-height: 0px;
+    color: black;
+    font-family: 'AxiformaL';
+}
+
+.navbar-agenda {
+    padding: 50px;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.navbar-agenda ul div a {
+    font-family: "AxiformaL";
+    font-size: 15px;
+    color: #000;
+    font-weight: 900px;
+    padding-top: 12px;
+}
+
+.navbar-agenda ul .div .img-subnav {
+    position: relative;
+}
+
+.navbar-agenda ul{
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: center;
+    background-color: #F5F6FA;
+    border-radius: 35px;
+    padding: 0px 0px;
+    width: 100%;
+    box-shadow: 0px 6px 7px 0px rgba(203, 210, 239, 0.7);
+    -webkit-box-shadow: 0px 6px 7px 0px rgba(203, 210, 239, 0.7);
+    -moz-box-shadow: 0px 6px 7px 0px rgba(203, 210, 239, 0.7);
+    display: flex; 
+}
+
+.navbar-agenda ul div .grid .agenda-link {
+    border-right: 1px solid #000;
+    padding-right: 20px;
+}
+
+.navbar-agenda ul div .grid{
+    justify-items: center;
+}
+
+.btn-primario{
+    background-color: #08b374;
+    font-family: "AxiformaM";
+    border-radius: 30px;
+    padding: 15px 30px;
+    font-weight: 600;
+    flex-wrap: wrap;
+    color: #fff;
+    transition: all 0.3s ease-in-out 0s;
+    font-size: 16px;
+}
+
+.btn-primario:hover {
+    background-color: #247143;
+} 
+
+
+
+
+
+/* COMO PROCEDEMOS*/
+.beneficios {
+    background-color: #000;
+    padding-top: 50px;
+    padding-left: 100px;
+    padding-bottom: 100px;
+}
+
+.beneficios ul {
+    font-size: 17px;
+    font-family: "AxiformaL";
+    font-weight: 300;
+}
+
+.list-tarifa li {
+    transition: .5s;
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+
+.guion-prot {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    margin-top: -3px;
+    width: 60px;
+    border-bottom: 2px solid #fff;
+}
+
+.list-tarifa p {
+    margin-left: 70px;
+}
+
+.list-tarifa p .number {
+    font-size: 13px;
+    margin-right: 20px;
+}
+
+.beneficios .container .img-tarifa {
+    position: absolute;
+    right: 0;
+    padding-top: 34px;
+    max-width: 300px;
+}
+
+.beneficios .container h1 {
+    font-family: "AxiformaM";
+    font-weight: 600;
+    padding-top: 8px;
+    color: #fff;
+    font-size: 40px;
+    padding-bottom: 10px;
+    width: 100%
+}
+
+.tarifario {
+    padding-top: 100px;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-bottom: 50px;
+    position: relative;
+}
+
+.tarifario .container h1 {
+    color: #212529;
+    font-size: 40px;
+    font-family: "AxiformaM";
+    font-weight: 900;
+}
+
+.tarifario .container .nav-pills {
+    width: 100%;
+}
+
+.tarifario .nav-pills .nav-link {
+    color: #000;
+    font-size: 16px;
+}
+
+.tarifario .nav-pills .nav-item, .nav-link {
+    color: #3CBF71;
+    background-color: transparent;
+    font-size: 16px;
+    font-family: "Helvetica";
+    font-weight: bolder;
+    padding-right: 5px;
+}
+
+.tab-content .tab-pane .list-tarifa p {
+    margin-left: 70px;
+    font-size: 17px;
+    font-family: "AxiformaL";
+    font-weight: 300;
+}
+
+.tab-content .tab-pane .list-tarifa .precio .title {
+    font-size: 12px;
+    margin-bottom: 0.3rem;
+    font-family: "AxiformaL";
+    font-weight: 300;
+}
+
+.tab-content .tab-pane .list-tarifa .precio .moneda {
+    position: relative;
+    font-weight: 600;
+    font-size: 70px;
+    margin-bottom: 0;
+    font-family: "AxiformaM";
+    padding-left: 25px;
+}
+
+.tab-content .tab-pane .list-tarifa .precio .moneda span {
+    font-size: 19px;
+    font-family: "AxiformaL";
+}
+
+.tab-content .tab-pane .list-tarifa .precio .moneda span:nth-child(1) {
+    position: absolute;
+    top: 15px;
+    left: 0;
+}
+
+.list-tarifa p {
+    margin-left: 70px;
+    font-family: "AxiformaL";
+    font-weight: 300;
+}
+
+.tab-content .tab-pane .list-tarifa .precio .text-verde {
+    color: #3CBF71;
+    font-family: "AxiformaM";
+    font-size: 17px;
+    font-weight: 900;
+}
+
+
+.tarifario .container p {
+    padding-top: 16px;
+    font-family: "AxiformaL";
+    font-size: 16px;
+}
+
+.tarifario .container div .input-control {
+    border: none;
+    border-bottom: 1px solid #B8BCC9;
+}
+
+.tarifario .container div .form-control {
+    display: block;
+    width: 100%;
+    height: calc(1.5em + 0.75rem + 2px);
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+    border-radius: 10px;
+}
+
+.tarifario .container div .form-group {
+    margin-bottom: 1rem;
+}
+
+.tarifario .container div {
+    position: relative;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.tarifario .container div .input-group {
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -ms-flex-align: stretch;
+    align-items: stretch;
+    width: 100%;
+}
+
+.tarifario .container div .input-group .input-group-prepend {
+    margin-right: -1px;
+    display: flex;
+}
+
+.tarifario .container div .input-group,
+.input-group a {
+    font-size: 16px;
+}
+
+.tarifario .container div .input-group .label {
+    display: inline-block;
+    margin-bottom: 0.5rem;
+}
+
+
+.tarifario .container .btn-outline-black {
+    border: #000 1px solid;
+    border-radius: 30px;
+    line-height: 0px;
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.9);
+    transition: 0.3s;
+    font-size: 17px;
+    padding: 14px 20px;
+    text-align: left;
+    height: auto;
+}
+
+.tarifario .container .btn-outline-black a {
+    font-family: "Helvetica";
+    font-size: 17px;
+}
+
+.tarifario .container .card-img-top {
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    width: 25%;
+    height: 45%;
+}
+
+.tarifario .container div .btn-primario {
+    background-color: #08b374;
+    border-radius: 30px;
+    padding: 15px 25px;
+    font-weight: 900;
+    color: #fff;
+    transition: all 0.3s ease-in-out 0s;
+    font-size: 17px;
+    font-family: "Helvetica";
+}
+
+.tarifario .container div .btn-primario:hover {
+    background-color: #247143;
+}
+
+/*********************ALQUILER AMBIENTES*********************/
+.alquilerA {
+    align-items: center !important;
+    background-color: white;
+    width: 100%;
+    height: 100%;
+    padding: 150px 130px;
+}
+
+.alquilerA .dtl div h2 {
+    padding-top: 15px;
+    padding-bottom: 30px;
+    font-size: 43px;
+    color: black;
+    font-family: 'AxiformaM';
+    line-height: 50px;
+}
+
+.alquilerA .dtl div h2 span {
+    color: #3CBF71;
+}
+
+.alquilerA .dtl div p {
+    padding-top: 15px;
+    font-size: 17px;
+    color: black;
+    font-family: 'AxiformaL';
+}
+
+.alquilerA .dtl div div div p {
+    padding-top: 40px;
+    padding-left: 10px;
+    padding-right: 0px;
+    font-size: 16px;
+    line-height: 0px;
+    color: black;
+    font-family: 'AxiformaL';
+}
+
+.alquilerA .dtl div a {
+    z-index: 999;
+}
+
+.alquilerA .navbar-agenda {
+    padding-top: 100px;
+}
+
+.alquilerA .navbar-agenda ul li a {
+    font-family: "AxiformaL";
+    font-size: 15px;
+    color: #000;
+    font-weight: 900px;
+    padding-top: 12px;
+}
+
+
+.alquilerA .navbar-agenda {
+    width: 100%;
+}
+
+.alquilerA .navbar-agenda .img-subnav {
+    padding-top: 5px;
+    position: absolute;
+}
+
+.alquilerA .navbar-agenda ul {
+    margin: auto;
+    width: 100%;
+    background-color: #F5F6FA;
+    border-radius: 35px;
+    padding: 14px 25px;
+    box-shadow: 0px 6px 7px 0px rgba(203, 210, 239, 0.7);
+    -webkit-box-shadow: 0px 6px 7px 0px rgba(203, 210, 239, 0.7);
+    -moz-box-shadow: 0px 6px 7px 0px rgba(203, 210, 239, 0.7);
+    /* display: flex; */
+}
+
+.alquilerA .navbar-agenda ul li.agenda-link {
+    border-right: 1px solid #000;
+    padding: 8px;
+}
+
+.alquilerA .navbar-agenda ul li .btn-primario {
+    background-color: #08b374;
+    font-family: "AxiformaM";
+    border-radius: 30px;
+    padding: 10px 30px;
+    line-height: 0px;
+    font-weight: 600;
+    padding-top: 8px;
+    color: #fff;
+    transition: all 0.3s ease-in-out 0s;
+    font-size: 16px;
+}
+
+.alquilerA .navbar-agenda ul li .btn-primario:hover {
+    background-color: #247143;
+}
+
+/* -------SLIDE2---------*/
+#slide2 .slideshow {
+
+    width: 100%;
+    position: relative;
+    z-index: 0;
+
+}
+
+#slide2 .slideshow .my-slider li,
+.my-slider ul {
+    width: 100%;
+}
+
+#slide2 .slideshow .my-slider li {
+    overflow: hidden;
+}
+
+#slide2 .slideshow .my-slider li img {
+    width: 100%;
+    height: 1200px;
+    z-index: 0;
+}
+
+#slide2 .slideshow .my-slider .caption {
+    position: absolute;
+    display: flex;
+    padding-top: 800px;
+    flex-direction: column;
+    bottom: 0;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+    z-index: 20;
+}
+
+#slide2 .slideshow .my-slider .caption p {
+    font-family: "AxiformaL";
+    width: 100%;
+    font-weight: 400;
+    font-size: 20px;
+    margin-bottom: 0.5rem;
+}
+
+#slide2 .slideshow .my-slider .caption h1 {
+    font-family: "AxiformaM";
+    width: 100%;
+    font-weight: 600;
+    font-size: 40px;
+    margin-bottom: 0.5rem;
+}
+
+#slide2 .slideshow .my-slider .content .caption .button-slide {
+    border: #3CBF71 2px solid;
+    border-radius: 35px;
+    line-height: 0px;
+    cursor: pointer;
+    font-weight: 600;
+    color: #fff;
+    background-color: rgba(60, 191, 113, 0.14);
+    transition: 0.3s;
+    font-size: 17px;
+    padding: 25px 20px;
+    height: auto;
+    display: flex;
+    z-index: 9;
+}
+
+#slide3 .slideshow1 {
+
+    width: 100%;
+    position: relative;
+    z-index: 1;
+
+}
+
+#slide3 .my-slider1 li {
+    overflow: hidden;
+    z-index: 0;
+}
+
+#slide3 .my-slider1 li img {
+    width: 90%;
+    height: 90%;
+    z-index: 1;
+}
+
+
+#slide3 .tns-controls {
+    position: absolute;
+    z-index: 1;
+    top: 300px;
+    height: 10%;
+    width: 100%;
+}
+
+#slide3 .tns-controls button {
+    opacity: .3;
+    transition: all .5;
+}
+
+#slide3 .tns-controls button:hover {
+    opacity: 1;
+}
+
+#slide3 .tns-controls button[data-controls="prev"] {
+    visibility: hidden;
+}
+
+#slide3 .tns-controls button[data-controls="next"] {
+    visibility: hidden;
+}
+
+#slide3 .animacion {
+    animation: fadeIn 5s;
+    transition: all .5 s;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+
+/*********************ASESORIA LEGAL*********************/
+.asesoriaL {
+    align-items: center !important;
+    background-color: white;
+    width: 100%;
+    height: 100%;
+    padding: 80px 130px;
+}
+
+.dtl div h2 {
+    font-size: 43px;
+    color: black;
+    font-family: 'AxiformaM';
+}
+
+.dtl div h2 span {
+    color: #3CBF71;
+}
+
+.dtl div p {
+    padding-top: 15px;
+    font-size: 17px;
+    color: black;
+    font-family: 'AxiformaL';
+}
+
+.dtl div div div p {
+    padding-top: 40px;
+    padding-left: 10px;
+    padding-right: 0px;
+    font-size: 16px;
+    line-height: 0px;
+    color: black;
+    font-family: 'AxiformaL';
+}
+
+.asesoriaL .navbar-agenda {
+    padding-top: 100px;
+}
+
+.asesoriaL .navbar-agenda ul li a {
+    font-family: "AxiformaL";
+    font-size: 15px;
+    color: #000;
+    font-weight: 900px;
+    padding-top: 12px;
+}
+
+
+.asesoriaL .navbar-agenda {
+    width: 100%;
+}
+
+.asesoriaL .navbar-agenda .img-subnav {
+    padding-top: 5px;
+    position: absolute;
+}
+
+.asesoriaL .navbar-agenda ul {
+    margin: auto;
+    width: 100%;
+    background-color: #F5F6FA;
+    border-radius: 35px;
+    padding: 14px 25px;
+    box-shadow: 0px 6px 7px 0px rgba(203, 210, 239, 0.7);
+    -webkit-box-shadow: 0px 6px 7px 0px rgba(203, 210, 239, 0.7);
+    -moz-box-shadow: 0px 6px 7px 0px rgba(203, 210, 239, 0.7);
+    /* display: flex; */
+}
+
+.asesoriaL .navbar-agenda ul li.agenda-link {
+    border-right: 1px solid #000;
+    padding: 8px;
+}
+
+.asesoriaL .navbar-agenda ul li .btn-primario {
+    background-color: #08b374;
+    font-family: "AxiformaM";
+    border-radius: 30px;
+    padding: 10px 30px;
+    line-height: 0px;
+    font-weight: 600;
+    padding-top: 8px;
+    color: #fff;
+    transition: all 0.3s ease-in-out 0s;
+    font-size: 16px;
+}
+
+.asesoriaL .navbar-agenda ul li .btn-primario:hover {
+    background-color: #247143;
+}
+
+/*********************ASESORIA LEGAL*********************/
+.capacitacionesCCIA {
+    align-items: center !important;
+    background-color: white;
+    width: 100%;
+    height: 100%;
+    padding: 60px 130px;
+}
+
+.capacitacionesCCIA div h2 {
+    font-size: 40px;
+    font-weight: 900;
+    color: black;
+    font-family: 'AxiformaM';
+    padding-bottom: 20px;
+}
+
+.capacitacionesCCIA div .nav-pills {
+    width: 100%;
+}
+
+.capacitacionesCCIA div .nav-pills .nav-link {
+    color: #000;
+    font-size: 16px;
+    margin-right: 20px;
+}
+
+
+.capacitacionesCCIA div .tab-content .tab-pane .card {
+    margin: 2.5rem 0;
+    width: 380px;
+    height: 420px;
+    position: relative;
+    padding-bottom: 20px;
+}
+
+.capacitacionesCCIA div .tab-content .tab-pane .card .card-body h5 {
+    font-family: "AxiformaM";
+    font-weight: 900;
+    font-size: 19px;
+}
+
+.capacitacionesCCIA div .tab-content .tab-pane .card .card-body P {
+    font-family: "AxiformaL";
+    font-weight: 900;
+    font-size: 16px;
+}
+
+.capacitacionesCCIA div .tab-content .tab-pane .card .card-body {
+    padding: 10px 10px 0 10px;
+}
+
+.capacitacionesCCIA div .tab-content .tab-pane .card .card-body {
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    min-height: 1px;
+    padding: 1.25rem;
+}
+
+.capacitacionesCCIA div .tab-content .tab-pane .card .card-body .btn-secundario {
+    background-color: transparent;
+    font-weight: 600;
+    /* padding: 15px 25px; */
+    line-height: 0px;
+    font-weight: 600;
+    color: #3CBF71;
+    transition: all 0.3s ease-in-out 0s;
+    font-size: 17px;
+    cursor: pointer;
+    text-align: center;
+    width: 100%;
+}
+
+.capacitacionesCCIA div .tab-content .tab-pane .card .card-body a {
+    justify-content: center;
+}
+
+.capacitacionesCCIA div .tab-content .tab-pane .card .card-body .btn-secundario:hover {
+    color: #1b6137;
+}
+
+.capacitacionesCCIA div .tab-content .tab-pane .card .card-header img {
+    width: 80%;
+}
+
+.capacitacionesCCIA div .tab-content .tab-pane .card .card-header .card-img-top {
+    border-top-left-radius: calc(0.25rem - 1px);
+    border-top-right-radius: calc(0.25rem - 1px);
+}
+
+.capacitacionesCCIA div .tab-content .tab-pane .card {
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid rgba(0, 0, 0, .125);
+    border-radius: 0.25rem;
+}
+
+.capacitacionesCCIA .card .card-body i {
+    padding-top: 10px;
+    font-style: normal;
+}  
+
+/*********************CERTIFICACION ORIGEN*********************/
+.certificacionO {
+    align-items: center !important;
+    background-color: white;
+    width: 100%;
+    height: 100%;
+    padding: 80px 130px;
+}
+
+.certificacionO .navbar-agenda {
+    padding-top: 100px;
+}
+
+.certificacionO .navbar-agenda ul li a {
+    font-family: "AxiformaL";
+    font-size: 15px;
+    color: #000;
+    font-weight: 900px;
+    padding-top: 12px;
+}
+
+
+.certificacionO .navbar-agenda {
+    width: 100%;
+}
+
+.certificacionO .navbar-agenda .img-subnav {
+    padding-top: 5px;
+    position: absolute;
+}
+
+.certificacionO .navbar-agenda ul {
+    margin: auto;
+    width: 100%;
+    background-color: #F5F6FA;
+    border-radius: 35px;
+    padding: 14px 25px;
+    box-shadow: 0px 6px 7px 0px rgba(203, 210, 239, 0.7);
+    -webkit-box-shadow: 0px 6px 7px 0px rgba(203, 210, 239, 0.7);
+    -moz-box-shadow: 0px 6px 7px 0px rgba(203, 210, 239, 0.7);
+    /* display: flex; */
+}
+
+.certificacionO .navbar-agenda ul li.agenda-link {
+    border-right: 1px solid #000;
+    padding: 8px;
+}
+
+.certificacionO .navbar-agenda ul li .btn-primario {
+    background-color: #08b374;
+    font-family: "AxiformaM";
+    border-radius: 30px;
+    padding: 10px 30px;
+    line-height: 0px;
+    font-weight: 600;
+    padding-top: 8px;
+    color: #fff;
+    transition: all 0.3s ease-in-out 0s;
+    font-size: 16px;
+}
+
+.certificacionO .navbar-agenda ul li .btn-primario:hover {
+    background-color: #247143;
+}
+
+.certificacion-servicios .container-fluid {
+    width: 100%;
+}
+
+.certificacion-servicios .card {
+    min-height: 650px;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    border: none;
+    position: relative;
+    background-color: transparent;
+    border-radius: 0;
+    min-width: 350px;
+    word-wrap: break-word;
+}
+
+.certificacion-servicios .container-fluid .grid .col .card .card-body {
+    width: 100%;
+    position: relative;
+}
+
+.certificacion-servicios .container-fluid .grid .col .card .card-body h5 {
+    font-family: "AxiformaM";
+    font-weight: 600;
+    color: #fff;
+    text-align: center;
+    margin-top: 400px;
+    margin-bottom: 40px;
+    transition: all 0.3s ease-in-out 0s;
+}
+
+.certificacion-servicios .container-fluid .grid .col .card .card-body .btn-outline {
+    position: relative;
+    border: #3CBF71 2px solid;
+    border-radius: 35px;
+    line-height: 0px;
+    text-align: center;
+    justify-content: center;
+    cursor: pointer;
+    font-weight: 600;
+    color: #fff;
+    background-color: rgba(60, 191, 113, 0.14);
+    font-size: 17px;
+    padding: 15px 40px;
+    display: none;
+}
+
+.certificacion-servicios .container-fluid .grid .col:hover .card .card-body .btn-outline {
+    padding: 25px 50px;
+    display: inline-block;
+}
+
+.certificacion-servicios .container-fluid .grid .col:hover .card .card-body h5 {
+    font-size: 1.525rem;
+}
+
+.tarifa-certif{
+    padding-top: 80px;
+    padding-left: 150px;
+    background-color: #000;
+    color: white;
+}
+
+.tarifa-certif .container .text-white{
+    font-size: 40px;
+    font-family: "AxiformaM";
+    font-weight: 900;
+    
+}
+
+.tarifa-certif .container .list-tarifa li .guion-prot {
+    position: absolute;
+    left: 0;
+    top: 60%;
+    margin-top: -3px;
+    width: 60px;
+    border-bottom: 2px solid #fff;
+}
+
+.tarifa-certif .container .list-tarifa li {
+    transition: .5s;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.tarifa-certif .container .list-tarifa li p span{
+    font-size: 13px;
+}
+
+.tarifa-certif .container .list-tarifa li p{
+    font-size: 17px;
+}
+
+.tarifa-certif .container .list-tarifa .precio p{
+    font-size: 12px;
+}
+
+.tarifa-certif .container .list-tarifa .precio .moneda span {
+    font-size: 19px;
+    font-weight: 400;
+}
+
+.tarifa-certif .container .list-tarifa .precio .moneda {
+    font-family: "AxiformaM";
+    position: relative;
+    font-weight: 900;
+    font-size: 70px;
+    margin-bottom: 0;
+    padding-left: 25px;
+}
+
+.tarifa-certif .container .list-tarifa .precio .moneda span:nth-child(1){
+    position: absolute;
+    top: 15px;
+    left: 0;
+    font-weight: 900;
+}
+
+#requisitos-origen{
+    padding: 100px;
+    background-color: #F4F6F9;
+}
+
+#requisitos-origen .container h1{
+    font-family: "AxiformaM";
+    width: 100%;
+    font-size: 40px;
+    font-weight: 600;
+}
+
+#requisitos-origen .container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+#requisitos-origen .container h2 {
+    font-size: 43px;
+    color: black;
+    font-weight: 900;
+    font-family: 'AxiformaM';
+}
+
+#requisitos-origen .container p {
+    font-size: 17px;
+    color: black;
+    font-weight: 300;
+    font-family: 'AxiformaL';
+}
+
+#requisitos-origen .container .row div h5 {
+    font-size: 20px;
+    color: black;
+    font-weight: 900;
+    font-family: 'AxiformaM';
+    ;
+}
+
+#requisitos-origen .container .row {
+    display: flex;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+#requisitos-origen .container .row div{
+    position: relative;
+    width: 690px;
+}
+
+#requisitos-origen .container .row div img{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    max-width: 90px;
+}
+
+#certificados-origen{
+    font-family: "AxiformaM";
+    background-color: #ebeff4;
+    padding: 100px;
+}
+
+#certificados-origen .container h1{
+    font-family: "AxiformaM";
+    font-size: 40px;
+    width: 100%;
+    font-weight: 600;
+}
+
+#certificados-origen .container .row div .cert-item h5{
+    font-weight: 600;
+    font-size: 20px;
+}
+
+#certificados-origen .container .row div .cert-item{
+    position: relative;
+    padding-left: 50px;
+    width: 100%;
+}
+
+#certificados-origen .container .row div .cert-item span{
+    position: absolute;
+    left: -10px;
+    top: -10px;
+    font-size: 23px;
+    font-weight: 300;
+    line-height: 50px;
+    border-radius: 10px;
+    width: 48px;
+    height: 48px;
+    text-align: center;
+    box-shadow: 2px 7px 7px 0px rgba(203,210,239,0.6);
+    -webkit-box-shadow: 2px 7px 7px 0px rgba(203,210,239,0.6);
+}
+
+#certificados-origen .container .row{
+    display: flex;
+}
+
+#certificados-origen .container .row .col-md-4{
+    width: 100%;
+    padding-left: 20px;
+}
+
+#certificados-origen .container .row .col-md-4 .img-fluid {
+    padding-top: 50px;
+    width: 100%;
+    height: 95%;
+    place-self: start;
+}
+
+/*********************COMPRA ASOCIADO********************/
+.compraA{
+    padding-top: 150px;
+}
+
+.compraA .navbar-directorio ul li a {
+    font-family: "AxiformaL";
+    font-size: 16px;
+    color: #000;
+    font-weight: 900px;
+}
+
+.compraA .navbar-directorio {
+    width: 100%;
+}
+
+.compraA .navbar-directorio ul {
+    margin: auto;
+    width: 80%;
+    background-color: #F5F6FA;
+    padding: 20px 25px;
+    border-radius: 35px;
+    box-shadow: 0px 6px 7px 0px rgba(203, 210, 239, 0.7);
+    -webkit-box-shadow: 0px 6px 7px 0px rgba(203, 210, 239, 0.7);
+    -moz-box-shadow: 0px 6px 7px 0px rgba(203, 210, 239, 0.7);
+    /* display: flex; */
+}
+
+.compraA .navbar-directorio ul li.directorio-link {
+    text-align: center;
+    border-right: 1px solid #000;
+    padding: 8px;
+}
+
+.compraA .container {
+    width: 100%;
+}
+
+.compraA .container .row {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.compraA div h1 {
+    font-family: "AxiformaE";
+    font-size: 35px;
+    color: #000;
+    font-weight: 900px;
+}
+
+.compraA div .tab-pane{
+    justify-items: center;
+}
+
+.compraA div .tab-pane .card .card-body {
+    padding: 10px 10px 10px 20px;
+}
+
+.compraA div .tab-pane .card .card-body {
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    min-height: 1px;
+    padding-top: 1.25rem;
+}
+
+.compraA div .tab-pane .card .card-body .btn-secundario {
+    background-color: transparent;
+    font-weight: 600;
+    line-height: 0px;
+    color: #3CBF71;
+    transition: all 0.3s ease-in-out 0s;
+    font-size: 17px;
+    cursor: pointer;
+    text-align: center;
+    width: 100%;
+}
+
+.compraA div .tab-pane .card .card-body a {
+    justify-content: center;
+}
+
+.compraA div .tab-pane .card .card-body .btn-secundario:hover {
+    color: #1b6137;
+}
+
+.compraA div .tab-pane .card .card-header img {
+    width: 90%;
+}
+
+.compraA div .tab-pane .card .card-header .card-img-top {
+    border-top-left-radius: calc(0.25rem - 1px);
+    border-top-right-radius: calc(0.25rem - 1px);
+}
+
+.compraA div .tab-pane .card {
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid rgba(0, 0, 0, .125);
+    border-radius: 0.25rem;
+    width: 90%;
+}
+
+.compraA div .tab-pane .card .card-body h5 {
+    font-family: "AxiformaE";
+    font-size: 25px;
+    color: #000;
+    justify-content: center;
+    font-weight: 500px;
+    place-self: center;
+}
+
+.compraA div .tab-pane .card .card-body p {
+    font-family: "AxiformaL";
+    font-size: 18px;
+    color: #000;
+    font-weight: 500px;
+}
+
+.compraA div .tab-pane .card .card-body.btn-secundario i {
+    font-size: 18px;
+}
+
+.compraA div .tab-pane .card .card-body .btn-secundario {
+    background-color: transparent;
+    font-weight: 600;
+    /* padding: 15px 25px; */
+    line-height: 0px;
+    font-weight: 600;
+    color: #3CBF71;
+    transition: all 0.3s ease-in-out 0s;
+    font-size: 17px;
+    cursor: pointer;
+    width: 100%;
+    font-style: normal;
+    font-family: "AxiformaE";
+}
+
+.compraA div .tab-pane .card .card-body a {
+    justify-content: center;
+}
+
+.compraA div .tab-pane .card .card-body .btn-secundario:hover {
+    color: #1b6137;
+}
+
+.compraA div .tab-pane:nth-child(3){
+    justify-content: start;
+}
+
+
+.nuestrosC {
+    padding-top: 200px;
+    padding-right: 200px;
+    padding-left: 200px;
+}
+
+.nuestrosC h1 {
+    font-family: "AxiformaE";
+    font-size: 50px;
+    color: #000;
+    justify-content: center;
+    font-weight: 500px;
+    place-self: center;
+}
+
+.nuestrosC .row .container {
+    width: 100%;
+    padding-right: 10px;
+}
+
+.nuestrosC .row {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: 15px;
+    margin-left: 15px;
+}
+
+.nuestrosC .row .container div div .card {
+    margin: 2.5rem 0;
+    height: 340px;
+    position: relative;
+    padding-bottom: 20px;
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid rgba(0, 0, 0, .125);
+    border-radius: 0.25rem;
+    width: 100%;
+}
+
+.nuestrosC .row .container div div .card .card-body h5 {
+    font-family: "AxiformaM";
+    font-weight: 900;
+    font-size: 19px;
+}
+
+.nuestrosC .row .container div div .card .card-body {
+    padding: 10px 10px 0 10px;
+}
+
+
+.nuestrosC .row .container div div .card .card-body {
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    min-height: 1px;
+    padding: 1.25rem;
+}
+
+.nuestrosC .row .container div div .card .card-body .btn-secundario {
+    background-color: transparent;
+    font-weight: 600;
+    line-height: 0px;
+    font-weight: 600;
+    color: #3CBF71;
+    transition: all 0.3s ease-in-out 0s;
+    font-size: 17px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.nuestrosC .row .container div div .card .card-body .btn-secundario, .nuestrosC .row .container div div .card{
+    display: flex;
+}
+
+
+.nuestrosC .row .container div div .card .card-body .btn-secundario:hover {
+    color: #1b6137;
+}
+
+.nuestrosC .row .container div div .card .card-header img {
+    width: 90%;
+}
+
+.nuestrosC .row .container div div .card .card-header .card-img-top {
+    border-top-left-radius: calc(0.25rem - 1px);
+    border-top-right-radius: calc(0.25rem - 1px);
+}
+
+
+
+.estudiosE {
+    align-items: center !important;
+    background-color: white;
+    width: 100%;
+    height: 100%;
+    padding: 150px 130px;
+}
+
+.estudiosE .navbar-agenda {
+    padding-top: 100px;
+}
+
+.estudiosE .navbar-agenda ul li a {
+    font-family: "AxiformaL";
+    font-size: 15px;
+    color: #000;
+    font-weight: 900px;
+    padding-top: 12px;
+}
+
+
+.estudiosE .navbar-agenda {
+    width: 100%;
+}
+
+.estudiosE .navbar-agenda .img-subnav {
+    padding-top: 5px;
+    position: absolute;
+}
+
+.estudiosE .navbar-agenda ul {
+    margin: auto;
+    width: 100%;
+    background-color: #F5F6FA;
+    border-radius: 35px;
+    padding: 14px 25px;
+    box-shadow: 0px 6px 7px 0px rgba(203, 210, 239, 0.7);
+    -webkit-box-shadow: 0px 6px 7px 0px rgba(203, 210, 239, 0.7);
+    -moz-box-shadow: 0px 6px 7px 0px rgba(203, 210, 239, 0.7);
+    /* display: flex; */
+}
+
+.estudiosE .navbar-agenda ul li.agenda-link {
+    border-right: 1px solid #000;
+    padding: 8px;
+}
+
+.estudiosE .navbar-agenda ul li .btn-primario {
+    background-color: #08b374;
+    font-family: "AxiformaM";
+    border-radius: 30px;
+    padding: 10px 30px;
+    line-height: 0px;
+    font-weight: 600;
+    padding-top: 8px;
+    color: #fff;
+    transition: all 0.3s ease-in-out 0s;
+    font-size: 16px;
+}
+
+.estudiosE .navbar-agenda ul li .btn-primario:hover {
+    background-color: #247143;
+}
+
+.cifras div h2 {
+    font-family: "AxiformaE";
+    font-size: 50px;
+    color: #000;
+    font-weight: 500px;
+}
+
+.cifras div h2 span {
+    color: #3CBF71;
+}
+
+.cifras div .year-filter {
+    max-width: 250px;
+    position: relative;
+}
+
+.cifras div .year-filter .year-filter-nav {
+    float: left;
+    position: relative;
+    height: 42px;
+}
+
+.cifras div .year-filter .year-filter-nav .year-filter-button.year-filter-down {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 50%;
+}
+
+.year-filter-button.year-filter-down {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 50%;
+}
+
+.year-filter-button {
+    position: relative;
+    color: #3CBF71;
+    cursor: pointer;
+    width: 22px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1.9;
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+
+.cifras div .year-filter input {
+    font-size: 20px;
+    font-weight: 600;
+    width: 85px;
+    height: 42px;
+    line-height: 1.65;
+    float: left;
+    padding: 0;
+    font-family: "AxiformaM";
+    border: none;
+}
+
+.year-filter-button.year-filter-up {
+    position: absolute;
+    height: 50%;
+    top: 0;
+    left: 0;
+}
+
+.cifras div .year-filter input {
+    overflow: hidden;
+}
+
+.cifras div .row .col-md-1 {
+    -ms-flex: 0 0 8.333333%;
+    flex: 0 0 8.333333%;
+    max-width: 8.333333%;
+    position: relative;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+[type=button]:not(:disabled),
+button:not(:disabled) {
+    cursor: pointer;
+}
+
+[type=button],
+button {
+    -webkit-appearance: button;
+}
+
+.cifras div .row .col-md-1 .btn-mes-filter {
+    padding: 25px 20px;
+    font-weight: 300;
+    font-size: 18px;
+    text-align: center;
+    background-color: transparent;
+    border: none;
+    color: #797D8C;
+}
+
+.cifras div .row .col-md-1 .btn-mes-filter.active {
+    background-color: #F4F6F9;
+    border-radius: 10px;
+}
+
+.testimoniales {
+    background-image: url(../../public/images/bg-testimonial.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.testimoniales .container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.testimoniales .container .row h1 {
+    font-family: "AxiformaE";
+    font-size: 50px;
+    color: #fff;
+    justify-content: center;
+    font-weight: 500px;
+    place-self: center;
+}
+
+.testimonial-item .item .info {
+    width: 70%;
+    margin: auto;
+}
+
+.testimoniales .container div div p {
+    font-family: "AxiformaL";
+    font-size: 18px;
+    color: #fff;
+}
+
+.testimoniales .container .row {
+    display: -ms-flexbox;
+    display: inline;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+.testimoniales .container .row p {
+    padding-top: 50px;
+    font-family: "AxiformaL";
+    font-size: 18px;
+    color: #fff;
+    justify-content: center;
+    font-weight: 500px;
+    place-self: center;
+    padding-left: 200px;
+    padding-right: 200px;
+}
+
+.align-items-center {
+    align-items: center !important;
+}
+
+.justify-content-center {
+    -ms-flex-pack: center !important;
+    justify-content: center !important;
+}
+
+.recomendacion {
+    padding: 150px;
+
+}
+
+.recomendacion .container h1 {
+    font-family: "AxiformaE";
+    font-size: 40px;
+    color: #000;
+    font-weight: 500px;
+}
+
+.recomendacion .container p {
+    font-family: "AxiformaL";
+    font-size: 18px;
+    color: #000;
+    font-weight: 500px;
+}
+
+.recomendacion .container div div span {
+    font-family: "AxiformaE";
+    font-size: 20px;
+    color: #000;
+    font-weight: 900px;
+}
+
+
+.reservar {
+    min-height: 600px;
+    background-color: #F4F6F9;
+}
+
+.reservar .container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.reservar img {
+    position: absolute;
+    max-width: 450px;
+    bottom: 0;
+    right: 0;
+}
+
+.reservar h2 {
+    font-family: "AxiformaE";
+    font-size: 47px;
+    color: #000;
+}
+
+.btn:not(:disabled):not(.disabled) {
+    cursor: pointer;
+}
+
+.reservar .container div button.btn-primario {
+    padding: 22px 32px;
+    font-size: 17px;
+}
+
+.feria {
+    align-items: center !important;
+    background-color: white;
+    width: 100%;
+    height: 100%;
+    padding: 80px 130px;
+}
+
+.feria div h2 {
+    font-size: 40px;
+    font-weight: 900;
+    color: black;
+    font-family: 'AxiformaM';
+    padding-bottom: 20px;
+}
+
+.feria div .nav-pills {
+    width: 100%;
+    justify-content: space-between;
+}
+
+.feria div .nav-pills .nav-link {
+    color: #000;
+    font-size: 16px;
+}
+
+.feria div .nav-pills .nav-link.active,
+.nav-pills .show>.nav-link,
+.nav-pills .nav-link.active,
+.nav-pills .show>.nav-link {
+    color: #3CBF71;
+    background-color: transparent;
+    font-size: 16px;
+    font-family: "Helvetica";
+    font-weight: bolder;
+    border-bottom: 2px solid #3CBF71;
+}
+
+.feria div .tab-content .tab-pane div .card {
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid rgba(0, 0, 0, .125);
+    border-radius: 0.25rem;
+}
+
+
+.feria div .tab-content .tab-pane div .card .card-img-top {
+    border-top-left-radius: calc(0.25rem - 1px);
+    border-top-right-radius: calc(0.25rem - 1px);
+}
+
+.feria div .tab-content .tab-pane div .card .card-body {
+    flex: 0 0 0;
+    padding: 0px;
+}
+
+.formFerias{
+    position: relative;
+}
+
+.formFerias .container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.formFerias .container div h1 {
+    font-family: "AxiformaM";
+    font-size: 40px;
+    font-weight: 900;
+}
+
+.formFerias .container p {
+    padding-top: 16px;
+    font-family: "AxiformaL";
+    font-size: 16px;
+}
+
+.formFerias .container div .input-control {
+    border: none;
+    border-bottom: 1px solid #B8BCC9;
+}
+
+.formFerias .container div .form-control {
+    display: block;
+    width: 100%;
+    height: calc(1.5em + 0.75rem + 2px);
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+    border-radius: 10px;
+}
+
+.formFerias .container div .form-group {
+    margin-bottom: 1rem;
+}
+
+.formFerias .container div {
+    position: relative;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.formFerias .container div .input-group {
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -ms-flex-align: stretch;
+    align-items: stretch;
+    width: 100%;
+}
+
+.formFerias .container div .input-group .input-group-prepend {
+    margin-right: -1px;
+    display: flex;
+}
+
+.formFerias .container div .input-group,
+.input-group a {
+    font-size: 16px;
+}
+
+.formFerias .container div .input-group .label {
+    display: inline-block;
+    margin-bottom: 0.5rem;
+}
+
+
+.formFerias .container .btn-outline-black {
+    border: #000 1px solid;
+    border-radius: 30px;
+    line-height: 0px;
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.9);
+    transition: 0.3s;
+    font-size: 17px;
+    padding: 14px 20px;
+    text-align: left;
+    height: auto;
+}
+
+.formFerias .container .btn-outline-black a {
+    font-family: "Helvetica";
+    font-size: 17px;
+}
+
+.formFerias .container .card-img-top {
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    width: 26%;
+    height: 85%;
+}
+
+.formFerias .container div .btn-primario {
+    background-color: #08b374;
+    border-radius: 30px;
+    padding: 15px 25px;
+    font-weight: 900;
+    color: #fff;
+    transition: all 0.3s ease-in-out 0s;
+    font-size: 17px;
+    font-family: "Helvetica";
+}
+
+.formFerias .container div .btn-primario:hover {
+    background-color: #247143;
+}
+
+/******************************************/
+.orgWeb {
+    align-items: center !important;
+    background-color: white;
+    width: 100%;
+    height: 100%;
+    padding: 80px 130px;
+}
+
+.orgWeb .dtl div h2 {
+    font-size: 43px;
+    color: black;
+    font-family: 'AxiformaM';
+}
+
+.orgWeb .dtl div h2 span {
+    color: #3CBF71;
+}
+
+.orgWeb .dtl div p {
+    padding-top: 15px;
+    font-size: 17px;
+    color: black;
+    font-family: 'AxiformaL';
+}
+
+.orgWeb .dtl div div div p {
+    padding-top: 40px;
+    padding-left: 10px;
+    padding-right: 0px;
+    font-size: 16px;
+    line-height: 0px;
+    color: black;
+    font-family: 'AxiformaL';
+}
+
+.orgWeb .navbar-agenda {
+    padding-top: 100px;
+}
+
+.orgWeb .navbar-agenda ul li a {
+    font-family: "AxiformaL";
+    font-size: 15px;
+    color: #000;
+    font-weight: 900px;
+    padding-top: 12px;
+}
+
+
+.orgWeb .navbar-agenda {
+    width: 100%;
+}
+
+.orgWeb .navbar-agenda .img-subnav {
+    padding-top: 5px;
+    position: absolute;
+}
+
+.orgWeb .navbar-agenda ul {
+    margin: auto;
+    width: 100%;
+    background-color: #F5F6FA;
+    border-radius: 35px;
+    padding: 14px 25px;
+    box-shadow: 0px 6px 7px 0px rgba(203, 210, 239, 0.7);
+    -webkit-box-shadow: 0px 6px 7px 0px rgba(203, 210, 239, 0.7);
+    -moz-box-shadow: 0px 6px 7px 0px rgba(203, 210, 239, 0.7);
+    /* display: flex; */
+}
+
+.orgWeb .navbar-agenda ul li.agenda-link {
+    border-right: 1px solid #000;
+    padding: 8px;
+}
+
+.orgWeb .navbar-agenda ul li .btn-primario {
+    background-color: #08b374;
+    font-family: "AxiformaM";
+    border-radius: 30px;
+    padding: 10px 30px;
+    line-height: 0px;
+    font-weight: 600;
+    padding-top: 8px;
+    color: #fff;
+    transition: all 0.3s ease-in-out 0s;
+    font-size: 16px;
+}
+
+.orgWeb .navbar-agenda ul li .btn-primario:hover {
+    background-color: #247143;
+}
+
+.feria div .tab-content div .col .card {
+    margin: 2.5rem 0;
+    width: 380px;
+    height: 420px;
+    position: relative;
+    padding-bottom: 20px;
+}
+
+.feria div .tab-content div .col .card .card-body h5 {
+    font-family: "AxiformaM";
+    font-weight: 900;
+    font-size: 19px;
+}
+
+.feria div .tab-content div .col .card .card-body p {
+    font-family: "AxiformaL";
+    font-weight: 400;
+    font-size: 17px;
+}
+
+.feria div .tab-content div .col .card .card-body {
+    padding: 10px 10px 0 10px;
+}
+
+.feria div .tab-content div .col .card .card-body {
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    min-height: 1px;
+    padding: 1.25rem;
+}
+
+.exclusive {
+    background-color: #F4F6F9;
+}
+
+.exclusive .container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.exclusive .container h2 {
+    font-size: 43px;
+    color: black;
+    font-weight: 900;
+    font-family: 'AxiformaM';
+}
+
+.exclusive .container p {
+    font-size: 17px;
+    color: black;
+    font-weight: 300;
+    font-family: 'AxiformaL';
+    ;
+}
+
+.exclusive .container .row div h5 {
+    font-size: 20px;
+    color: black;
+    font-weight: 900;
+    font-family: 'AxiformaM';
+    ;
+}
+
+.exclusive .container .row {
+    display: flex;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+.solicitudOrg .container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.solicitudOrg .container .row .col-8 {
+    position: relative;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.solicitudOrg .container .row div .cert-item {
+    position: relative;
+    padding-left: 3rem;
+}
+
+.solicitudOrg .container .row div .cert-item p {
+    font-size: 15px;
+    font-family: "AxiformaL";
+}
+
+.solicitudOrg .container .row div .cert-item span {
+    position: absolute;
+    left: -10px;
+    font-family: "AxiformaL";
+    top: -10px;
+    font-size: 23px;
+    font-weight: 900;
+    line-height: 50px;
+    border-radius: 10px;
+    width: 48px;
+    height: 48px;
+    text-align: center;
+    box-shadow: 2px 7px 7px 0px rgba(203, 210, 239, 0.6);
+    -webkit-box-shadow: 2px 7px 7px 0px rgba(203, 210, 239, 0.6);
+    -moz-box-shadow: 2px 7px 7px 0px rgba(203, 210, 239, 0.6);
+}
+
+.solicitudOrg .container .row .col-4 {
+    position: relative;
+    width: 65%;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.solicitudOrg .formFerias .container .card-img-top {
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    width: 25%;
+    height: 24%;
+}
+
+
+
+.protestos {
+    align-items: center !important;
+    background-color: white;
+    width: 100%;
+    height: 100%;
+    padding: 80px 130px;
+}
+
+.protestos .navbar-agenda {
+    padding-top: 100px;
+}
+
+.protestos .navbar-agenda ul li a {
+    font-family: "AxiformaL";
+    font-size: 15px;
+    color: #000;
+    font-weight: 900px;
+    padding-top: 12px;
+}
+
+
+.protestos .navbar-agenda {
+    width: 100%;
+}
+
+.protestos .navbar-agenda .img-subnav {
+    padding-top: 5px;
+    position: absolute;
+}
+
+.protestos .navbar-agenda ul {
+    margin: auto;
+    width: 100%;
+    background-color: #F5F6FA;
+    border-radius: 35px;
+    padding: 14px 25px;
+    box-shadow: 0px 6px 7px 0px rgba(203, 210, 239, 0.7);
+    -webkit-box-shadow: 0px 6px 7px 0px rgba(203, 210, 239, 0.7);
+    -moz-box-shadow: 0px 6px 7px 0px rgba(203, 210, 239, 0.7);
+    /* display: flex; */
+}
+
+.protestos .navbar-agenda ul li.agenda-link {
+    border-right: 1px solid #000;
+    padding: 8px;
+}
+
+.protestos .navbar-agenda ul li .btn-primario {
+    background-color: #08b374;
+    font-family: "AxiformaM";
+    border-radius: 30px;
+    padding: 10px 30px;
+    line-height: 0px;
+    font-weight: 600;
+    padding-top: 8px;
+    color: #fff;
+    transition: all 0.3s ease-in-out 0s;
+    font-size: 16px;
+}
+
+.protestos .navbar-agenda ul li .btn-primario:hover {
+    background-color: #247143;
+}
+
+.anunciate {
+    padding-top: 200px;
+    padding-bottom: 4.5rem;
+    font-family: 'AxiformaL';
+}
+
+.anunciate .container h1 {
+    font-size: 43px;
+    color: black;
+    font-weight: 900;
+    font-family: 'AxiformaM';
+}
+
+.anunciate .container div .btn-primario {
+    background-color: #08b374;
+    border-radius: 30px;
+    padding: 20px 25px;
+    line-height: 0px;
+    font-weight: 600;
+    color: #fff;
+    transition: all 0.3s ease-in-out 0s;
+    font-size: 17px;
+}
+
+.anunciate .container div .btn-primario:hover {
+    background-color: #247143;
+}
+
+.hero-portada {
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    min-height: 750px;
+}
+
+#counts .container {
+    background-color: #fff;
+    margin-top: -3rem;
+    position: relative;
+    z-index: 9;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+#counts .container .row .col-6 {
+    position: relative;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+#counts .container .counters span {
+    font-size: 70px;
+    color: #3CBF71;
+    font-family: "AxiformaE";
+}
+
+#counts .container .counters span {
+    font-size: 70px;
+    color: #3CBF71;
+    font-family: "AxiformaE";
+}
+
+#counts .container .row .col-6 .info p {
+    font-size: 17px;
+    font-family: "AxiformaL";
+    font-weight: 300;
+    padding: 10px;
+
+}
+
+#counts .container .row .col-6 .info p:nth-child(1) {
+    font-weight: 900;
+    font-family: "AxiformaM";
+}
+
+.counters .container .row .col-6 .info p:nth-child(2) {
+    font-size: 15px;
+    font-weight: 300;
+}
+
+.information{
+    padding: 40px;
+}
+
+.information .container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.information .container .row .col-md-6 {
+    position: relative;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.information .container .row div h5 {
+    font-size: 20px;
+    font-family: "AxiformaM";
+    font-weight: 900;
+
+}
+
+.information .container .row div p {
+    font-size: 17px;
+    font-family: "AxiformaL";
+
+}
+
+.hero-portada .container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+
+}
+
+.hero-portada .container .info-portada {
+    position: absolute;
+    top: 48%;
+    margin-top: -100px;
+    padding: 20px;
+}
+
+.hero-portada .container .info-portada h1 {
+    font-family: "AxiformaM";
+    width: 100%;
+    color: #fff;
+    font-size: 40px;
+    font-weight: 600;
+}
+
+.hero-portada .container .info-portada .descripcion-portada {
+    margin-top: 1em;
+    margin-bottom: 1em;
+    color: #fff;
+    max-width: 550px;
+}
+
+.hero-portada .container .info-portada .descripcion-portada p {
+    font-size: 17px;
+    font-family: "AxiformaL";
+    font-weight: 300;
+}
+
+.hero-portada .container .info-portada .btn-outline {
+    border: #3CBF71 2px solid;
+    border-radius: 35px;
+    line-height: 0px;
+    cursor: pointer;
+    font-weight: 600;
+    color: #fff;
+    background-color: rgba(60, 191, 113, 0.14);
+    transition: 0.3s;
+    font-family: "AxiformaM";
+    font-size: 17px;
+    padding: 25px 20px;
+    height: auto;
+}
+
+.hero-portada .container .info-portada div .w-100{
+    flex: none;
+    display: list-item;
+}
+
+
+/*********************EVENTOS*********************/
+.eventos {
+    align-items: center !important;
+    background-color: white;
+    width: 100%;
+    height: 100%;
+    padding: 80px 130px;
+}
+
+.eventos .dtl div h2 {
+    font-size: 43px;
+    color: black;
+    font-family: 'AxiformaM';
+}
+
+.eventos .dtl div h2 span {
+    color: #3CBF71;
+}
+
+.eventos .dtl div p {
+    padding-top: 15px;
+    font-size: 17px;
+    color: black;
+    font-family: 'AxiformaL';
+}
+
+.eventos .dtl div div div p {
+    padding-top: 40px;
+    padding-left: 10px;
+    padding-right: 0px;
+    font-size: 16px;
+    line-height: 0px;
+    color: black;
+    font-family: 'AxiformaL';
+}
+
+#eventos-realizados .container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+#eventos-realizados .container .row {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+#eventos-realizados .container .row .col-md-12 {
+    position: relative;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+#eventos-realizados .container .row .col-md-12 .navbar-subnav-botons {
+    margin: auto;
+    /* width: 80%; */
+    max-width: 600px;
+    background-color: #fff;
+    padding: 20px 25px;
+    border-radius: 35px;
+    box-shadow: 0px 6px 7px 0px rgba(203, 210, 239, 0.7);
+    -webkit-box-shadow: 0px 6px 7px 0px rgba(203, 210, 239, 0.7);
+    -moz-box-shadow: 0px 6px 7px 0px rgba(203, 210, 239, 0.7);
+    /* display: flex; */
+}
+
+#eventos-realizados .container .row .col-md-12 ul.navbar-subnav-botons li.subnav-link {
+    text-align: center;
+    border-right: none;
+    padding: 8px;
+}
+
+#eventos-realizados .container .row .col-md-12 ul li a{
+    font-family: "Helvetica";
+    font-weight: 900;
+    font-size: 16px;
+}
+
+
+
+#eventos-realizados .container .row .col-md-12 ul.navbar-subnav-botons li.now {
+    border-right: 1px solid #000;
+}
+
+#eventos-realizados .container .row .col-md-12 .nav-pills .nav-item .nav-link {
+    border-radius: 0.25rem;
+    color: #000;
+}
+
+#eventos-realizados .container .row .tab-content .tab-pane.fade {
+    transition: opacity .15s linear;
+}
+
+#eventos-realizados .container .row .tab-content .tab-pane .row p {
+    padding-bottom: 0px;
+}
+
+#eventos-realizados .container .row .tab-content .tab-pane fieldset iframe{
+    height: 900px;
+    width: 80%;
+}
+
+
+#eventos-realizados .container .row .tab-content .tab-pane .row {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: max-content;
+    padding-top: 100px;
+    padding-right: 50px;
+    padding-left: 50px;
+}
+
+#eventos-realizados .container .row .tab-content .tab-pane .row .container div {
+    width: 100%;
+    height: fit-content;
+}
+
+#eventos-realizados .container .row .tab-content .tab-pane .row .container div .column1 .card .card-body h5, #eventos-realizados .container .row .tab-content .tab-pane .row .container div .column2 .card .card-body h5 {
+    font-size: 20px;
+    color: black;
+    font-weight: 900;
+    font-family: 'AxiformaM';
+}
+
+#eventos-realizados .container .row .tab-content .tab-pane .row .container div .column1 .card .card-body p, #eventos-realizados .container .row .tab-content .tab-pane .row .container div .column2 .card .card-body p  {
+    font-size: 17px;
+    color: black;
+    font-family: 'AxiformaL';
+}
+
+/******CONTACTOS*******/
+
+.contacto .container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 70px;
+}
+
+.contacto .container h1 {
+    font-family: "AxiformaM";
+    width: 100%;
+    font-weight: 600;
+    font-size: 2.5rem;
+}
+
+.contacto .container .row {
+    display: flex;
+}
+
+.contacto .container .row div p {
+    padding-bottom: 0px;
+}
+
+.contacto .container .row1 div {
+    position: relative;
+    width: 30%;
+    padding-left: 15px;
+}
+
+.contacto .container .row div h5 {
+    font-family: "AxiformaM";
+    width: 100%;
+    font-weight: 600;
+    font-size: 1.25rem;
+    text-align: left;
+    padding-bottom: 20px;
+}
+
+
+.contacto .container .row .col-md-8 form h5 {
+    font-family: "AxiformaM";
+    width: 100%;
+    font-weight: 600;
+    font-size: 1.25rem;
+}
+
+.contacto .container .row .col-md-8 form .form-group {
+    margin-bottom: 1rem;
+}
+
+.contacto .container .row .col-md-8 form .form-group .input-control {
+    border: none;
+    border-bottom: 1px solid #B8BCC9;
+}
+
+.contacto .container .row .col-md-8 form .form-group .form-control {
+    display: block;
+    width: 300%;
+    height: calc(1.5em + 0.75rem + 2px);
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border-bottom: 1px solid #ced4da;
+    border-radius: 1.25rem;
+    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+
+.contacto .container .row .col-md-8 form .btn-primario {
+    background-color: #08b374;
+    border-radius: 30px;
+    padding: 25px 25px;
+    line-height: 0px;
+    font-weight: 600;
+    color: #fff;
+    transition: all 0.3s ease-in-out 0s;
+    font-size: 17px;
+}
+
+.contacto .container .row div table {
+    width: 100%;
+    text-align: left;
+    padding-right: 100px;
+}
+
+.contacto .container .row div table tbody {
+    display: table-row-group;
+    vertical-align: middle;
+    border-color: inherit;
+}
+
+.contacto .container .row div table tr td:nth-child(1) {
+    font-size: 17px;
+    font-family: "AxiformaE";
+}
+
+.contacto .container .row div table tr td:nth-child(2) {
+    font-size: 17px;
+    font-family: "AxiformaL";
+}
+
+#areas{
+    padding: 100px;
+}
+
+#areas .container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+#areas .container h1 {
+    font-family: "AxiformaM";
+    width: 100%;
+    font-weight: 900;
+    font-size: 2.5rem;
+}
+
+#areas .container h1 {
+    font-size: 43px;
+    color: black;
+    font-family: 'AxiformaM';
+}
+
+#areas .container h1 span {
+    color: #3CBF71;
+}
+
+#areas .container .row {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+#areas .container .row div .number-contact {
+    position: absolute;
+    left: 0;
+    top: -10px;
+    font-size: 23px;
+    font-family: 'AxiformaM';
+    font-weight: 300;
+    border-radius: 10px;
+    width: 48px;
+    height: 48px;
+    text-align: center;
+    line-height: 50px;
+    box-shadow: 2px 7px 7px 0px rgba(203, 210, 239, 0.6);
+    -webkit-box-shadow: 2px 7px 7px 0px rgba(203, 210, 239, 0.6);
+    -moz-box-shadow: 2px 7px 7px 0px rgba(203, 210, 239, 0.6);
+}
+
+#areas .container .row .col-md-12 {
+    position: relative;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+#areas .container .row .col-md-4 {
+    position: relative;
+}
+
+#areas .container .row .col-md-4 .title-contact {
+    color: #B2B6CC;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+
+#areas .container .row div h5 {
+    font-size: 1.25rem;
+    font-family: "AxiformaM";
+    width: 100%;
+    font-weight: 600;
+}
+
+#areas .container .row .col-md-4 p:nth-child(1) {
+    font-size: 1.25rem;
+    font-family: "AxiformaL";
+    width: 100%;
+    font-weight: 900;
+    margin-bottom: 0px;
+    padding-bottom: 10px;
+}
+
+#areas .container .row .col-md-4 p:nth-child(2) {
+    font-size: 1.25rem;
+    font-family: "AxiformaL";
+    width: 100%;
+    font-weight: 400;
+    margin-top: 0px;
+    padding-top: 0px;
+}
+
+.modal:target{
+    visibility: visible;
+    opacity: 1;
+    transition: all .2s;
+}
+
+.modal{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    height: 100vh;
+    font-family: "AxiformaM";
+    visibility: hidden;
+    opacity: 0;
+    z-index: 10;
+    position: absolute;
+    width: 50%;
+    transform: translateX(50%);
+}
+
+
+
+.login{
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 1px 8px 1px rgba(0, 0, 0, 0.26);
+    border-radius: 5%;
+    padding: 3rem;
+    gap: 2rem;
+    width: 90%;
+    justify-content: center;
+    align-items: center;
+    background-color: #F5F6FA;
+    position: relative;
+}
+
+.login-close, .login-close:link, .login-close:visited{
+    font-size: 2.5rem;
+    color: #08b374;
+    position: absolute;
+    top: 1.3rem;
+    right: 2rem;
+    &:hover{
+        color: #247143;
+    }
+}
+
+.modal .login .title-login{
+    text-align: center;
+}
+
+.modal .login h1{
+    font-family: "AxiformaM";
+    font-size: 40px;
+    font-weight: 900;
+}
+
+.modal .login h1 span{
+    color: #3CBF71;
+}
+
+.modal .login .login-info form .form-info .input-login{
+    display: block;
+    width: 100%;
+    height: calc(1.5em + 0.75rem + 2px);
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #495057;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: 0.5rem;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+} 
+
+.modal .login .login-info form{
+    justify-content: center;
+    align-items: center;
+}
+
+.modal .login .login-info form .form-info .input-login{
+
+    border: none;
+    border-bottom: 2px solid #B8BCC9;
+}
+
+.modal .login .login-info form a{
+    display: flex;
+    justify-content: center;
+}
+
+
+input {
+    overflow: visible;
+}
+
+.ser-socio{
+    padding-top: 100px;
+    width: 100%;
+}
+
+.ser-socio .container{
+    width: 100%;
+    background-color: #000;
+}
+
+.ser-socio .container .row{
+    width: 100%;
+    margin-right: -30px;
+    margin-left: 0px;
+    position: relative;
+}
+
+.ser-socio .container .row .card{
+    min-height: 600px;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    position: relative;
+    height: 100%;
+    min-width: 280px;
+}
+
+.ser-socio .container .row .card .card-body{
+    position: absolute;
+    top: 70%;
+    width: 90%;
+}
+
+.ser-socio .container .row .card .card-body h5{
+    font-size: 17px;
+    color: white;
+}
+
+.ser-socio .container .row .card .card-body p{
+    position: absolute;
+    padding-top: 30px;
+    color: white;
+    font-size: 15px;
+}
+
+.ser-socio-second{
+    height: 400px;
+    padding-left: 50px;
+    text-align: center;
+}
+
+.ser-socio-second .container .second{
+    text-align: center;
+    padding-top: 150px;
+    font-size: 45px;
+    font-family: "AxiformaM";
+    font-weight: 900;
+}
+
+.ser-socio-third{
+    padding: 100px;
+    font-family: 'AxiformaM';
+}
+
+.ser-socio-third .container h2 {
+    font-size: 40px;
+    color: black;
+    font-weight: 900;    
+}
+
+.ser-socio-third .container h2 span {
+    color: #3CBF71;
+}
+
+.ser-socio-third .container p{
+    font-size: 18px;
+    font-family: "AxiformaL";
+}
+
+.ser-socio-third .container h3{
+    font-size: 30px;
+    font-weight: 700;
+    padding-top: 20px;
+}
+
+.ser-socio-third .container .row .col-4 p{
+    color: rgb(255 255 255);
+    line-height: normal;
+    padding-bottom: 10px;
+    font-size: 18px;
+
+}
+
+.revista{
+    padding: 150px;
+}
+
+.revista .container h2 {
+    font-size: 40px;
+    font-family: "AxiformaM";
+    color: black;
+    font-weight: 900; 
+    line-height: 50px;   
+}
+
+.revista .container h2 span {
+    color: #3CBF71;
+}
+
+.revista .container .grid div .div-imagen .img-fluid{
+    width: 97.5%;
+    height: 97.5%;
+}
+
+.revista .container div div a .div-imagen{
+    position: relative;
+    display: flex;
+    align-self: center !important;
+    align-content: center;
+}
+
+.revista .container div div a .div-imagen h3{
+    background-color: #009961; 
+    opacity: 0;
+    width: 100%;
+    padding-top: 50%;
+    height: 100%;
+    position: absolute;
+    z-index: 10;
+    color: #fff;
+    font-size: 30px;
+}
+
+.revista .container div div a .div-imagen:hover h3{
+    opacity: 90%;
+    transition: 0.4s;
+}
+
+.revista .container div div .grid div a .div-imagen:hover h3{
+    opacity: 90%;
+    transition: 0.4s;
+}
+
+
+.revista .container .grid div a .div-imagen h3{
+    background-color: #009961; 
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    text-align: center;
+    font-family: "AxiformaM";
+    font-weight: 900;
+    z-index: 10;
+    color: #fff;
+    font-size: 20px;
+}
+
+.auditorio{
+    width: 100%;
+    color: white;
+    font-family: "AxiformaM";
+}
+
+.auditorio img{
+    position: relative;
+}
+
+.auditorio .contain{
+    padding: 150px;
+    position: absolute;
+    top: 15%;
+    width: 60%;
+}
+
+.auditorio .contain h1{
+    font-size: 40px;
+    font-weight: 900;
+    padding-bottom: 30px;
+}
+
+.auditorio .contain p{
+    font-family: "AxiformaL";
+    font-size: 17px;
+}
+
+.auditorio2 .contain h1{
+    font-size: 40px;
+    font-weight: 900;
+    padding-bottom: 30px;
+    font-family: "AxiformaM";
+}
+
+.auditorio2 .contain p{
+    font-family: "AxiformaL";
+    font-size: 17px;
+}
+
+.auditorio2 .contain .second img{
+    width: 80%;
+    height: 50%;
+}
+
+.tarifas{
+    background-color: black;
+}
+
+.tarifas h1{
+    color: white;
+    font-family: "AxiformaM";
+    font-size: 40px;
+    font-weight: 900;
+}
+
+.tarifas .tab-content .tab-pane .list-tarifa li p {
+    font-size: 25px;
+}
+
+.tarifas #otros .list-tarifa li p {
+    font-size: 20px;
+}
+
+.tarifas .tab-content .tab-pane .list-tarifa .precio .moneda small{
+    font-size: 18px;
+    font-weight: 100;
+}
+
+.tarifas img{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+.auditorio1{
+    width: 100%;
+    color: white;
+    font-family: "AxiformaM";
+}
+
+.auditorio1 img{
+    position: relative;
+}
+
+.auditorio1 .contain{
+    padding: 150px;
+    position: absolute;
+    top: 15%;
+    width: 80%;
+}
+
+.auditorio1 .contain h1{
+    font-size: 40px;
+    font-weight: 900;
+    padding-bottom: 30px;
+    font-family: "AxiformaM";
+}
+
+.auditorio1 .contain p{
+    font-family: "AxiformaL";
+    font-size: 17px;
+}
+
+.auditorio1 h2 {
+    font-size: 40px;
+    font-family: "AxiformaM";
+    color: black;
+    font-weight: 900; 
+    line-height: 50px;   
+}
+
+.auditorio1 h2 span {
+    color: #3CBF71;
+}
+
+.auditorio1 .grid div h3 {
+    color: #000;
+    font-weight: 900;
+    font-size: 20px;
+    padding-top: 20px;
+    margin-bottom: 0.5em;
+    border-bottom: 1px solid #cad1e7;
+}
+
+.auditorio1 .grid div p {
+    color: #000;
+    font-size: 18px;
+    font-family: "AxiformaL";
+}
+
+
+
+.auditorio1 div .col-md-1 table {
+    width: 100%;
+    text-align: right;
+}
+
+.auditorio1 div .col-md-1 table tbody {
+    display: table-row-group;
+    text-align: left;
+    border-color: inherit;
+}
+
+.auditorio1 div .col-md-1 table tr td:nth-child(1) {
+    font-family: "AxiformaE";
+    color: #000;
+}
+
+.auditorio1 div .col-md-1 table tr td:nth-child(2) {
+    font-family: "AxiformaL";
+    color: #000;
+    padding-left: 40px;
+}
+
+.auditorio1 div .col-md-1 h5{
+    font-size: 23px;
+}
+
+.auditorio1 div .col-md-1:nth-child(2){
+    border-right: 1px solid #707481;
+}   
+
+.auditorio1 div .col-md-1 .caption .button-slide{
+    background-color: #3CBF71;
+    border-radius: 30px;
+    padding: 25px 30px;
+    font-weight: 600;
+    color: #fff;
+    transition: all 0.3s ease-in-out 0s;
+    font-size: 16px;
+}
+
+.auditorio1 div .col-md-1 .caption .button-slide:hover{
+    background-color: #247143;
+}
+
+#detalles{
+    padding: 135px;
+}
+
+#detalles h5{
+    font-size: 30px;
+    font-family: "AxiformaM";
+    font-weight: 900;
+}
+
+#detalles p{
+    font-size: 17px;
+    font-family: "AxiformaL";
+}
+
+.lbl-switch {
+    display: inline-block;
+    border: 1px solid #000;
+    border-radius: 30px;
+    width: 40px;
+    height: 20px;
+    margin-bottom: 0;
+    cursor: pointer;
+    position: relative;
+}
+
+.lbl-switch::after {
+    content: '';
+    display: block;
+    width: 15px;
+    height: 15px;
+    background-color: #B8BCC9;
+    border-radius: 50%;
+    position: absolute;
+    top: 1px;
+    left: 2px;
+    transition: .5s;
+}
+
+.lbl-switch.changed::after {
+    background-color: #3CBF71;
+    left: 20px;
+    transition: .5s;
+}
+
+.switch {
+    display: none;
+}
+
+
+.reservar1 {
+    min-height: 100px;
+    background-color: #fff;
+    padding-bottom: 100px;
+}
+
+.reservar1 .container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.reservar1 h2 {
+    font-family: "AxiformaE";
+    font-size: 40px;
+    color: #000;
+}
+
+.btn:not(:disabled):not(.disabled) {
+    cursor: pointer;
+}
+
+.reservar1 .container div button.btn-primario {
+    padding: 22px 32px;
+    font-size: 17px;
+}
+
+
+/*-------------------------------RESPONSIVE------------------------*/
+
+
+/*HEADER*/
+
+@media(max-width: 1024px) {
+
+    #landing-header header {
+        height: 100px;
+        background: black;
+        display: flex;
+        z-index: 50;
+        background-attachment: fixed;
+        width: 100%;
+        position: fixed;
+        place-content: center;
+        color: currentColor;
+        justify-content: space-around;
+    }
+
+    .mostrar-menu,
+    .esconder-menu {
+        display: block;
+        overflow-y: hidden;
+    }
+
+    .menu {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: black;
+        right: -100%;
+        top: 0;
+        text-align: center;
+        padding: 100px 0;
+        z-index: 100;
+        transition: 0.8s;
+        overflow-y: hidden;
+    }
+
+    .menu li {
+        display: block;
+        padding: 20px;
+    }
+
+    .esconder-menu {
+        position: absolute;
+        top: 40px;
+        right: 40px;
+    }
+
+    .menu ul li .dropdown{
+        position: relative;
+        width: 100%;
+    }
+
+    #check:checked~.menu {
+        right: 0;
+    }
+
+    /*SLIDE 1*/
+    #slide1 {
+        height: auto;
+        width: auto;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    #slide1 .caption {
+        padding: 40px;
+        padding-top: 100px;
+        padding-left: 60px;
+        padding-right: 0px;
+    }
+
+    #slide1 h1 {
+        font-size: 6vw;
+        width: 95%;
+        padding-top: 0px;
+        word-break: normal;
+
+    }
+
+    #slide1 div ul li .button-slide {
+        font-size: 4vw;
+        padding: 3vw 3vw;
+    }
+
+    .tns-controls {
+        top: 0px;
+
+    }
+
+    .tns-controls button[data-controls="prev"] {
+        top: 100%;
+        left: -10px;
+    }
+
+    .tns-controls button[data-controls="next"] {
+        top: 100%;
+        right: -10px;
+    }
+
+    .slideshow .my-slider li .icons {
+        visibility: hidden;
+    }
+
+    /*NAVBAR*/
+    #navbar {
+        flex-direction: column;
+        position: relative;
+        padding: 0px;
+        width: 100%;
+        height: fit-content;
+        padding-bottom: 80px;
+    }
+
+    #navbar .navbar-subnav ul {
+        flex-direction: column;
+        padding: 0px 0px 0px;
+        padding-top: 8px;
+    }
+    .navbar-subnav ul li.subnav-button {
+        padding-left: 0px;
+    
+    }
+
+    /*---------ACTIVITY SECTION------------*/
+
+    #hero {
+        flex-direction: column;
+        padding-left: 0px;
+        padding: 50px;
+        width: 100%;
+        padding-top: 150px;
+        height: fit-content;
+    }
+
+    .container .row1 {
+        padding: 20px;
+        padding-left: 0px;
+    }
+
+    .container .row1 .years-home {
+        width: fit-content;
+    }
+
+    .container .row1 .years-home .year-num {
+        width: fit-content;
+        font-size: 20vw;
+    }
+
+    .container .row1 .years-home .year-str {
+        width: fit-content;
+        font-size: 15vw;
+    }
+
+    .container .row1 h1 {
+        font-size: 28px;
+        width: 100%;
+    }
+
+    .container .row {
+        display: flex;
+        align-content: center;
+        padding-bottom: 0px;
+        flex-direction: column;
+        display: inline-flex;
+    }
+
+    .container .row1 p {
+        width: 100%;
+
+    }
+
+    .container .row2 {
+        width: auto;
+        height: auto;
+        padding: 0;
+    }
+
+    div .img-fluid {
+        width: max-content;
+        height: max-content;
+    }
+
+    /*---------VIDEO SECTION------------*/
+    #video {
+        flex-direction: column;
+        padding: 30px;
+        width: 100%;
+        height: max-content;
+        padding-bottom: 150px;
+    }
+
+    #video .video-home-url {
+        width: auto;
+    }
+
+    /*---------DOWNLOAD SECTION------------*/
+
+    #download {
+        flex-direction: column;
+        padding: 10px;
+        height: max-content;
+        width: 100%;
+        position: relative;
+        padding-bottom: 70px;
+    }
+
+    #download .dtl {
+        width: 100%;
+    }
+
+    #download .dtl div{
+        padding: 0px;
+    }
+
+    #download .dtl h2 {
+        width: 100%;
+    }
+
+    #download .iconos {
+        grid-template-columns: none;
+        width: 100%;
+    }
+
+    #download .img-fluid-a {
+        min-width: fit-content;
+    }
+
+    #download .img-fluid-b {
+        min-width: fit-content;
+    }
+
+    #download .dtl {
+        grid-template-columns: none;
+    }
+
+    #download .app-img {
+        position: relative;
+        place-content: right;
+        width: 70%;
+        height: fit-content;
+        top: 10%;
+    }
+
+
+
+    /*---------PUBLICITY SECTION------------*/
+    #publicity {
+        width: 100%;
+        flex-direction: column;
+        padding: 10px;
+        height: fit-content;
+    }
+
+    #publicity .slider h2 {
+        padding: 0px;
+    }
+
+
+    #publicity .slider {
+        position: relative;
+        padding-left: 0px;
+        width: 100%;
+        flex-direction: column;
+    }
+
+    #publicity div h5 {
+        padding-top: 0px;
+    }
+
+    .slider .slide img {
+        object-fit: fill;
+        padding-left: 10px;
+    }
+
+    #publicity .col-md-4{
+        width: 100%;
+        padding: 10px;
+        text-align: left;
+    }
+
+    /*---------OPTIONS SECTION------------*/
+    #options {
+        flex-direction: column;
+        padding: 70px;
+        height: fit-content;
+    }
+
+    .nav1 {
+        width: 100%;
+    }
+
+    .nav2 {
+        width: 100%;
+    }
+
+    #options .principal {
+        flex-direction: column;
+    }
+
+    .inside-nav {
+        width: 100%;
+    }
+
+    .inside-nav1 {
+        width: 100%;
+    }
+
+    .inside-nav h2 {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    #options .nav2 {
+        width: 100%;
+        padding: 0px;
+        gap: 0rem;
+    }
+
+    /*---------FOOTER SECTION------------*/
+    #footer {
+        width: 100%;
+        flex-direction: column;
+        padding: 30px;
+        height: fit-content;
+    }
+
+    #footer .row {
+        flex-direction: column;
+    }
+
+    #footer .row .first {
+        width: 100%;
+    }
+
+    #footer .row .second {
+        width: 100%;
+    }
+
+    #footer div .icons {
+        z-index: 10;
+        padding: 0;
+        position: relative;
+        color: white;
+        left: 0px;
+        top: 0px;
+        display: flex;
+        width: 100%;
+    }
+
+    #footer .second div div form input {
+        min-width: 50vw;
+    }
+
+
+
+    /*---------QUIENES SOMOS SECTION------------*/
+    #quienes-somos {
+        width: 90%;
+        height: fit-content;
+        padding: 20px;
+        padding-top: 200px;
+    }
+
+    .row img-fluid {
+        float: none;
+    }
+
+    /*---------CONSEJO DIRECTIVO SECTION------------*/
+    #consejo {
+        background-color: white;
+        padding: 100px;
+        padding-top: 150px;
+    }
+
+    .scrollblock {
+        width: 100%;
+        margin: 2.5rem 0;
+    }
+
+    .person {
+        margin: 2.5rem 0;
+        width: 280px;
+        position: relative;
+    }
+
+    .person-name {
+        margin-top: -30px;
+        margin-left: -40px;
+        position: relative;
+        background-color: #3CBF71;
+        border-radius: 20rem !important;
+        height: 80px;
+        width: max-content;
+    }
+
+    .person-name p {
+        padding: 10px;
+        font-weight: bold;
+        color: white;
+        font-size: 16px;
+        font-family: "AxiformaM";
+        position: relative;
+        justify-content: center;
+        align-items: center;
+        padding-top: 7px;
+    }
+
+    /*---------ORGANIZACION SECTION------------*/
+
+    #organizacion {
+        background-color: white;
+        height: fit-content;
+        padding: 40px;
+        padding-left: 60px;
+        padding-top: 200px;
+    }
+
+    #organizacion .person-name {
+        margin-top: -30px;
+        margin-left: -40px;
+        position: relative;
+        background-color: #3CBF71;
+        border-radius: 20rem !important;
+        height: 80px;
+        max-height: min-content;
+        width: max-content;
+    }
+
+    /*---------QUIENES SOMOS SECTION------------*/
+    .directorio-menu {
+        flex-direction: column;
+        width: 100%;
+        padding-top: 150px;
+        height: fit-content;
+    }
+
+    /*NAVBAR*/
+    .navbar-directorio {
+        flex-direction: column;
+        position: relative;
+        padding: 0px;
+        width: 100%;
+        height: fit-content;
+        padding-bottom: 80px;
+    }
+
+    .navbar-directorio ul {
+        flex-direction: column;
+        padding: 0px 0px 0px;
+        padding-top: 8px;
+    }
+
+    .directorio-menu .navbar-directorio ul li.directorio-link {
+        text-align: center;
+        border-right: none;
+        padding: 8px;
+    }
+
+    .directorio-menu .container {
+        width: 100%;
+        margin-top: 0px;
+        padding-left: 10px;
+    }
+
+
+    .directorio-menu .container form .row {
+        place-content: start;
+        padding: 8px;
+        align-items: center;
+    }
+
+
+    .form-control {
+        width: 95vw;
+        flex-grow: 0;
+        font-size: 2vw;
+        height: calc(1.5em + 0.75rem + 2px);
+        padding: 20px 5px;
+    }
+
+    .directorio-menu .container .row div div .search-cat {
+        justify-content: start;
+        display: flex;
+        flex-grow: 0;
+    }
+
+
+    .directorio-menu .container .row div div .search-cat label {
+        font-family: "AxiformaL";
+        padding-top: 15px;
+        color: #000;
+        font-weight: 900;
+        padding-right: 10px;
+        flex-grow: 0;
+    }
+
+    .directorio-menu .container .row div div {
+        display: flex;
+        align-items: center;
+        padding-left: 0px;
+
+    }
+
+    .directorio-menu .container .row div .search-cat label:nth-child(2){
+        display: none;
+    }
+
+
+    .directorio-menu .container .row div {
+        flex-direction: column;
+    }
+
+    .empresas{
+        padding: 5px;
+    }
+
+    .empresas .row{
+        padding: 0px;
+    }
+
+    .empresas .container .grid{
+        grid-template-columns:
+        repeat(
+            auto-fit,
+            minmax(160px, 1fr)
+        );
+        gap: 10px;
+    }
+    
+    .empresas .card .card-header img {
+        max-width: fit-content;
+    }
+    
+    .empresas .card {
+        max-width: fit-content;
+    }
+    
+    .empresas .row1 {
+        padding-top: 10px;
+        padding-left: 0px;
+    }
+
+    
+
+
+    /*---------AGENDA COMERCIAL SECTION------------*/
+    .agendaC{
+        flex-direction: column;
+        padding: 0px;
+        padding-top: 100px;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-bottom: 100px;
+    }
+
+    .agendaC .grid{
+        grid-template-columns:
+        repeat(
+            auto-fit,
+            minmax(250px, 100fr)
+        );
+        gap: 20px;
+    }
+
+    .agendaC .dtl div .imagen1{
+        padding-top: 100px;
+    }
+
+    .agendaC .dtl div div div p {
+        padding-top: 10px;
+        line-height: 20px;
+    }
+
+    /*NAVBAR*/
+.navbar-agenda{
+    padding: 0px;
+}
+
+    .navbar-agenda ul .navbar .grid{
+        grid-template-columns:
+        repeat(
+            auto-fit,
+            minmax(200px, 1fr)
+        );
+        gap: 20px;
+    }
+
+    .navbar-agenda ul .navbar .grid .agenda-link {
+        border-right: none;
+    }
+
+
+    /*---------COMO PROCEDEMOS SECTION------------*/
+    .beneficios {
+        background-color: #000;
+        padding-left: 10px;
+        padding-bottom: 100px;
+    }
+
+    .beneficios .container img{
+    display: none;
+    }
+
+    .beneficios .container h1 {
+        font-family: "AxiformaM";
+        font-weight: 600;
+        padding-top: 8px;
+        color: #fff;
+        font-size: 40px;
+        padding-bottom: 10px;
+        width: 100%
+    }
+
+    /*---------TARIFARIO SECTION------------*/
+    .tarifario {
+        padding: 0px;
+        padding: 20px;
+        height: fit-content;
+    }
+
+    .tarifario .container .tab-content .tab-pane .list-tarifa p {
+        margin-left: 0px;
+    }
+
+    .tarifario .container .tab-content .tab-pane .list-tarifa .precio .moneda {
+        position: relative;
+        font-weight: 600;
+        font-size: 70px;
+        margin-bottom: 0;
+        font-family: "AxiformaM";
+        padding-left: 20px;
+    }
+    
+    .tarifario .container .tab-content .tab-pane .list-tarifa .precio .moneda span:nth-child(1) {
+        position: absolute;
+        top: 15px;
+        left: 0;
+    }
+
+    
+div .input-control {
+        border-bottom: 1px solid #B8BCC9;
+    }
+
+div .form-group{
+        flex-direction: column;
+    }
+
+div .form-group input{
+        margin-bottom: 20px;
+    }
+
+div .form-group button i svg{
+        transform: rotate(90deg);
+    }
+    
+    .tarifario .container div {
+        padding: 0px;
+    }
+
+
+    .tarifario .container .card-img-top {
+        position: relative;
+        height: 80%;
+        width: 80%;
+    }
+    
+
+    /***************ALQUILER AMBIENTES *********************/
+    .alquilerA{
+        flex-direction: column;
+        padding: 0px;
+        padding-top: 1000px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .alquilerA .grid{
+        grid-template-columns:
+        repeat(
+            auto-fit,
+            minmax(250px, 100fr)
+        );
+        gap: 20px;
+    }
+
+    .alquilerA .dtl div #slide3 .slideshow1 .my-slider1 li{
+        padding-top: 100px;
+    }
+    
+
+
+    /*SLIDE2 */
+
+    /* -------SLIDE2---------*/
+
+    #slide2 .slideshow .my-slider .caption {
+        position: absolute;
+        display: flex;
+        padding: 0px;
+        padding-left: 10px;
+        padding-top: 800px;
+        flex-direction: column;
+        bottom: 0;
+        align-items: start;
+        text-align: start;
+        color: #fff;
+        z-index: 20;
+    }
+
+    #slide2 .slideshow .my-slider .caption p {
+        width: 100%;
+        font-weight: 400;
+        font-size: 20px;
+        margin-bottom: 0.5rem;
+    }
+
+    #slide2 .slideshow .my-slider .caption h1 {
+        width: 100%;
+        font-weight: 600;
+        font-size: 40px;
+        margin-bottom: 0.5rem;
+    }
+
+    #slide2 .slideshow .my-slider .content .caption .button-slide {
+        border: #3CBF71 2px solid;
+        border-radius: 35px;
+        line-height: 0px;
+        cursor: pointer;
+        font-weight: 600;
+        color: #fff;
+        background-color: rgba(60, 191, 113, 0.14);
+        transition: 0.3s;
+        font-size: 17px;
+        padding: 25px 20px;
+        height: auto;
+        display: flex;
+        z-index: 9;
+    }
+    #slide2 .wrapper .carousel {
+        grid-auto-columns: calc((100% / 2) - 9px);
+    }
+
+
+        /*---------ASESORIA LEGAL SECTION------------*/
+        .asesoriaL{
+            flex-direction: column;
+            padding: 0px;
+            padding-top: 100px;
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+    
+        .asesoriaL .grid{
+            grid-template-columns:
+            repeat(
+                auto-fit,
+                minmax(250px, 100fr)
+            );
+            gap: 20px;
+        }
+    
+        .asesoriaL .dtl div .imagen1{
+            padding-top: 100px;
+        }
+    
+        .asesoriaL .dtl div div div p {
+            padding-top: 10px;
+            font-size: 16px;
+            line-height: 20px;
+            color: black;
+            font-family: 'AxiformaL';
+        }
+
+        .asesoriaL .navbar-agenda ul li.agenda-link {
+            border-right: none;
+            padding: 8px;
+        }
+    
+
+        /*---------CAPACITACIONES SECTION------------*/
+        .capacitacionesCCIA{
+            flex-direction: column;
+            padding: 0px;
+            padding-top: 100px;
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+    
+        .capacitacionesCCIA .grid{
+            grid-template-columns:
+            repeat(
+                auto-fit,
+                minmax(250px, 100fr)
+            );
+            gap: 20px;
+        }
+    
+        .capacitacionesCCIA .dtl div .imagen1{
+            padding-top: 60px;
+        }
+    
+        .capacitacionesCCIA .dtl div div div p {
+            padding-top: 10px;
+            font-size: 16px;
+            line-height: 20px;
+            color: black;
+            font-family: 'AxiformaL';
+        }
+
+        .capacitacionesCCIA .navbar-agenda ul li.agenda-link {
+            border-right: none;
+            padding: 8px;
+        }
+
+        .capacitacionesCCIA .tab-content .grid{
+            grid-template-columns:
+            repeat(
+                auto-fit,
+                minmax(300px, 100fr)
+            );
+            gap: 20px;
+        }
+    
+
+        /*---------CERTIFICACION SECTION------------*/
+        .certificacionO{
+            flex-direction: column;
+            padding: 0px;
+            padding-top: 100px;
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+    
+        .certificacionO .grid{
+            grid-template-columns:
+            repeat(
+                auto-fit,
+                minmax(250px, 100fr)
+            );
+            gap: 20px;
+        }
+    
+        .certificacionO .dtl div .imagen1{
+            padding-top: 80px;
+        }
+
+        .certificacionO .navbar-agenda ul li.agenda-link {
+            border-right: none;
+            padding: 8px;
+        }
+        .certificacionO .dtl div div div p {
+            padding-top: 10px;
+            line-height: 20px;
+        }
+
+        .certificacion-servicios .container-fluid .grid{
+            flex-direction: column;
+        }
+        
+        .certificacion-servicios .container-fluid .grid .col .card .card-body h5 {
+            margin-top: 400px;
+            margin-bottom: 4px;
+            text-align: start;
+            margin-left: 5px;
+        }
+        
+        .certificacion-servicios .container-fluid .grid .col .card .card-body .btn-outline {
+            width: max-content;
+            padding: 20px 20px;
+            display: flex;
+        }
+        
+        .certificacion-servicios .card {
+            min-height: 550px;
+            min-width: 350px;
+        }
+
+        .certificacion-servicios .container-fluid .grid{
+            grid-template-columns:
+            repeat(
+                auto-fit,
+                minmax(120px, 100fr)
+            );
+            gap: 1px;
+        }
+
+    /*---------COMPRA AL ASOCIADO SECTION------------*/
+
+        .compraA{
+            padding: 5px;
+        }
+    
+        .compraA .row{
+            padding: 0px;
+        }
+    
+        .compraA div .grid{
+            grid-template-columns:
+            repeat(
+                auto-fit,
+                minmax(200px, 1fr)
+            );
+            gap: 10px;
+        }
+        
+        .compraA .card .card-header img {
+            max-width: fit-content;
+        }
+        
+        .compraA .card {
+            max-width: fit-content;
+        }
+        
+        .compraA .row1 {
+            padding-top: 10px;
+            padding-left: 0px;
+        }
+
+        .compraA div .tab-pane:nth-child(3){
+            justify-content: start;
+        }
+
+        .compraA .container form .row {
+            place-content: start;
+            padding: 8px;
+        }
+
+        .compraA .container .row div {
+            padding-left: 0px;
+            justify-content: center;
+        }
+
+        .compraA div{
+            padding: 0px;
+            padding-left: 20px;
+            padding-top: 20px;
+        }
+
+        /*---------NUESTROS CONVENIOS SECTION------------*/
+
+        .nuestrosC{
+            padding: 5px;
+            padding-top: 150px;
+        }
+    
+        .nuestrosC .row{
+            padding: 0px;
+            justify-content: center;
+        }
+    
+        .nuestrosC .container .grid{
+            grid-template-columns:
+            repeat(
+                auto-fit,
+                minmax(160px, 1fr)
+            );
+            gap: 10px;
+        }
+        
+        .nuestrosC .card .card-header img {
+            max-width: fit-content;
+        }
+        
+        .nuestrosC .card {
+            max-width: fit-content;
+        }
+    
+        /*********************ESTUDIOS ECONOMICOS*********************/
+        .estudiosE{
+            flex-direction: column;
+            padding: 0px;
+            padding-top: 100px;
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+    
+        .estudiosE .grid{
+            grid-template-columns:
+            repeat(
+                auto-fit,
+                minmax(250px, 100fr)
+            );
+            gap: 60px;
+        }
+    
+        .estudiosE .dtl div .imagen1{
+            padding-top: 100px;
+        }
+    
+        .estudiosE .dtl div div div p {
+            padding-top: 10px;
+            line-height: 20px;
+        }
+    
+        /*NAVBAR*/
+        .navbar-agenda {
+            flex-direction: column;
+            position: relative;
+            padding: 0px;
+            width: 100%;
+            height: fit-content;
+            padding-bottom: 80px;
+            place-content: start;
+        }
+    
+        .navbar-agenda ul {
+            flex-direction: column;
+            padding: 0px 0px 0px;
+            padding-top: 8px;
+        }
+    
+        .estudiosE .navbar-agenda ul li.agenda-link {
+            border-right: none;
+            padding: 8px;
+        }
+
+        .estudiosE .row{
+           flex: 0;
+        }
+
+        .cifras div .row{
+            display: grid;
+            grid-template-columns:
+            repeat(
+                auto-fit,
+                minmax(20px, 100fr)
+            );
+            gap: 60px;
+            
+         }
+
+         .cifras div .pdf{
+            flex: none;
+         }
+
+        
+        .testimoniales .container {
+            width: 100%;
+        }
+        
+        .testimoniales .container .row h1 {
+            font-size: 8vw;
+            justify-content: start;
+            place-self: start;
+        }
+        
+        .testimoniales .container .row {
+            margin: 0px;
+        }
+
+        .testimoniales .container .row img{
+        
+        width: 10%;
+        
+        }
+        
+        .testimoniales .container .row p {
+            padding: 0px;
+        }
+
+        .recomendacion {
+            padding: 10px;
+        
+        }
+        
+        .recomendacion .container h1 {
+            font-size: 7vw;
+        }
+        
+        .recomendacion .container div div span {
+            font-family: "AxiformaE";
+            font-size: 20px;
+            color: #000;
+            font-weight: 900px;
+        }
+
+        .recomendacion .container .grid{
+            grid-template-columns:
+            repeat(
+                auto-fit,
+                minmax(250px, 100fr)
+            );
+            gap: 60px;
+        }
+ 
+        .reservar img {
+            position: relative;
+            max-width: 70%;
+        }
+        
+        .reservar h2 {
+            text-align: center;
+            font-size: 7vw;
+        }
+
+        .reservar .container div {
+            padding: 0px;
+            display: inline-block;
+            width: 100%;
+            text-align: center;
+        }
+
+        .reservar .container div a{
+            padding: 0px;
+            padding-top: 10px;
+            margin: 0px;
+            width: max-content;
+            align-content: center;
+            width: 100%;
+            text-align: center;
+            justify-content: center;
+        }
+
+        .feria {
+            padding: 30px 30px;
+        }
+        
+        .feria .grid{
+            grid-template-columns:
+            repeat(
+                auto-fit,
+                minmax(360px, 100fr)
+            );
+            gap: 20px;
+        }
+    
+        .feria .dtl div .imagen1{
+            padding-top: 100px;
+        }
+    
+        .feria .dtl div div div p {
+            padding-top: 10px;
+            line-height: 20px;
+        }
+
+        .feria div .nav-pills {
+            padding: 0px;
+            display: inline-block;
+            width: 100%;
+            text-align: center;
+        }
+
+        .orgWeb{
+            flex-direction: column;
+            padding: 0px;
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+    
+        .orgWeb .grid{
+            grid-template-columns:
+            repeat(
+                auto-fit,
+                minmax(250px, 100fr)
+            );
+            gap: 100px;
+        }
+    
+        .orgWeb .dtl div div div p {
+            padding-top: 10px;
+            line-height: 20px;
+        }
+
+        /*NAVBAR*/
+    .orgWeb .navbar-agenda ul li.agenda-link {
+        border-right: none;
+        padding: 8px;
+    }
+
+    .orgWeb .dtl div h2{
+            font-size: 7vw;
+    }
+
+    .orgWeb .dtl div h2{
+        font-size: 7vw;
+    }
+
+    .formFerias .container{
+        padding: 10px;
+    }
+
+    .formFerias .container div{
+        padding-bottom: 20px;
+    }
+
+    .formFerias .container div h1{
+        font-size: 7vw;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    .formFerias .container div .input-control {
+        border-bottom: 1px solid #B8BCC9;
+    }
+
+    .formFerias .container div .form-group{
+        flex-direction: column;
+    }
+
+    .formFerias .container div .form-group input{
+        margin-bottom: 20px;
+    }
+
+    .formFerias .container div .form-group button i svg{
+        transform: rotate(90deg);
+    }
+    
+    .formFerias .container div {
+        padding: 0px;
+    }
+
+    .formFerias .container .card-img-top {
+        position: relative;
+        width: 70%;
+        height: 70%;
+    }
+
+
+    .solicitudOrg .formFerias .container .card-img-top {
+        padding-top: 40px;
+        position: relative;
+        height: 70%;
+        width: 70%;
+    }
+    
+
+    .protestos{
+        flex-direction: column;
+        padding: 0px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .protestos .grid{
+        grid-template-columns:
+        repeat(
+            auto-fit,
+            minmax(250px, 100fr)
+        );
+        gap: 50px;
+    }
+
+    .protestos .dtl div div div p {
+        padding-top: 10px;
+        line-height: 20px;
+    }
+
+    .protestos .navbar-agenda ul li.agenda-link {
+        border-right: none;
+        padding: 8px;
+    }
+
+    .anunciate {
+        padding-top: 150px;
+    }
+
+    .anunciate .container div{
+        display: inline-block;
+        padding-top: 10px;
+    }
+
+    .anunciate .container div a:nth-child(2){
+        padding-top: 50px;
+        justify-content: center;
+    }
+
+    .hero-portada {
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 100%;
+        min-height: 360px;
+    }
+    
+    #counts{
+        background-color: transparent;
+        padding: 0px;
+    }
+
+    #counts .container {
+        margin-top: -3rem;
+        background-color: transparent;
+        padding-right: 0px;
+    padding-left: 0px;
+    }
+    
+    #counts .container .row{
+        flex-direction: column;
+    }
+
+    #counts .container .row .col-6{
+        flex-direction: column;
+    }
+
+    #counts .container .row .col-6 .info p {
+        padding: 0px;
+        text-align: center;
+    }
+
+    
+    .information{
+        padding: 0px;
+        padding: 20px;
+    }
+
+    .information .container {
+        width: 100%;
+        padding: 0px;
+        margin: 0px;
+    }
+    
+    .information .container .row .col-md-6 {
+        padding: 0px;
+    }
+
+    .hero-portada{
+        padding-top: 20px;
+        padding-bottom: 0px;
+    }
+
+    .hero-portada .container {
+        padding: 0px;
+        position: relative;
+        margin: 0px;
+    }
+    
+    .hero-portada .container .info-portada {
+        position: relative;
+        margin-top: 0px;
+    }
+    
+    .hero-portada .container .info-portada h1 {
+        font-size: 8vw;
+        color: #000;
+    }
+
+    .hero-portada .container .info-portada .descripcion-portada {
+        margin-top: 0px;
+        color: #fff;
+        max-width: 100%;
+    }
+    
+    .hero-portada .container .info-portada .descripcion-portada p {
+        padding-top: 0px;
+        font-size: 17px;
+        color: black;
+    }
+
+    .hero-portada .container .info-portada div.w-100{
+        width: fit-content;
+        padding: 0px;
+        justify-content: center;
+        align-content: center;
+        text-align: center;
+    }
+
+    .hero-portada .container .info-portada .w-100 a{
+        display: inline-block;
+    }
+    
+    .hero-portada .container .info-portada .btn-outline {
+        border: #3CBF71 2px solid;
+        color: rgb(69, 62, 62) ;
+        font-size: 17px;
+        padding: 25px 20px;
+        height: auto;
+        margin: 0px;
+        margin-top: 10px;
+    }
+
+        /*---------EVENTOS SECTION------------*/
+        .eventos{
+            flex-direction: column;
+            padding: 0px;
+            padding-top: 100px;
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+    
+        .eventos .grid{
+            grid-template-columns:
+            repeat(
+                auto-fit,
+                minmax(250px, 100fr)
+            );
+            gap: 20px;
+        }
+    
+        .eventos .dtl div .imagen1{
+            padding-top: 100px;
+        }
+    
+        .eventos .dtl div div div p {
+            padding-top: 10px;
+            line-height: 20px;
+        }
+
+        #eventos-realizados{
+            padding: 20px;
+        }
+
+
+        #eventos-realizados .container {
+            width: 100%;
+            padding: 0px;
+            margin: 0px;
+            justify-content: center;
+        }
+
+        .eventos button{
+            width: 100%;
+            padding: 20px;
+            justify-content: center;
+        }
+
+        #eventos-realizados .container .row{
+            padding: 0px;
+            margin: 0px;
+            width: 100%;
+        }
+
+        #eventos-realizados .container .row .tab-content .tab-pane fieldset iframe{
+            height: 400px;
+            width: 80%;
+        }
+
+        #eventos-realizados .container .row .col-md-12 {
+            padding: 0px;
+            margin: 0px;
+        }
+
+        #eventos-realizados .container .row .tab-content{
+            justify-content: center;
+        }
+    
+        #eventos-realizados .container .row .tab-content .tab-pane .row{
+            padding: 10px;
+            justify-content: center;
+        }
+
+        #eventos-realizados .container .row .tab-content .tab-pane .row .container .grid{
+            grid-template-columns:
+            repeat(
+                auto-fit,
+                minmax(150px, 100fr)
+            );
+            gap: 50px;
+        }
+    
+        
+        #eventos-realizados .container .row .tab-content .tab-pane .row .container div .column1 .card .card-body h5, #eventos-realizados .container .row .tab-content .tab-pane .row .container div .column2 .card .card-body h5 {
+            font-size: 3vw;
+            color: black;
+            font-weight: 900;
+            font-family: 'AxiformaM';
+        }
+        
+        #eventos-realizados .container .row .tab-content .tab-pane .row .container div .column1 .card .card-body p, #eventos-realizados .container .row .tab-content .tab-pane .row .container div .column2 .card .card-body p  {
+            font-size: 2vw;
+            color: black;
+            font-family: 'AxiformaL';
+        }
+        
+       
+
+
+    /******CONTACTOS*******/
+    .contacto .container {
+        width: 100%;
+        padding:0px;
+        margin: 0px;
+        text-align: center;
+    }
+
+    .contacto .container h1 {
+        font-size: 5vw;
+    }
+
+    .contacto .container .row .col-md-1 {
+        position: relative;
+        width: 60%;
+        text-align: center;
+    }
+
+    .contacto .container .row .col-md-1 h5 {
+        font-family: "AxiformaM";
+        width: 100%;
+        font-weight: 600;
+        font-size: 1.25rem;
+    }
+
+    .contacto .container .row .col-md-8 form h5 {
+        font-family: "AxiformaM";
+        width: 100%;
+        font-weight: 600;
+        font-size: 1.25rem;
+    }
+
+    .contacto .container .row .col-md-8 form .form-group {
+        margin-bottom: 1rem;
+    }
+
+    .contacto .container .row .col-md-8 form .form-group .input-control {
+        border: none;
+        border-bottom: 1px solid #B8BCC9;
+    }
+
+    .contacto .container .row .col-md-8 form .form-group .form-control {
+        display: block;
+        width: 300%;
+        height: calc(1.5em + 0.75rem + 2px);
+        padding: 0.375rem 0.75rem;
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 1.5;
+        color: #495057;
+        background-color: #fff;
+        background-clip: padding-box;
+        border-bottom: 1px solid #ced4da;
+        border-radius: 1.25rem;
+        transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+    }
+
+    .contacto .container .row .col-md-8 form .btn-primario {
+        background-color: #08b374;
+        border-radius: 30px;
+        padding: 25px 25px;
+        line-height: 0px;
+        font-weight: 600;
+        color: #fff;
+        transition: all 0.3s ease-in-out 0s;
+        font-size: 17px;
+    }
+
+    .contacto .container .row .col-md-1 table {
+        width: 100%;
+    }
+
+    #areas{
+        padding: 30px;
+        padding-top: 0px;
+    }
+
+#areas .container {
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+}
+
+#areas .container h1 {
+    font-family: "AxiformaM";
+    width: 100%;
+    font-weight: 900;
+    font-size: 2.5rem;
+}
+
+#areas .container h1 {
+    font-size: 43px;
+    color: black;
+    font-family: 'AxiformaM';
+}
+
+#areas .container h1 span {
+    color: #3CBF71;
+}
+
+#areas .container .row {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+#areas .container .row div .number-contact {
+    position: absolute;
+    left: 0;
+    top: -10px;
+    font-size: 23px;
+    font-family: 'AxiformaM';
+    font-weight: 300;
+    border-radius: 10px;
+    width: 48px;
+    height: 48px;
+    text-align: center;
+    line-height: 50px;
+    box-shadow: 2px 7px 7px 0px rgba(203, 210, 239, 0.6);
+    -webkit-box-shadow: 2px 7px 7px 0px rgba(203, 210, 239, 0.6);
+    -moz-box-shadow: 2px 7px 7px 0px rgba(203, 210, 239, 0.6);
+}
+
+#areas .container .row .col-md-12 {
+    position: relative;
+    width: 100%;
+    padding: 0px;
+}
+
+#areas .container .row .col-md-4 {
+    position: relative;
+}
+
+#areas .container .row .col-md-4 .title-contact {
+    color: #B2B6CC;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+
+#areas .container .row div h5 {
+    font-size: 1.25rem;
+    font-family: "AxiformaM";
+    width: 100%;
+    font-weight: 600;
+}
+
+#areas .container .row .col-md-4 p:nth-child(1) {
+    font-size: 1.25rem;
+    font-family: "AxiformaL";
+    width: 100%;
+    font-weight: 900;
+    margin-bottom: 0px;
+    padding-bottom: 10px;
+}
+
+#areas .container .row .col-md-4 p:nth-child(2) {
+    font-size: 1.25rem;
+    font-family: "AxiformaL";
+    width: 100%;
+    font-weight: 400;
+    margin-top: 0px;
+    padding-top: 0px;
+}
+
+.tarifa-certif{
+    padding: 20px;
+    color: white;
+    min-width: 100%;
+}
+
+.tarifa-certif .container .text-white{
+    font-size: 8vw;
+    
+}
+
+.tarifa-certif .container .list-tarifa li .guion-prot {
+    display: none;
+}
+
+.tarifa-certif .container .list-tarifa li {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+#requisitos-origen{
+    width: 100%;
+    padding: 20px;
+    overflow-x: hidden;
+}
+
+#requisitos-origen .container {
+    padding: 0px;
+    margin: 0px;
+}
+
+#requisitos-origen .container .row {
+    display: flex;
+    margin: 0px;
+}
+
+#requisitos-origen .container .row div{
+    position: relative;
+    width: auto;
+}
+
+#requisitos-origen .container p{
+    padding-top: 20px;
+}
+
+#certificados-origen{
+    padding: 20px;
+}
+
+#certificados-origen .container .row .col-md-4{
+    width: 100%;
+}
+
+#certificados-origen .container .row .col-md-4 .img-fluid {
+    padding-top: 50px;
+    width: 90%;
+    height: 50%;
+}
+
+
+.ser-socio .container .row{
+    display: grid;
+    grid-template-columns:
+        repeat(
+            auto-fit,
+            minmax(250px, 100fr)
+        );
+        gap: 50px;
+}
+
+.ser-socio-second{
+    height: fit-content;
+    padding: 10px;
+}
+
+.ser-socio-second .container .second{
+    padding-top: 10px;
+    font-size: 7vw;
+}
+
+.ser-socio-third{
+    padding: 10px;
+}
+
+
+
+}
+
+
+
+
+@media screen and (max-width: 600px) {
+    #slide2 .wrapper .carousel {
+        grid-auto-columns: 100%;
+    }
+}

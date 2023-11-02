@@ -1,0 +1,82 @@
+---
+import FooterSection from "../components/FooterSection.astro";
+import LandingHeader from "../components/LandingHeader.astro";
+import Arrow from "../components/comuns/Arrow.astro";
+import Formulario from "../components/comuns/Formulario.astro";
+import Layout from "../layouts/Layout.astro";
+
+---
+
+<Layout title="Levantamiento de Protestos y Moras">
+    <LandingHeader/>
+    <section class="auditorio1">
+        <img src="./images/protestos.webp">
+        <div class="contain">
+            <h1>Levantamiento de Protestos y Moras</h1>
+                <p>Mediante nuestro servicio usted tendrá la posibilidad de ser sujeto de crédito nuevamente y continuar con su operatividad empresarial, mejorando las condiciones de recupero en ventas al crédito y manteniéndose actualizado para generar más y mejores negocios</p>
+            <div class="caption flex mt-10">
+                <a href="#certificados-origen"><button type="submit" class="btn btn-secundario flex ml-6 mt-4"
+                        ><i class="mr-2"> <Arrow/>
+                        </i>Levantar Protestos y Moras</button
+                    ></a>
+            
+            </div>
+        </div>
+</section>
+<section class="py-6" id="certificados-origen">
+
+    <div class="container">
+
+        <h1 class="">Requisitos</h1>
+        <p class="mt-4 font-[AxiformaL] text-[20px]">Documentación necesaria para el levantamiento de protestos y moras.</p>
+
+        <div class="row mt-5">
+
+            <div class="col-md-8 w-2/3">
+
+                <div class="cert-item pt-20">
+
+                    <h5 class="mt-4">Documento cancelatorio original + copia (letra / pagaré)</h5>
+
+                    <p>Papel Membretado de la Persona Jurídica.
+                        Carta con firma legalizada en caso de ser Persona Natural.</p>
+
+                </div>
+
+                <div class="cert-item pt-20">
+
+                    <h5 class="mt-4">Carta de no adeudo anexando Ficha RUC Simple (Consulta SUNAT)</h5>
+
+                    <p>Documento del girador</p>
+
+                </div>
+
+                <div class="cert-item pt-20">
+
+                    <h5 class="mt-4">Copia DNI</h5>
+
+                    <p>Persona que realiza el levantamiento.</p>
+
+                </div>
+
+
+            </div>
+
+            <div class=" w-1/3">
+
+                <img src="./images/upload-img.webp" class="img-fluid" alt="">
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+<section class="formFerias">
+    <div class="container">
+        <Formulario/>
+    </div>
+        </section>
+    <FooterSection/>
+</Layout>

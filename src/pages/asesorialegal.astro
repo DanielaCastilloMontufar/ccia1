@@ -1,0 +1,116 @@
+---
+import FooterSection from "../components/FooterSection.astro";
+import LandingHeader from "../components/LandingHeader.astro";
+import Arrow1 from "../components/comuns/Arrow1.astro";
+import NavbarAgenda from "../components/comuns/NavbarAgenda.astro";
+import Layout from "../layouts/Layout.astro";
+---
+<script>
+    import { tns } from "tiny-slider";
+  
+    var slider = tns({
+      container: ".my-slider",
+      items: 2,
+      slideBy: "page",
+      autoplay: true,
+      controls: true,
+      nav: false,
+      autoplayButtonOutput: false,
+      arrowKeys: true,
+      autoplayHoverPause: true,
+      speed: 300,
+      mode: "gallery",
+      responsive: {
+        300: {
+          items: 1,
+        },
+      },
+    });
+  
+    const prev = document.querySelector(
+      ".tns-controls button[data-controls='prev']"
+    );
+    prev.innerHTML =
+      '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="white" class="w-14 h-14"><path fill-rule="evenodd" d="M12.79 5.23a.75.75 0 01-.02 1.06L8.832 10l3.938 3.71a.75.75 0 11-1.04 1.08l-4.5-4.25a.75.75 0 010-1.08l4.5-4.25a.75.75 0 011.06.02z" clip-rule="evenodd" /></svg>';
+    const next = document.querySelector(
+      ".tns-controls button[data-controls='next']"
+    );
+    next.innerHTML =
+      '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="white" class="w-14 h-14">  <path fill-rule="evenodd" d="M7.21 14.77a.75.75 0 01.02-1.06L11.168 10 7.23 6.29a.75.75 0 111.04-1.08l4.5 4.25a.75.75 0 010 1.08l-4.5 4.25a.75.75 0 01-1.06-.02z" clip-rule="evenodd" /></svg>';
+  </script>
+<Layout title="Asesoría Legal">
+    <LandingHeader/>
+    <section class="asesoriaL">
+        <div class="dtl grid grid-cols-2 gap-2">
+            <div class="pt-20 pl-10">
+                <h2>Asesoría <span><br />Legal</span></h2>
+                <p>
+                    El respaldo que tu empresa necesita. <br /><br />
+                    Independientemente de la etapa en la que se encuentre tu empresa, contar con asesoría legal es vital para la formalidad, protección y desempeño de tu marca.<br /><br />
+                    ¿En que área necesitas asesoría? <br>¡Nosotros podemos ayudarte!
+    
+    
+                </p>
+    
+                <a href="#slide2"><button type="submit" class="btn btn-secundario flex mt-10"
+                    ><i> <Arrow1 /></i> Revisa las opciones de asesoría que ofrecemos</button></a>
+            </div>
+    
+            <div>
+                <div class="imagen1 pt-20">
+                    <img
+                        class="app-img1"
+                        src="./images/legal.webp"
+                        alt=""
+                    />
+                </div>
+                <div class="flex">
+                    <div class="w-1/2"><a href="/asesorialegal/"><img
+                    class=" pt-20 w-200"
+                    src="./images/videos.webp"
+                    alt=""
+                /></a></div>
+                <div class="pt-20 w-1/2">
+                    <p class="uppercase">Novedades</p>
+                    <p class="">¿Qué es el libro de reclamaciones?</p>
+                </div></div>
+            </div>
+        </div>
+    </section>    
+    <NavbarAgenda 
+    name="Abg. Gustavo Chirinos Estrada"
+    number="380505 Anexo 123"
+    hotmail="gchirinos@cciarequipa.org"
+    link=""/>
+      <section id="slide2">
+        <div class="slideshow">
+          <ul class="my-slider">
+            <li style="content">
+              <img src="./images/legalLaboral.webp" alt="" />
+              <section class="caption">
+                <h1>Laboral</h1>
+                <p class="pt-6 pb-6">Absolvemos consultas de índole laboral para que nuestros asociados eviten contingencias ante la SUNAFIL o el Poder Judicial.</p>
+                <a href="/detallesLaboral/" class="button-slide">Ver Más</a>
+              </section>
+            </li>
+            <li style="">
+              <img src="./images/legalTributario.webp" alt="" />
+              <section class="caption">
+                <h1>Tributario</h1>
+                <p class="pt-6 pb-6">Aclaramos las consultas de nuestros asociados respecto a procedimientos de fiscalización tributaria y de impugnación, tanto a nivel administrativo como judicial.</p>
+                <a href="/detallesTributario/" class="button-slide">Ver Más</a>
+              </section>
+            </li>
+            <li style="">
+              <img src="./images/legalCorporativo.webp" alt="" />
+              <section class="caption">
+                <h1>Corporativo</h1>
+                <p class="pt-6 pb-6">Brindamos asesoría en diversas etapas de la actividad empresarial, desde su puesta en marcha y durante la ejecución de su actividad comercial.</p>
+                <a href="/detallesCorporativo/" class="button-slide">Ver Más</a>
+              </section>
+            </li>
+          </ul>
+        </div>
+      </section>     
+    <FooterSection/>
+</Layout>

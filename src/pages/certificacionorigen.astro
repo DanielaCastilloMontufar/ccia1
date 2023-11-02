@@ -1,0 +1,303 @@
+---
+import FooterSection from "../components/FooterSection.astro";
+import LandingHeader from "../components/LandingHeader.astro";
+import Arrow1 from "../components/comuns/Arrow1.astro";
+import NavbarAgenda from "../components/comuns/NavbarAgenda.astro";
+import StaticSlides from "../components/comuns/StaticSlides.astro";
+import Layout from "../layouts/Layout.astro";
+
+---
+
+<Layout title="Certificación de Origen">
+    <LandingHeader/>
+    <section class="certificacionO">
+        <div class="dtl grid grid-cols-2 gap-2">
+            <div class="pt-20 pl-10">
+                <h2 class="leading-[55px]">Certificación <span><br />de Origen</span></h2>
+                <p>
+                    Convenio de delegación de funciones por parte del Ministerio de Comercio Exterior y Turismo. <br /><br />
+                    Permite a los exportadores de la región acreditar el cumplimiento de los requisitos de origen para beneficiarse de las preferencias arancelarias en el marco de los Tratados de Libre Comercio o Acuerdos Comerciales Internacionales de los cuales nuestro país es parte.
+                </p>
+    
+            </div>
+    
+            <div>
+                <div class="imagen1">
+                    <img
+                        class="app-img1 pt-20 pl-10"
+                        src="./images/certificacion1.webp"
+                        alt=""
+                    />
+                </div>
+                <div class="flex">
+                    <div class="w-1/2"><a href="/certificacionorigen/"><img
+                    class=" pt-20 w-200"
+                    src="./images/videos.webp"
+                    alt=""
+                /></a></div>
+                <div class="pt-20 w-1/2">
+                    <p class="uppercase">Novedades</p>
+                    <p class="">¿Qué es el libro de reclamaciones?</p>
+                </div></div>
+            </div>
+        </div>
+    </section>
+    <NavbarAgenda 
+    name=" Geraldine Márquez Herrera"
+    number="380505 Anexo 113"
+    hotmail="gmarquez@cciarequipa.org"
+    link="https://wa.link/voi18q"/>
+    
+    <StaticSlides/>
+
+    <section class="tarifa-certif" id="tarifario-origen">
+
+        <div class="container">
+    
+            <h1 class="text-white">Tarifas</h1>
+    
+            <ol class="list-tarifa">
+    
+                <li class="relative">
+    
+                    <div class="guion-prot"></div>
+    
+                    <p><span class="number">01</span> Derecho de trámite por cada Certificado de Origen
+    
+                    </p>
+    
+                </li>
+    
+                <div class="precio mt-4 active relative">
+    
+                    <p class="title">Tarifa actual</p>
+    
+                    <p class="moneda"><span>S/</span> 36<span>.00 no inc. IGV</span></p>
+    
+                </div>
+    
+            </ol>
+    
+        </div>
+    
+    </section>
+
+    <section class="py-6" id="requisitos-origen">
+
+        <div class="container">
+    
+            <h1 class="title-section">Requisitos</h1>
+
+            <div class="row mt-5 p-10">
+    
+                <div class="col-4 text-center p-6 pt-20 bg-[#BDBDB5]">
+    
+                    <img src="./images/requisito.webp" alt="">
+                    <h5 class="my-4 ">Declaración Jurada de Origen</h5>
+    
+    
+                </div>
+    
+                <div class="col-4 text-center p-6 pt-20 bg-[#3CBF71]">
+    
+                    <img src="./images/requisito.webp" alt="">
+                    <h5 class="my-4">Certificado de Origen debidamente diligenciado</h5>
+    
+    
+                </div>
+    
+                <div class="col-4 text-center p-6 pt-20 bg-[#BDBDB5]">
+                    <img src="./images/requisito.webp" alt="">    
+                    <h5 class="my-4">Copia de la factura de exportación o boleta de venta; otros documentos de ser el caso.</h5>
+    
+    
+                </div>
+    
+            </div>
+
+            <p>El trámite de la Declaración Jurada y Certificado de Origen se realiza en la Ventanilla Única de Comercio Exterior www.vuce.gob.pe.</p><br>
+    
+            <p>Para acceder a la VUCE previamente debe crear un usuario y contraseña con la Clave SOL en la página de SUNAT.</p>
+    
+        </div>
+    
+    </section>
+
+    <section class="py-6" id="certificados-origen">
+
+        <div class="container">
+    
+            <h1 class="">Certificados que se emiten</h1>
+    
+            <div class="row mt-5">
+    
+                <div class="col-md-8">
+    
+                    <div class="cert-item">
+    
+                        <span>01</span>
+    
+                        <h5 class="mt-4">Formato EUR 1. ACUERDO COMERCIAL PERÚ – UNIÓN EUROPEA</h5>
+    
+                        <p>Se utiliza para las exportaciones de la Unión Europea (Alemania, Austria, Bélgica, Bulgaria,
+    
+                            Chipre, Croacia, Dinamarca, España, Eslovaquia, Eslovenia, Estonia, Finlandia, Francia, Grecia,
+    
+                            Hungría, Irlanda, Italia, Letonia, Lituania, Luxemburgo, Malta, Países Bajos, Polonia, Portugal,
+    
+                            Reino Unido, República Checa, Rumania y Suecia).</p>
+    
+                    </div>
+    
+                    <div class="cert-item">
+    
+                        <span>02</span>
+    
+                        <h5 class="mt-4">Formato A: Sistema Generalizado de Preferencias</h5>
+    
+                        <p>Se utiliza para las exportaciones bajo el Sistema Generalizado de Preferencias – SGP: Australia,
+    
+                            Nueva Zelanda, República de Bielorrusia, Federación Rusa y Turquía.</p>
+    
+                    </div>
+    
+                    <div class="cert-item">
+    
+                        <span>03</span>
+    
+                        <h5 class="mt-4">Formato ALADI</h5>
+    
+                        <p>Destinado para las exportaciones de los países que integran la Comunidad Andina - CAN (Bolivia,
+    
+                            Colombia y Ecuador) y para el Mercado Común del Sur - MERCOSUR (Argentina, Brasil, Uruguay y
+    
+                            Paraguay) además de Cuba.</p>
+    
+                    </div>
+    
+                    <div class="cert-item">
+    
+                        <span>04</span>
+    
+                        <h5 class="mt-4">Formato ALADI-CHILE</h5>
+    
+                        <p>Utilizado para las exportaciones a Chile.</p>
+    
+                    </div>
+    
+                    <div class="cert-item">
+    
+                        <span>05</span>
+    
+                        <h5 class="mt-4">Formato Sistema Global de Preferencias Comerciales – SGPC</h5>
+    
+                        <p>Este Certificado se utiliza para los siguientes países: Argelia, Bangladesh, Benín, Camerún, Egipto, Filipinas, Ghana, Guinea, Guyana, India, Indonesia, Irán, Irak, Libia, Malasia, Marruecos, Mozambique, Myanmar, Nicaragua, Nigeria, Pakistán, Tanzania, Sri Lanka, Sudan, Trinidad y Tobago, Túnez, Vietnam y Zimbawe</p>
+    
+                    </div>
+    
+                    <div class="cert-item">
+    
+                        <span>06</span>
+    
+                        <h5 class="mt-4">Formato TLC PERÚ - CHINA</h5>
+    
+                        <p>Destinado para las exportaciones a China. Excepción: Articulo N° 39 (Revisar Articulo 39)</p>
+    
+                    </div>
+    
+                    <div class="cert-item">
+    
+                        <span>07</span>
+    
+                        <h5 class="mt-4">Formato ALC PERÚ – KOREA</h5>
+    
+                        <p>Se utiliza para las exportaciones a Korea.</p>
+    
+                    </div>
+    
+                    <div class="cert-item">
+    
+                        <span>08</span>
+    
+                        <h5 class="mt-4">Formato EUR 1. TLC PERÚ – EFTA</h5>
+    
+                        <p>Utilizado para las exportaciones a los países de Suiza, Islandia, Liechtenstein y Noruega.</p>
+    
+                    </div>
+    
+                    <div class="cert-item">
+    
+                        <span>09</span>
+    
+                        <h5 class="mt-4">Formato TLC PERÚ – TAILANDIA</h5>
+    
+                        <p>Se utiliza para las exportaciones a Tailandia.</p>
+    
+                    </div>
+    
+                    <div class="cert-item">
+    
+                        <span>10</span>
+    
+                        <h5 class="mt-4">Formato TLC PERÚ – JAPÓN</h5>
+    
+                        <p>Destinado para las exportaciones a Japón.</p>
+    
+                    </div>
+    
+                    <div class="cert-item">
+    
+                        <span>11</span>
+    
+                        <h5 class="mt-4">Formato TLC PERÚ – PANAMÁ</h5>
+    
+                        <p>Destinado para las exportaciones a Panamá.</p>
+    
+                    </div>
+    
+                    <div class="cert-item">
+    
+                        <span>12</span>
+    
+                        <h5 class="mt-4">Formato TLC PERÚ – COSTA RICA</h5>
+    
+                        <p>Destinado para las exportaciones a Costa Rica.</p>
+    
+                    </div>
+    
+                    <div class="cert-item">
+    
+                        <span>13</span>
+    
+                        <h5 class="mt-4">Formato TLC PERÚ – VENEZUELA</h5>
+    
+                        <p>Destinado para las exportaciones a Venezuela.</p>
+    
+                    </div>
+    
+                    <div class="cert-item">
+    
+                        <span>14</span>
+    
+                        <h5 class="mt-4">Formato TLC PERÚ – SINGAPUR</h5>
+    
+                        <p>Destinado para las exportaciones a Singapur.</p>
+    
+                    </div>
+    
+                </div>
+    
+                <div class="col-md-4">
+    
+                    <img src="./images/cert-img.webp" class="img-fluid" alt="">
+    
+                </div>
+    
+            </div>
+    
+        </div>
+    
+    </section>
+
+    <FooterSection/>
+</Layout>

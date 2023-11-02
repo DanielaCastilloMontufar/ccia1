@@ -1,0 +1,174 @@
+---
+import FooterSection from "../components/FooterSection.astro";
+import LandingHeader from "../components/LandingHeader.astro";
+import Layout from "../layouts/Layout.astro";
+
+---
+
+<Layout title="Anúnciate">
+    <LandingHeader/>
+    <section class="anunciate">
+
+        <div class="container text-center">
+    
+            <h1 class="">Anúnciate con nosotros</h1>
+    
+            <p class="mt-4">¡No pases desapercibido!<br>¿En cúal de nuestros medios te gustaría anunciarte?</p>
+    
+            <div class="mt-4 flex items-center justify-content-center">
+    
+                <a href="#anuncia" class="py-4 btn btn-primario">Zonas publicitarias</a>
+    
+                <a href="#information" class="ml-4 btn-secundario flex"><i>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-5 h-5 pt-1">
+                    <path fill-rule="evenodd" d="M10 3a.75.75 0 01.75.75v10.638l3.96-4.158a.75.75 0 111.08 1.04l-5.25 5.5a.75.75 0 01-1.08 0l-5.25-5.5a.75.75 0 111.08-1.04l3.96 4.158V3.75A.75.75 0 0110 3z" clip-rule="evenodd" />
+                  </svg>
+                  </i> Ver detalle</a>
+    
+            </div>
+    
+        </div>
+    
+    </section>
+    
+    <section id="" class="hero-portada position-relative">
+    
+        <img 
+        src="./images/anunciate.webp"                            
+        width="100%"
+        alt="">
+    
+    </section>
+    
+    <section class="" id="counts">
+    
+        <div class="container py-5">
+    
+            <div class="row counters flex">
+    
+                <div class="col-6 flex items-center justify-center">
+    
+                    <span data-toggle="counter-up">1500</span>
+    
+                    <div class="pl-3 info">
+    
+                        <p>Visualizaciones</p>
+                        <p class="mb-0">Entregada a las principales empresas e instituciones.</p>
+    
+                    </div>
+    
+                </div>
+    
+                <div class="col-6 flex items-center justify-center">
+    
+                    <span data-toggle="counter-up">5</span>
+    
+                    <div class="pl-3 info">
+    
+                        <p>Publicaciones</p>
+    
+                        <p class="mb-0">Anuales.</p>
+    
+                    </div>
+    
+                </div>
+    
+            </div>
+    
+        </div>
+    
+    </section>
+    
+    <section class="information" id="information">
+    
+        <div class="container">
+    
+            <div class="row flex items-center">
+    
+                <div class="col-md-6 mt-4">
+    
+                    <h5>La red empresarial más grande</h5>
+    
+                    <p>Conoce a todos nuestros socios, realiza cotizaciones y encuentra sus contactos, servicios, puntuación
+    
+                        y comentarios dados por otros socios.</p>
+    
+                </div>
+    
+                <div class="col-md-6 mt-4">
+    
+                    <img src="./images/anunciate2.webp" alt="" width="100%">
+    
+                </div>
+    
+            </div>
+    
+            <div class="row flex items-center">
+    
+                <div class="col-md-6 mt-4">
+    
+                    <img src="./images/anunciate3.webp" alt="" width="100%">
+    
+                </div>
+    
+                <div class="col-md-6 mt-4">
+    
+                    <h5>Es la Revista Empresarial más importante de Arequipa.</h5>
+    
+                </div>
+    
+            </div>
+    
+            <div class="row flex items-center">
+    
+                <div class="col-md-6 mt-4">
+    
+                    <h5>Cámara AQP</h5>
+    
+                    <p>La Revista Institucional es entregada a las principales empresas e instituciones de la región Sur.</p>
+    
+                </div>
+    
+                <div class="col-md-6 mt-4">
+    
+                    <img src="./images/anunciate4.webp" alt="" width="100%">
+    
+                </div>
+    
+            </div>
+    
+        </div>
+    
+    </section>
+    
+    <section class="hero-portada relative" id="anuncia">
+    
+        <img src="./images/anunciate5.webp" alt="" width="100%">
+    
+        <div class="container">
+    
+            <div class="info-portada">
+    
+                <h1 class="text-white">Genera alcance e impacto</h1>
+    
+                <div class="descripcion-portada">
+    
+                    <p>Ahora que conoces todos los detalles, puedes seleccionar el medio por el cual deseas anunciarte.</p>
+    
+                </div>
+    
+                <div class="w-100 pt-4">
+    
+                    <a href="/detallesAnunciaRevista/" class=" py-3 px-4 btn btn-outline">Anuncia en la revista</a>
+    
+                    <a href="/detallesAnunciaBoletin/" class=" py-3 px-4 ml-5 btn btn-outline">Anuncia en el boletín</a>
+    
+                </div>
+    
+            </div>
+    
+        </div>
+    
+    </section>
+    <FooterSection/>
+</Layout>

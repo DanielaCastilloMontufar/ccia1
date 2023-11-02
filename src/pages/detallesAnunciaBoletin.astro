@@ -1,0 +1,205 @@
+---
+import FooterSection from "../components/FooterSection.astro";
+import LandingHeader from "../components/LandingHeader.astro";
+import Arrow from "../components/comuns/Arrow.astro";
+import Formulario from "../components/comuns/Formulario.astro";
+import Layout from "../layouts/Layout.astro";
+
+---
+
+<Layout title="Anuncia en el boletin">
+    <LandingHeader/>
+    <section class="auditorio1">
+        <img src="./images/anunciateBoletin.webp">
+        <div class="contain">
+            <h1>Anuncia en el Boletín</h1>
+            <p>
+                Anuncia en el Boletín
+                Nuestros socios y suscriptores te esperan<br><br>Ejemplares diarios enviados a todos nuestros socios y suscriptores , conoce las estadísticas en el botón ver detalles, si eres lector, reserva una de las zonas que te ofrecemos para anunciarte.</p>
+            <div class="caption flex mt-10">
+                <a href="#form" class="button-slide">
+                    Reservar
+                </a>
+                <a href="#auditorio2"><button type="submit" class="btn btn-secundario flex ml-6 mt-4"
+                        ><i class="mr-2"> <Arrow/>
+                        </i> Ver detalles</button
+                    ></a>
+            
+            </div>
+        </div>
+</section>
+<section class="ser-socio-third pb-0">
+    <div class="container">
+        <h2>Ventajas de anunciar<br><span>en nuestro boletín</span></h2>
+        <p>¡Más de 600 socios de diferentes industrias!<br>También puedes revisar las zonas en las que puedes anunciarte.</p>
+        <div class="row p-4 flex">
+
+            <div class="col-4 p-6 w-[600px] bg-[#BDBDB5]">
+
+                <p class="mb-0 flex font-extrabold">
+                    Beneficio</p>
+                <p class="mb-0 flex">
+                    Accede a descuentos exclusivos en publicidad a través de nuestro Boletín diario.</p>
+
+            </div>
+
+            <div class="col-4 p-6 bg-[#3CBF71]">
+
+                <p class="mb-0 flex font-extrabold">
+                    Beneficio</p>
+                <p class="mb-0 flex">
+                    Llega a más de 1500 lectores y principales empresas de la región.</p>
+
+            </div>
+
+            <div class="col-4 p-6 bg-[#BDBDB5]">
+
+                <p class="mb-0 flex font-extrabold">
+                    Beneficio</p>
+                <p class="mb-0 flex">
+                    Promociona tu marca a través del gremio más representativo del sur del Perú.</p>
+                    
+            </div>
+
+        </div>
+    </div>
+</section>
+<section class="pt-20 pb-20" id="counts">
+    
+    <div class="container">
+
+        <div class="row counters flex">
+
+            <div class="col-6 flex items-center justify-center">
+
+                <span data-toggle="counter-up">1500</span>
+
+                <div class="pl-3 info">
+
+                    <p>Visualizaciones</p>
+
+                </div>
+
+            </div>
+
+            <div class="col-6 flex items-center justify-center">
+
+                <span data-toggle="counter-up">1</span>
+
+                <div class="pl-3 info">
+
+                    <p>
+                        Publicación</p>
+
+                    <p class="mb-0">Diario</p>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+    <img src="./images/anunciateDetalles.webp">
+    
+    <section class="auditorio2 text-center pt-20 pb-0" id="auditorio2">
+        <div class="contain">
+            <h1>Zonas promocionales</h1>
+            <p class="p-50">¿Cuál es la zona de tu interés?<br>
+                Selecciona una o más zonas donde te gustaría anunciarte.</p>
+
+                <div class="flex p-10" id="ecran">
+                    <div class="w-[60%] p-10 pb-0 pt-0">
+                        <img src="./images/revista-seccion.webp" class="p-20 pt-0">   
+                    </div>
+                    <div class="col-m-5 pt-20">
+
+                        <div class="flex align-items-center justify-start">
+        
+                            <div class="switch-container">
+        
+                                <input type="checkbox" class="switch" name="" id="switch1">
+        
+                                <label for="switch1" class="lbl-switch"></label>
+        
+                            </div>
+        
+                            <div class="info-zonas ml-4">
+        
+                                <p class="mb-0 font-bold subtitle-revista" style="color: rgb(0, 0, 0);">Sección inicial</p>
+        
+                                <p class="mb-0">42px cm x 500 cm</p>
+        
+                            </div>
+        
+                        </div>
+        
+                        <div class="flex align-items-center justify-start mt-4">
+        
+                            <div class="switch-container">
+        
+                                <input type="checkbox" class="switch" name="" id="switch2">
+        
+                                <label for="switch2" class="lbl-switch"></label>
+        
+                            </div>
+        
+                            <div class="info-zonas ml-4">
+        
+                                <p class="mb-0 font-bold subtitle-revista" style="color: rgb(0, 0, 0);">Sección media</p>
+        
+                                <p class="mb-0">300px cm x 500 cm</p>
+        
+                            </div>
+        
+                        </div>
+        
+                        <div class="flex align-items-center justify-start mt-4">
+        
+                            <div class="switch-container">
+        
+                                <input type="checkbox" class="switch" name="" id="switch3">
+        
+                                <label for="switch3" class="lbl-switch"></label>
+        
+                            </div>
+        
+                            <div class="info-zonas ml-4">
+        
+                                <p class="mb-0 font-bold subtitle-revista" style="color: rgb(0, 0, 0);">Sección final</p>
+        
+                                <p class="mb-0">42px cm x 500 cm</p>
+        
+                            </div>
+        
+                        </div>
+        
+        
+                    </div>          
+                </div>
+        </div>
+    </section>
+
+    <section class="reservar1 relative flex items-center" id="reservar">
+        <div class="container text-center">
+            <h2>Solicitar <span>sección ahora</span></h2>
+            <div class="w-100 pt-4 inline-flex">
+                <a href=""><button class="inline btn btn-primario btn-login">Soy socio</button></a>
+                <a href="/beneficios/" class="ml-8 mt-2 flex btn-secundario"><i><Arrow/></i> Aún no soy socio</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="formFerias" id="form">
+        <div class="container">
+            <Formulario/>
+        </div>
+            </section>
+
+
+    <FooterSection/>
+</Layout>

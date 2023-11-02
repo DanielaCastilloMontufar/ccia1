@@ -1,0 +1,101 @@
+---
+import Logo from "./comuns/Logo.astro";
+import BotonLogIn from "./BotonLogIn";
+---
+
+<script>
+  var nav = document.getElementById("header");
+  var logo = document.getElementById("logo");
+  var logoimg = document.getElementById("logo-img");
+  // var items = document.getElementsByClassName("item-navbar")
+  window.onscroll = () => {
+      var scroll = document.documentElement.scrollTop;
+      if (scroll > 30) {
+          nav.classList.add("backgorund-black");
+          logoimg.src = "./images/logo-mini.webp";
+          // for (var i = 0; i < items.length; i++) {
+          //     // items[i].style.color = "#1C335F"
+          //     items[i].classList.remove("text-white")
+          //     items[i].classList.add("text-risso-blue")
+
+          // }
+      } else {
+          nav.classList.remove("backgorund-black");
+          logoimg.src = "./images/logoOf.webp";
+          // for (var i = 0; i < items.length; i++) {
+          //     // items[i].style.color = "white"
+          //     items[i].classList.remove("text-risso-blue")
+          //     items[i].classList.add("text-white")
+          // }
+      }
+  };
+</script>
+
+
+<section id="landing-header" class="landing-section z-50 sticky ">
+  <body>
+    <header class="" id="header">
+      <a href="/./" class="logo w-[240px]" style="background-color: transparent;" id="logo"><Logo/></a>
+      <input type="checkbox" id="check" />
+      <label for="check" class="mostrar-menu">&#8801</label>
+      <nav class="menu">
+        <ul>
+          <li><a href="#">Nosotros &#x25BE;</a>
+            <ul class="dropdown">
+             <li><a href="/quienessomos/">Quienes Somos</a></li>
+             <li><a href="/consejod/">Consejo Directivo</a></li>
+             <li><a href="/organizacion/">Organizacion</a></li>
+            </ul></li>
+          <li><a href="/directorioempresarial/">Directorio Empresarial</a></li>
+          <li>
+            <a href="#">Servicios &#x25BE;</a>
+            <ul class="dropdown mt-2">
+             <li><a href="/agendacomercial/">Agenda Comercial</a></li>
+             <li><a href="/alquilerambientes/">Alquiler de Ambientes</a></li>
+             <li><a href="/asesorialegal/">Asesoría Legal</a></li>
+             <li><a href="/capacitacionesCCIA/">Capacitaciones</a></li>
+             <li><a href="/certificacionorigen/">Certificación de Origen</a></li>
+             <li><a href="/compraasociado/">Cómprale al Asociado</a></li>
+             <li><a href="/convenios/">Convenios</a></li>
+             <li><a href="/estudioseconomicos/">Estudios Económicos</a></li>
+             <li><a href="/feriasyruedasnetworking/">Ferias y Ruedas de Networking</a></li>
+             <li><a href="/organizacionwebinars/">Organización de Webinars</a></li>
+             <li><a href="/protestosymoras/">Protestos y Moras</a></li>
+            </ul>
+            </li>
+          <li><a href="https://www.arbitrajeccia.com.pe">Arbitraje</a></li>
+          <li><a href="/anunciate/">Anúnciate</a></li>
+          <li><a href="/eventos/">Eventos</a></li>
+          <li><a href="/contactos/">Contactos</a></li>
+          <li><BotonLogIn client:only/></li>
+       </ul>
+       <label for="check" class="esconder-menu">&#215</label>
+      </nav>
+    </header>
+
+
+
+  </body>
+</section>
+
+<div class="modal" id="modal">
+  <section class="login">
+    <a href="#" class="login-close">&times;</a>
+    <h1 class="title-login">Iniciar <span>sesión</span></h1>
+
+    <div class="login-info">
+      <form action="" method="post" class="" id="formLoginWeb">
+        <div class="form-info mb-14">
+            <input type="text" class="input-login" name="usuario" id="" placeholder="Número de RUC" required="" />
+        </div>
+        <div class="form-info mb-10">
+            <input type="password" class="input-login" name="password" id="" placeholder="Contraseña" required=""/>
+        </div>
+        <p><a href="" class="btn-secundario">He olvidado mi contraseña</a></p>
+        <a class="btn-primario mt-14">Ingresar</a>
+    </form>
+    </div>
+  </section>
+
+</div>
+

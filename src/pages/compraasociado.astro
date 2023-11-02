@@ -1,0 +1,249 @@
+---
+import FooterSection from "../components/FooterSection.astro";
+import LandingHeader from "../components/LandingHeader.astro";
+import Arrow from "../components/comuns/Arrow.astro";
+import NavbarEmpresas from "../components/comuns/NavbarEmpresas.astro";
+import Layout from "../layouts/Layout.astro";
+
+---
+
+<Layout title="Cómprale al Asociado">
+    <LandingHeader/>
+    <section class="compraA">
+        <NavbarEmpresas/>
+        <div class="container mt-14">
+            <form
+                action="https://www.camara-arequipa.org.pe/directorio"
+                method="post"
+            >
+                <div class="row">
+                    <div>
+                        <input
+                            type="text"
+                            class="flex-grow form-control input-control-search"
+                            id="search-directorio"
+                            name="search"
+                            placeholder="Coloca el nombre de la empresa o el tipo de servicio que estás buscando"
+                        />
+                    </div>
+                    <div class="flex align-items-center pl-[500px]">
+                        <button type="submit" class="btn btn-secundario flex mt-4"
+                            ><i> <Arrow/>
+                            </i> Buscar</button
+                        >
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="p-20">
+            <h1>Cómprale al<br>
+                asociado</h1>
+                <div class="tab-pane gap-1 grid grid-cols-2 flex">
+                    <div class="card border rounded-lg">
+                        <div
+                            class="card-header flex items-center justify-center  pt-[30px] pb-[30px]"
+                        >
+                            <img
+                                src="./images/roosevelt.webp"
+                                class="card-img-top"
+                                alt="..."
+                            />
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title ">ROOSEVELT HOTEL & SUITES</h5>
+                            <p class="pt-4">Beneficio de traslado del aeropuerto hotel para los socios de la CCIA.</p>
+                            <a
+                                href="/detallesAsociados/"
+                                class="btn-secundario flex pt-[50px]"
+                                ><i class="not-italic pt-[11px] text-2xl"> Ver detalle</i></a
+                            >
+                        </div>
+                    </div>
+
+                    <div class="card border rounded-lg">
+                        <div
+                            class="card-header flex items-center justify-center pt-[30px] pb-[0px]"
+                        >
+                            <img
+                                src="./images/asociado2.webp"
+                                class="card-img-top"
+                                alt="..."
+                            />
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title ">MVS REPRESENTACIONES</h5>
+                            <a
+                                href="/detallesAsociados/"
+                                class="btn-secundario flex pt-20"
+                                ><i class="not-italic pt-[11px] text-2xl"> Ver detalle</i></a
+                            >
+                        </div>
+                    </div>
+                    
+    
+                    
+                    
+                </div>
+    
+                <div class="tab-pane gap-1 grid grid-cols-2 flex pt-10">
+
+                    <div class="card border rounded-lg">
+                        <div
+                            class="card-header flex items-center justify-center  pt-[30px] pb-[30px]"
+                        >
+                            <img
+                                src="./images/asociado1.webp"
+                                class="card-img-top"
+                                alt="..."
+                            />
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title ">CCASS Perú</h5>
+                            <p class="pt-4">No dejes pasar la oportunidad de fortalecer la confianza en tu empresa.</p>
+                            <a
+                                href="/detallesAsociados/"
+                                class="btn-secundario flex pt-12"
+                                ><i class="not-italic pt-[11px] text-2xl"> Ver detalle</i></a
+                            >
+                        </div>
+                    </div>
+
+                    <div class="card border rounded-lg">
+                        <div
+                            class="card-header flex items-center justify-center  pt-[30px] pb-[30px]"
+                        >
+                            <img
+                                src="./images/asociado3.webp"
+                                class="card-img-top"
+                                alt="..."
+                            />
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title ">FACTORING PLUS PERÚ S.A.C.</h5>
+                            <p class="pt-4">Servicio de Factoring</p>
+                            <a
+                                href="/detallesAsociados/"
+                                class="btn-secundario flex pt-20"
+                                ><i class="not-italic pt-[11px] text-2xl"> Ver detalle</i></a
+                            >
+                        </div>
+                    </div>
+                    
+                </div>
+
+                <div class="tab-pane gap-1 grid grid-cols-2 flex pt-10">
+                    <div class="card border rounded-lg">
+                        <div
+                            class="card-header flex items-center justify-center  pt-[30px] pb-[30px]"
+                        >
+                            <img
+                                src="./images/humbser.webp"
+                                class="card-img-top"
+                                alt="..."
+                            />
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title ">HUMBSER COMPANY</h5>
+                            <p class="pt-4">Envío gratuito todo es mes de setiembre.</p>
+                            <a
+                                href="/detallesAsociados/"
+                                class="btn-secundario flex pt-20"
+                                ><i class="not-italic pt-[11px] text-2xl"> Ver detalle</i></a
+                            >
+                        </div>
+                    </div>
+
+                    <div class="card border rounded-lg">
+                        <div
+                            class="card-header flex items-center justify-center  pt-[30px] pb-[30px]"
+                        >
+                            <img
+                                src="./images/ccas2.webp"
+                                class="card-img-top"
+                                alt="..."
+                            />
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title ">CCASS Perú</h5>
+                            <p class="pt-4">10% de descuentos en todos nuestros servicios a los asociados de la CCIA.</p>
+                            <a
+                                href="/detallesAsociados/"
+                                class="btn-secundario flex pt-12"
+                                ><i class="not-italic pt-[11px] text-2xl"> Ver detalle</i></a
+                            >
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tab-pane gap-1 grid grid-cols-2 flex pt-10">
+                    <div class="card border rounded-lg">
+                        <div
+                            class="card-header flex items-center justify-center  pt-[30px] pb-[30px]"
+                        >
+                            <img
+                                src="./images/asociado5.webp"
+                                class="card-img-top"
+                                alt="..."
+                            />
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title ">Holding Waki S.A.C</h5>
+                            <p>Tasas de interés competitivas.</p>
+                            <a
+                                href="/detallesAsociados/"
+                                class="btn-secundario flex pt-14"
+                                ><i class="not-italic pt-[11px] text-2xl"> Ver detalle</i></a
+                            >
+                        </div>
+                    </div>
+
+                    <div class="card border rounded-lg">
+                        <div
+                            class="card-header flex items-center justify-center  pt-[30px] pb-[30px]"
+                        >
+                            <img
+                                src="./images/chicharasa.webp"
+                                class="card-img-top"
+                                alt="..."
+                            />
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title ">CHICHARASA</h5>
+                            <p></p>
+                            <a
+                                href="/detallesAsociados/"
+                                class="btn-secundario flex pt-20"
+                                ><i class="not-italic pt-[11px] text-2xl"> Ver detalle</i></a
+                            >
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="tab-pane flex grid grid-cols-2 pt-10">
+                        <div class="card border rounded-lg">
+                            <div
+                                class="card-header flex items-center justify-center  pt-[30px] pb-[30px]"
+                            >
+                                <img
+                                    src="./images/asociado4.webp"
+                                    class="card-img-top"
+                                    alt="..."
+                                />
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title ">SEI SALUD</h5>
+                                <p>10% de descuentos en todos nuestros servicios a los asociados de la CCIA.</p>
+                                <a
+                                    href="/detallesAsociados/"
+                                    class="btn-secundario flex pt-10"
+                                    ><i class="not-italic pt-[11px] text-2xl"> Ver detalle</i></a
+                                >
+                            </div>
+                        </div>
+                </div>
+        </div>
+        </div>
+    
+    </section>
+<FooterSection/>
+</Layout>

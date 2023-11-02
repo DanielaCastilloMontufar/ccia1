@@ -1,0 +1,63 @@
+---
+import FooterSection from "../components/FooterSection.astro";
+import LandingHeader from "../components/LandingHeader.astro";
+import Layout from "../layouts/Layout.astro";
+import NavbarEmpresas from "../components/comuns/NavbarEmpresas.astro";
+import Arrow from "../components/comuns/Arrow.astro";
+import Empresas from "../components/comuns/Empresas.astro";
+
+---
+
+<Layout title="Directorio Empresarial">
+    <LandingHeader/>
+    <section class="directorio-menu">
+        <NavbarEmpresas/>
+        <div class="container mt-14">
+            <form
+                action=""
+                method="post"
+            >
+                <div class="row">
+                    <div>
+                        <input
+                            type="text"
+                            class="form-control input-control-search"
+                            id="search-directorio"
+                            name="search"
+                            placeholder="Coloca el nombre de la empresa o el tipo de servicio que estás buscando"
+                        />
+                    </div>
+                    <div class="flex">
+                        <div class="search-cat">
+                            <label class="">Categorías</label>
+                            <label class="">|</label>
+                            <select
+                                class="flex-grow form-control1"
+                                name="comite"
+                                id=""
+                            >
+                                <option value="">Seleccione</option>
+                                <option value="10">Agropecuario</option>
+                                <option value="11">Automotriz</option>
+                                <option value="12">Banca, Seguros y AFPs</option>
+                                <option value="13">Comercio</option>
+                                <option value="14">Construcción</option>
+                                <option value="15">Minería</option>
+                                <option value="16">Pequeña Empresa</option>
+                                <option value="17">Producción</option>
+                                <option value="18">Servicios</option>
+                            </select>
+                        </div>
+                        <button type="submit" class="btn btn-secundario flex mt-6 ml-6"
+                            ><i> <Arrow/>
+                            </i> Buscar</button
+                        >
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
+    <Empresas/>
+    
+    <FooterSection/>
+</Layout>

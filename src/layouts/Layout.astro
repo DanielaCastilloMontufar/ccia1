@@ -1,0 +1,127 @@
+--- 
+import "../styles/style.css"
+
+interface Props {
+	title: string;
+}
+
+const { title } = Astro.props;
+---
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="description" content="Astro description">
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/svg+xml" href="./images/favicon1.webp" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css">
+    <link rel="" href="./styles/styles.css">
+		<meta name="generator" content={Astro.generator} />
+		<title>{title}</title>
+	</head>
+	<body>
+		<slot />
+	</body>
+</html>
+
+<style is:global>
+	@font-face {
+	  font-family: 'RobotoT';
+	  src: url('/public/fonts/Roboto-Thin.ttf');
+	  font-weight: 300;
+	  font-style: normal;
+	}
+
+	@font-face {
+	  font-family: 'RobotoM';
+	  src: url('/public/fonts/Roboto-Medium.ttf');
+	  font-weight: 300;
+	  font-style: normal;
+	}
+
+	@font-face {
+    font-family: 'PoppinsE';
+    src: url('/public/fonts/Poppins-Black.ttf');
+  }
+
+  @font-face {
+    font-family: 'PoppinsM';
+    src: url('/public/fonts/Poppins-Medium.ttf');
+  }
+
+  @font-face {
+    font-family: 'PoppinsB';
+    src: url('/public/fonts/Poppins-Bold.ttf');
+  }
+  @font-face {
+    font-family: 'Poppins';
+    src: url('/public/fonts/Poppins-Regular.ttf');
+    font-weight: 400;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'InterB';
+    src: url('/public/fonts/Inter-Black.ttf');
+    font-weight: 400;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'InterBo';
+    src: url('/public/fonts/Inter-Bold.ttf');
+    font-weight: 400;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'InterM';
+    src: url('/public/fonts/Inter-Medium.ttf');
+    font-weight: 400;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'Helvetica';
+    src: url('/public/fonts/Helvetica.ttf');
+    font-weight: 400;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'HelveticaL';
+    src: url('/public/fonts/Helvetica-Light.ttf');
+    font-weight: 400;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'Raleway';
+    src: url('/public/fonts/Raleway-ExtraLight.ttf');
+    font-weight: 400;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'Raleway';
+    src: url('/public/fonts/Raleway-ExtraLight.ttf');
+    font-weight: 400;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'AxiformaE';
+    src: url('/public/fonts/Axiforma-ExtraBold.ttf');
+    font-weight: 400;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'AxiformaL';
+    src: url('/public/fonts/Axiforma-Light.ttf');
+    font-weight: 400;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'AxiformaM';
+    src: url('/public/fonts/Axiforma-Medium.ttf');
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  
+  
+
+	

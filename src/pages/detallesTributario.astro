@@ -1,0 +1,32 @@
+---
+import FooterSection from "../components/FooterSection.astro";
+import LandingHeader from "../components/LandingHeader.astro";
+import Arrow1 from "../components/comuns/Arrow1.astro";
+import Formulario from "../components/comuns/Formulario.astro";
+import Layout from "../layouts/Layout.astro";
+
+---
+
+<Layout title="Laboral">
+    <LandingHeader/>
+    <section class="auditorio">
+        <img src="./images/Tributario.webp">
+        <div class="contain">
+            <h1>Tributario</h1>
+            <p>Aclaramos las consultas de nuestros asociados respecto a procedimientos de fiscalización tributaria y de impugnación, tanto a nivel administrativo como judicial.</p>
+            <div class="caption flex mt-10">
+                <a href="#formFerias"><button type="submit" class="btn btn-secundario flex ml-6 mt-4"
+                        ><i class="mr-2"> <Arrow1/>
+                        </i>Contacta con nuestra asesora</button
+                    ></a>
+            
+            </div>
+        </div>
+</section>
+<section class="formFerias" id="formFerias">
+    <div class="container">
+        <Formulario/>
+    </div>
+        </section>
+    <FooterSection/>
+</Layout>

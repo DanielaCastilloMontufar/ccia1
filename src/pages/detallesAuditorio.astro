@@ -1,0 +1,198 @@
+---
+import FooterSection from "../components/FooterSection.astro";
+import LandingHeader from "../components/LandingHeader.astro";
+import Arrow1 from "../components/comuns/Arrow1.astro";
+import Layout from "../layouts/Layout.astro";
+import Arrow from "../components/comuns/Arrow.astro";
+---
+
+<Layout title="Auditorium">
+    <LandingHeader/>
+    <section class="auditorio">
+            <img src="./images/auditorium.webp">
+            <div class="contain">
+                <h1>Auditorium</h1>
+                <p>Tecnología y calidad de primera <br><br> Cuenta con enlace a internet, sistema wireless, proyector multimedia de última generación, computadoras portátiles para proyecciones, ecran para una mejor visión, mesa de registro. sistema de seguridad.</p>
+                <div class="caption flex mt-10">
+                    <a href="#reservar" class="button-slide">Reservar</a>
+                    <a href="#counts"><button type="submit" class="btn btn-secundario flex ml-6 mt-4"
+                            ><i class="mr-2"> <Arrow1/>
+                            </i> Ver detalle</button
+                        ></a>
+                
+                </div>
+            </div>
+    </section>
+    <section class="pt-20 pb-20" id="counts">
+    
+        <div class="container">
+    
+            <div class="row counters flex">
+    
+                <div class="col-6 flex items-center justify-center">
+    
+                    <span data-toggle="counter-up">100</span>
+    
+                    <div class="pl-3 info">
+    
+                        <p>Capacidad del Auditorium</p>
+                        <p class="mb-0">Ideal para la realización de diferentes tipos de eventos.</p>
+    
+                    </div>
+    
+                </div>
+    
+                <div class="col-6 flex items-center justify-center">
+    
+                    <span data-toggle="counter-up">1</span>
+    
+                    <div class="pl-3 info">
+    
+                        <p>Atriles</p>
+    
+                        <p class="mb-0">Ubicados estratégicamente.</p>
+    
+                    </div>
+    
+                </div>
+
+                <div class="col-6 flex items-center justify-center">
+    
+                    <span data-toggle="counter-up">15</span>
+    
+                    <div class="pl-3 info">
+    
+                        <p>
+                            % Descuento</p>
+    
+                        <p class="mb-0">Exclusivo para asociados.</p>
+    
+                    </div>
+    
+                </div>
+    
+            </div>
+    
+        </div>
+    
+    </section>
+    <section class="auditorio2 text-center">
+        <div class="contain">
+            <h1>Échale un vistazo</h1>
+            <p class="p-50">¡Nuestros ambientes han sido utilizados para los eventos más importantes de la ciudad!<br>
+                Te dejamos algunas fotografías de nuestros espacios, disfrútalas.</p>
+                <div class="flex p-20 pl-40">
+                    <div class="w-2/3 pr-10">
+                        <img src="./images/auditorium1.webp">
+                    </div>
+                    <div class="w-1/3 second">
+                        <img src="./images/auditorium2.webp">
+                        <img src="./images/auditorium3.webp" class="pt-4">
+
+                    </div>
+                </div>
+
+                <div class="flex p-20 pl-40 pt-0">
+                    <div class="w-1/3 second">
+                        <img src="./images/auditorium4.webp">
+                        <img src="./images/auditorium5.webp" class="pt-4">
+                    </div>
+                    <div class="w-2/3 pr-10">
+                        <img src="./images/auditorium6.webp">
+                    </div>
+                    
+                </div>
+
+            <h1>Mapa y ubicaciones</h1>
+            <p class="p-50">¡Empieza a conocerlo desde este momento!<br>
+                Conoce las zonas de interés de nuestros ambientes, interiores y exteriores.</p>
+
+                <ul class="nav nav-pills mb-3 mt-20 flex justify-center font-AxiformaM" id="pills-tab">
+                    <li class="nav-item pr-40">
+                        <a
+                            class="nav-link active"
+                            id="pills-socios-tab"
+                            href="#audio">Audio</a
+                        >
+                    </li>
+                    <li class="nav-item pr-40" role="presentation">
+                        <a class="nav-link" href="#puertas"
+                            >Puerta de ingreso / salida</a
+                        >
+                    </li>
+                    <li class="nav-item pr-40" role="presentation">
+                        <a class="nav-link" href="#ecran"
+                            >Ecran</a
+                        >
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <a class="nav-link" href="#atril"
+                            >Atril</a
+                        >
+                    </li>
+                </ul>
+
+                <div class="flex p-10" id="audio">
+                    <div class="w-[60%] p-10 pt-0">
+                        <img src="./images/auditoriumAudio.webp" class="p-20 pt-0">   
+                    </div>
+                    <div class=" pt-40 text-left">
+                        <p>Parlantes<br><br>
+                            Colocados estratégicamente al rededor del auditorium.<br><br>
+                            Micrófonos<br><br>              
+                            2 micrófonos inalámbricos (opción de adicionar 1 micrófono).</p>  
+                    </div>           
+                </div>
+
+                <div class="flex p-10" id="puertas">
+                    <div class="w-[60%] p-10 pt-0">
+                        <img src="./images/auditoriumPuertas.webp" class="p-20 pt-0">   
+                    </div>
+                    <div class=" pt-60 text-left">
+                        <p>Sistemas de escape<br><br>
+                            Puertas con sistema de escape seguro para casos de emergencia.</p>  
+                    </div>           
+                </div>
+
+                <div class="flex p-10" id="ecran">
+                    <div class="w-[60%] p-10 pt-0">
+                        <img src="./images/auditoriumEcran.webp" class="p-20 pt-0">   
+                    </div>
+                    <div class=" pt-60 text-left">
+                        <p>
+                            Medidas<br><br>
+                            3 metros x 4 metros.</p>  
+                    </div>           
+                </div>
+
+                <div class="flex p-10" id="atril">
+                    <div class="w-[60%] p-10 pt-0">
+                        <img src="./images/auditoriumAtril.webp" class="p-20 pt-0">   
+                    </div>
+                    <div class=" pt-60 text-left">
+                        <p>
+                            Atril<br><br>
+                            Acondicionado con conexiones audio, HDMI, VGA, corriente.</p>  
+                    </div>           
+                </div>
+        </div>
+    </section>
+
+    <section class="reservar relative flex items-center" id="reservar">
+        <div class="container">
+            <img
+                    class="mx-auto mt-5"
+                    src="./images/Fabiana.webp"
+                    alt=""
+                />
+            <h2>Solicitar asesoría económica</h2>
+            <div class="w-100 pt-4 inline-flex">
+                <a href=""><button class="inline btn btn-primario btn-login">Soy socio</button></a>
+                <a href="/beneficios/" class="ml-8 mt-2 flex btn-secundario"><i><Arrow/></i> Aún no soy socio</a>
+            </div>
+        </div>
+    </section>
+
+    
+    <FooterSection/>
+</Layout>

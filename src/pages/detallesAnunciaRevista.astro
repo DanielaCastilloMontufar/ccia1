@@ -1,0 +1,252 @@
+---
+import FooterSection from "../components/FooterSection.astro";
+import LandingHeader from "../components/LandingHeader.astro";
+import Arrow from "../components/comuns/Arrow.astro";
+import Formulario from "../components/comuns/Formulario.astro";
+import Layout from "../layouts/Layout.astro";
+
+---
+
+<Layout title="Anuncia en la revista">
+    <LandingHeader/>
+    <section class="auditorio1">
+        <img src="./images/anunciateRevista.webp">
+        <div class="contain">
+            <h1>Anuncia en la Revista</h1>
+            <p>Muéstrate a las mejores empresas de la ciudad<br><br>Un alcance increíble, descubre todas las estadísticas de nuestra revista en el botón ver detalles, si ya la conoces, reserva una de las zonas que te ofrecemos para anunciarte.</p>
+            <div class="caption flex mt-10">
+                <a href="#form" class="button-slide">Solicitar</a>
+                <a href="#auditorio2"><button type="submit" class="btn btn-secundario flex ml-6 mt-4"
+                        ><i class="mr-2"> <Arrow/>
+                        </i> Ver detalles</button
+                    ></a>
+            
+            </div>
+        </div>
+</section>
+<section class="ser-socio-third pb-0">
+    <div class="container">
+        <h2>Ventajas de anunciar<br><span>en nuestra revista</span></h2>
+        <p>¡Más de 600 socios de diferentes industrias!<br>También puedes revisar las zonas en las que puedes anunciarte.</p>
+        <div class="row p-4 flex">
+
+            <div class="col-4 p-2 w-[400px] bg-[#BDBDB5]">
+
+                <p class="mb-0 flex">
+                    <i><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 pr-2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M6.633 10.5c.806 0 1.533-.446 2.031-1.08a9.041 9.041 0 012.861-2.4c.723-.384 1.35-.956 1.653-1.715a4.498 4.498 0 00.322-1.672V3a.75.75 0 01.75-.75A2.25 2.25 0 0116.5 4.5c0 1.152-.26 2.243-.723 3.218-.266.558.107 1.282.725 1.282h3.126c1.026 0 1.945.694 2.054 1.715.045.422.068.85.068 1.285a11.95 11.95 0 01-2.649 7.521c-.388.482-.987.729-1.605.729H13.48c-.483 0-.964-.078-1.423-.23l-3.114-1.04a4.501 4.501 0 00-1.423-.23H5.904M14.25 9h2.25M5.904 18.75c.083.205.173.405.27.602.197.4-.078.898-.523.898h-.908c-.889 0-1.713-.518-1.972-1.368a12 12 0 01-.521-3.507c0-1.553.295-3.036.831-4.398C3.387 10.203 4.167 9.75 5 9.75h1.053c.472 0 .745.556.5.96a8.958 8.958 0 00-1.302 4.665c0 1.194.232 2.333.654 3.375z" />
+                  </svg>
+                  </i>
+                  La Revista Institucional es entregada a las principales empresas de la región Sur.</p>
+                    <p class="mb-0 pt-0 flex">
+                        <i><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 pr-2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M6.633 10.5c.806 0 1.533-.446 2.031-1.08a9.041 9.041 0 012.861-2.4c.723-.384 1.35-.956 1.653-1.715a4.498 4.498 0 00.322-1.672V3a.75.75 0 01.75-.75A2.25 2.25 0 0116.5 4.5c0 1.152-.26 2.243-.723 3.218-.266.558.107 1.282.725 1.282h3.126c1.026 0 1.945.694 2.054 1.715.045.422.068.85.068 1.285a11.95 11.95 0 01-2.649 7.521c-.388.482-.987.729-1.605.729H13.48c-.483 0-.964-.078-1.423-.23l-3.114-1.04a4.501 4.501 0 00-1.423-.23H5.904M14.25 9h2.25M5.904 18.75c.083.205.173.405.27.602.197.4-.078.898-.523.898h-.908c-.889 0-1.713-.518-1.972-1.368a12 12 0 01-.521-3.507c0-1.553.295-3.036.831-4.398C3.387 10.203 4.167 9.75 5 9.75h1.053c.472 0 .745.556.5.96a8.958 8.958 0 00-1.302 4.665c0 1.194.232 2.333.654 3.375z" />
+                      </svg>
+                      </i>
+                      Es la Revista Empresarial más importante de Arequipa.</p>
+
+            </div>
+
+            <div class="col-4 p-2 bg-[#3CBF71]">
+
+                <p class="mb-0 flex">
+                    <i><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 pr-2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M6.633 10.5c.806 0 1.533-.446 2.031-1.08a9.041 9.041 0 012.861-2.4c.723-.384 1.35-.956 1.653-1.715a4.498 4.498 0 00.322-1.672V3a.75.75 0 01.75-.75A2.25 2.25 0 0116.5 4.5c0 1.152-.26 2.243-.723 3.218-.266.558.107 1.282.725 1.282h3.126c1.026 0 1.945.694 2.054 1.715.045.422.068.85.068 1.285a11.95 11.95 0 01-2.649 7.521c-.388.482-.987.729-1.605.729H13.48c-.483 0-.964-.078-1.423-.23l-3.114-1.04a4.501 4.501 0 00-1.423-.23H5.904M14.25 9h2.25M5.904 18.75c.083.205.173.405.27.602.197.4-.078.898-.523.898h-.908c-.889 0-1.713-.518-1.972-1.368a12 12 0 01-.521-3.507c0-1.553.295-3.036.831-4.398C3.387 10.203 4.167 9.75 5 9.75h1.053c.472 0 .745.556.5.96a8.958 8.958 0 00-1.302 4.665c0 1.194.232 2.333.654 3.375z" />
+                  </svg>
+                  </i>
+                  Los anuncios de productos y servicios llegan a potenciales clientes.</p>
+                    <p class="mb-0 pt-0 flex">
+                        <i><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 pr-2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M6.633 10.5c.806 0 1.533-.446 2.031-1.08a9.041 9.041 0 012.861-2.4c.723-.384 1.35-.956 1.653-1.715a4.498 4.498 0 00.322-1.672V3a.75.75 0 01.75-.75A2.25 2.25 0 0116.5 4.5c0 1.152-.26 2.243-.723 3.218-.266.558.107 1.282.725 1.282h3.126c1.026 0 1.945.694 2.054 1.715.045.422.068.85.068 1.285a11.95 11.95 0 01-2.649 7.521c-.388.482-.987.729-1.605.729H13.48c-.483 0-.964-.078-1.423-.23l-3.114-1.04a4.501 4.501 0 00-1.423-.23H5.904M14.25 9h2.25M5.904 18.75c.083.205.173.405.27.602.197.4-.078.898-.523.898h-.908c-.889 0-1.713-.518-1.972-1.368a12 12 0 01-.521-3.507c0-1.553.295-3.036.831-4.398C3.387 10.203 4.167 9.75 5 9.75h1.053c.472 0 .745.556.5.96a8.958 8.958 0 00-1.302 4.665c0 1.194.232 2.333.654 3.375z" />
+                      </svg>
+                      </i>
+                      Al ser virtual el acceso a la revista es en segundos.</p>
+
+            </div>
+
+            <div class="col-4 p-2 bg-[#BDBDB5]">
+
+                <p class="mb-0 flex">
+                    <i><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 pr-2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M6.633 10.5c.806 0 1.533-.446 2.031-1.08a9.041 9.041 0 012.861-2.4c.723-.384 1.35-.956 1.653-1.715a4.498 4.498 0 00.322-1.672V3a.75.75 0 01.75-.75A2.25 2.25 0 0116.5 4.5c0 1.152-.26 2.243-.723 3.218-.266.558.107 1.282.725 1.282h3.126c1.026 0 1.945.694 2.054 1.715.045.422.068.85.068 1.285a11.95 11.95 0 01-2.649 7.521c-.388.482-.987.729-1.605.729H13.48c-.483 0-.964-.078-1.423-.23l-3.114-1.04a4.501 4.501 0 00-1.423-.23H5.904M14.25 9h2.25M5.904 18.75c.083.205.173.405.27.602.197.4-.078.898-.523.898h-.908c-.889 0-1.713-.518-1.972-1.368a12 12 0 01-.521-3.507c0-1.553.295-3.036.831-4.398C3.387 10.203 4.167 9.75 5 9.75h1.053c.472 0 .745.556.5.96a8.958 8.958 0 00-1.302 4.665c0 1.194.232 2.333.654 3.375z" />
+                  </svg>
+                  </i>
+                  Anunciar en una revista Institucional de prestigio.</p>
+                    
+            </div>
+
+        </div>
+    </div>
+</section>
+<section class="pt-20 pb-20" id="counts">
+    
+    <div class="container">
+
+        <div class="row counters flex">
+
+            <div class="col-6 flex items-center justify-center">
+
+                <span data-toggle="counter-up">1500</span>
+
+                <div class="pl-3 info">
+
+                    <p>Visualizaciones</p>
+                    <p class="mb-0">Posicionada en más de 1500 lectores.</p>
+
+                </div>
+
+            </div>
+
+            <div class="col-6 flex items-center justify-center">
+
+                <span data-toggle="counter-up">4</span>
+
+                <div class="pl-3 info">
+
+                    <p>
+                        Publicaciones</p>
+
+                    <p class="mb-0">Publicadas bimestralmente durante el año.</p>
+
+                </div>
+
+            </div>
+
+            <div class="col-6 flex items-center justify-center">
+
+                <span data-toggle="counter-up">30</span>
+
+                <div class="pl-3 info">
+
+                    <p>Páginas</p>
+
+                    <p class="mb-0">Más de 30 páginas a todo color.</p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+    <img src="./images/revistasportada.webp">
+    
+    <section class="auditorio2 text-center pt-20 pb-0" id="auditorio2">
+        <div class="contain">
+            <h1>Zonas promocionales</h1>
+            <p class="p-50">¿Cuál es la zona de tu interés?<br>
+                Selecciona una o más zonas donde te gustaría anunciarte.</p>
+
+                <div class="flex p-10" id="ecran">
+                    <div class="w-[60%] p-10 pb-0 pt-0">
+                        <img src="./images/revista-seccion.webp" class="p-20 pt-0">   
+                    </div>
+                    <div class="col-m-5 pt-20">
+
+                        <div class="flex align-items-center justify-start">
+        
+                            <div class="switch-container">
+        
+                                <input type="checkbox" class="switch" name="" id="switch1">
+        
+                                <label for="switch1" class="lbl-switch"></label>
+        
+                            </div>
+        
+                            <div class="info-zonas ml-4">
+        
+                                <p class="mb-0 font-weight-bold subtitle-revista" style="color: rgb(0, 0, 0);">Página completa</p>
+        
+                                <p class="mb-0">42px cm x 500 cm</p>
+        
+                            </div>
+        
+                        </div>
+        
+                        <div class="flex align-items-center justify-start mt-4">
+        
+                            <div class="switch-container">
+        
+                                <input type="checkbox" class="switch" name="" id="switch2">
+        
+                                <label for="switch2" class="lbl-switch"></label>
+        
+                            </div>
+        
+                            <div class="info-zonas ml-4">
+        
+                                <p class="mb-0 font-weight-bold subtitle-revista" style="color: rgb(0, 0, 0);">Media página vertical</p>
+        
+                                <p class="mb-0">300px cm x 500 cm</p>
+        
+                            </div>
+        
+                        </div>
+        
+                        <div class="flex align-items-center justify-start mt-4">
+        
+                            <div class="switch-container">
+        
+                                <input type="checkbox" class="switch" name="" id="switch3">
+        
+                                <label for="switch3" class="lbl-switch"></label>
+        
+                            </div>
+        
+                            <div class="info-zonas ml-4">
+        
+                                <p class="mb-0 font-weight-bold subtitle-revista" style="color: rgb(0, 0, 0);">Media página horizontal</p>
+        
+                                <p class="mb-0">42px cm x 500 cm</p>
+        
+                            </div>
+        
+                        </div>
+        
+                        <div class="flex align-items-center justify-start mt-4">
+        
+                            <div class="switch-container">
+        
+                                <input type="checkbox" class="switch" name="" id="switch4">
+        
+                                <label for="switch4" class="lbl-switch"></label>
+        
+                            </div>
+        
+                            <div class="info-zonas ml-4">
+        
+                                <p class="mb-0 font-weight-bold subtitle-revista">Pié de página</p>
+        
+                                <p class="mb-0">300px cm x 500 cm</p>
+        
+                            </div>
+        
+                        </div>
+        
+                    </div>          
+                </div>
+        </div>
+    </section>
+
+    <section class="reservar1 relative flex items-center" id="reservar">
+        <div class="container text-center">
+            <h2>Solicitar <span>sección ahora</span></h2>
+            <div class="w-100 pt-4 inline-flex">
+                <a href=""><button class="inline btn btn-primario btn-login">Soy socio</button></a>
+                <a href="/beneficios/" class="ml-8 mt-2 flex btn-secundario"><i><Arrow/></i> Aún no soy socio</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="formFerias" id="form">
+        <div class="container">
+            <Formulario/>
+        </div>
+            </section>
+
+
+    <FooterSection/>
+</Layout>

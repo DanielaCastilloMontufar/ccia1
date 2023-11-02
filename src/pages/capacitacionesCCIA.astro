@@ -1,0 +1,45 @@
+---
+import FooterSection from "../components/FooterSection.astro";
+import LandingHeader from "../components/LandingHeader.astro";
+import Arrow1 from "../components/comuns/Arrow1.astro";
+import Layout from "../layouts/Layout.astro";
+import Capacitaciones from "../components/Capacitaciones"
+
+---
+
+<Layout title="Capacitaciones">
+    <LandingHeader/>
+    <section class="capacitacionesCCIA">
+        <div class="dtl grid grid-cols-2 gap-2">
+            <div class="pt-20 pl-10">
+                <h2>Capacitaciones <span><br />CCIA</span></h2>
+                <p>
+                    Accede a programas en instituciones de calidad.<br /><br />
+                    Exclusivo para asociados
+    
+    
+                </p>
+    
+                <a href="/beneficios/"><button type="submit" class="btn btn-secundario flex mt-10"
+                    ><i> <Arrow1 /></i> Quiero ser asociado</button></a>
+            </div>
+    
+            <div>
+                <div class="imagen1">
+                    <img
+                        class="app-img1 pt-20"
+                        src="./images/eventos.webp"
+                        alt=""
+                    />
+                </div>
+            </div>
+        </div>
+            <div class="pt-20 text-center"><h2>Nuestras Capacitaciones</h2>
+                <Capacitaciones client:only/>
+    
+        </div>
+            
+        
+    </section>
+    <FooterSection/>
+</Layout>

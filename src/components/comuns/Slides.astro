@@ -1,0 +1,17 @@
+---
+interface Props {
+  imagen: string;
+  title: string;
+  button: string;
+}
+
+const { imagen, title, button } = Astro.props;
+---
+
+<li>
+    <img src={`${imagen}`} alt="">
+    <section class="caption">
+        <h1>{title}</h1>
+        <a href="" class="button-slide">{button}</a>
+    </section>
+</li>

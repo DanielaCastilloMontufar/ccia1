@@ -1,0 +1,138 @@
+---
+import FooterSection from "../components/FooterSection.astro";
+import LandingHeader from "../components/LandingHeader.astro";
+import Arrow1 from "../components/comuns/Arrow1.astro";
+import NavbarAgenda from "../components/comuns/NavbarAgenda.astro";
+import Layout from "../layouts/Layout.astro";
+
+
+---
+
+<Layout title="Protestos y Moras">
+    <LandingHeader/>
+    <section class="protestos pt-40">
+        <div class="dtl grid grid-cols-2 gap-2">
+            <div class="pl-10">
+                <h2 class="leading-[55px]">Protestos y <span><br />Moras</span></h2>
+                <p>
+                    Continúa con tu actividad empresarial operativa.<br /><br />
+                    Pagarés, letras, cheques, warrants que tengan la cláusula sin protesto y cuyos pagos a su vencimiento no se han efectuado.<br /><br />
+                    Para realizar una consulta selecciona: <br>
+    (50% de descuento para nuestros socios)
+                </p>
+    
+                <a href="#certificacion-servicios"><button type="submit" class="btn btn-secundario flex mt-10"
+                    ><i> <Arrow1/></i> Ver más</button
+                ></a>
+            </div>
+    
+            <div>
+                <div class="imagen1">
+                    <img
+                        class="app-img1"
+                        src="./images/protestos1.webp"
+                        alt=""
+                    />
+                </div>
+                <div class="flex">
+                    <div class="w-1/2"><a href="/protestosymoras/"><img
+                    class=" pt-10 w-200"
+                    src="./images/videos.webp"
+                    alt=""
+                /></a></div>
+                <div class="pt-10 w-1/2">
+                    <p class="uppercase">Novedades</p>
+                    <p class="">¿Qué es el libro de reclamaciones?</p>
+                </div></div>
+            </div>
+        </div>    
+    </section>
+    
+    <NavbarAgenda 
+    name="Jocelyn Cari Amanqui"
+    number="380505 Anexo 111"
+    hotmail="jcari@cciarequipa.org"
+    link="https://wa.link/2z8eme"/>
+    
+    <section class="certificacion-servicios pt-6 mt-6" id="certificacion-servicios">
+    
+        <div class="container-fluid pl-0 pr-0 flex">
+    
+            <div class="grid grid-cols-4 mr-0 ml-0 bg-black flex text-center">
+    
+                
+                <div class="col pl-0 pr-0">
+    
+                    <div class="card h-100 bg-[url('./images/certificacion2.webp')]">
+    
+                        <div class="card-body">
+    
+                            <h5 class="card-title text-lg">Tarifario</h5>
+    
+                            <a href="/detallesTarifario/" class="btn-outline py-3 px-4">Ver más</a>
+    
+                        </div>
+    
+                    </div>
+    
+                </div>
+    
+                
+                <div class="col pl-0 pr-0">
+    
+                    <div class="card h-100 bg-[url('./images/certificacion3.webp')]">
+    
+                        <div class="card-body">
+    
+                            <h5 class="card-title text-lg">Levantamiento de Protestos y Moras</h5>
+    
+                            <a href="/levantarProtestos/" class="btn-outline py-3 px-5">Ver más</a>
+    
+                        </div>
+    
+                    </div>
+    
+                </div>
+    
+                
+                <div class="col pl-0 pr-0">
+    
+                    <div class="card h-100 bg-[url('./images/certificacion4.webp')]">
+    
+                        <div class="card-body">
+    
+                            <h5 class="card-title text-lg">Títulos Valores</h5>
+    
+                            <a href="/detallesTitulosValores/" class="btn-outline py-3 px-5">Ver más</a>
+    
+                        </div>
+    
+                    </div>
+    
+                </div>
+    
+                
+                <div class="col pl-0 pr-0">
+    
+                    <div class="card h-100 bg-[url('./images/certificacion5.webp')]">
+    
+                        <div class="card-body">
+    
+                            <h5 class="card-title text-lg">Preguntas Frecuentes</h5>
+    
+                            <a href="/detallesPreguntasFrecuentes/" class="btn-outline py-10 px-5">Ver más</a>
+    
+                        </div>
+    
+                    </div>
+    
+                </div>
+    
+                
+            </div>
+    
+        </div>
+    
+    </section>
+    <FooterSection/>
+</Layout>
